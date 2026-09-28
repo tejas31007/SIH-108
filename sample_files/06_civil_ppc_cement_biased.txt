@@ -1,0 +1,26 @@
+TENDER: Procurement of Portland Pozzolana Cement (PPC) for Bridge Construction
+REFERENCE: NHAI/TECH/CEMENT-PPC/2026/77
+DEPARTMENT: National Highways Authority of India (NHAI)
+
+NATIONAL HIGHWAYS AUTHORITY OF INDIA
+Tender Notice No: NHAI/TECH/CEMENT-PPC/2026/77
+Project: 4-Laning of National Highway Bypass Package 2
+
+TECHNICAL SPECIFICATION SCHEDULE - CEMENT:
+
+1. DESCRIPTION OF ITEM:
+Supply of Flyash-based Portland Pozzolana Cement (PPC) in 50 kg HDPE bags for reinforced cement concrete (RCC) works, retaining structures, and pavement culverts.
+
+2. SPECIFIC BRAND DIRECTIVE:
+Tenderers must deliver cement produced by UltraTech Cement or ACC Cement or Ambuja Cement. Bids offering local or non-reputed cement brands shall not be considered.
+
+3. PHYSICAL AND CHEMICAL REQUIREMENTS:
+- Pozzolana Content: Pulverized fuel ash (fly ash) proportion between 15% and 35% by mass.
+- Fineness (Specific Surface): Not less than 300 m2/kg by Blaine air permeability method.
+- Setting Time: Initial setting time not less than 30 minutes; Final setting time not more than 600 minutes.
+- Compressive Strength:
+  * 72 +/- 1 hour (3 days): Minimum 16.0 MPa
+  * 168 +/- 2 hours (7 days): Minimum 22.0 MPa
+  * 672 +/- 4 hours (28 days): Minimum 33.0 MPa
+- Soundness: Le Chatelier expansion not more than 10 mm; Autoclave expansion not more than 0.8%.
+- Insoluble Residue: Not more than X + 4.0% by mass.

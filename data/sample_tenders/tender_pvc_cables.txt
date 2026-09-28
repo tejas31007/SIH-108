@@ -1,0 +1,15 @@
+STATE ELECTRICITY TRANSMISSION CORPORATION LIMITED
+TECHNICAL SPECIFICATION SCHEDULE - ELECTRICAL DISTRIBUTION WIRING
+
+Item Name: Low Tension Power and Control Flexible Cables for Substation Control Room.
+
+1. Scope:
+   Supply of single-core and multi-core PVC insulated copper conductor flexible cables.
+2. Technical Specifications:
+   a. Operating Voltage: Suitable for working voltages up to and including 1100 Volts AC, 50 Hz.
+   b. Conductor: High conductivity plain electrolytic copper conductor, flexible Class 5 stranded.
+   c. Insulation: Special Flame Retardant (FR) PVC insulation compound Type A.
+   d. Sheath: Flame Retardant Low Smoke and Halogen compound, extruded outer sheath.
+   e. Temperature Rating: Max continuous operating temperature 70 deg Celsius.
+   f. Voltage Test: Withstand 3.0 kV AC rms test voltage in water for 5 minutes without breakdown.
+   g. Preferred Brands: Material shall strictly be sourced from Havells or Polycab manufacturer catalogue.

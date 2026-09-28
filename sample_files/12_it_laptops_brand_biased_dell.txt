@@ -1,0 +1,22 @@
+TENDER: Supply of Executive Laptops for State Secretariat Departments
+REFERENCE: DIT/EGOV/LAPTOP-OFFICE/2026/89
+DEPARTMENT: State Department of Information Technology & e-Governance
+
+DEPARTMENT OF INFORMATION TECHNOLOGY AND E-GOVERNANCE
+Bid Reference: DIT/EGOV/LAPTOP-OFFICE/2026/89
+Subject: Supply of Executive Laptops for Senior Administrative Officers
+
+TECHNICAL SCHEDULE & ELIGIBILITY TERMS:
+
+1. MANDATORY PRODUCT SELECTION:
+Bidders must offer and deliver only Dell Latitude 5440 or HP EliteBook 840 G10 laptops. Any offer proposing alternative manufacturers such as Acer, Asus, Lenovo, or local brands will be disqualified at technical scrutiny without evaluation.
+
+2. HARDWARE SPECIFICATIONS:
+- Processor: Intel Core i7 13th Generation (10 cores, up to 5.0 GHz turbo frequency) or Apple M2.
+- Memory: 16 GB DDR5 RAM (expandable up to 64 GB).
+- Storage: 512 GB M.2 NVMe PCIe Gen 4 High Speed Solid State Drive (SSD).
+- Display: 14.0 inch Full HD (1920 x 1080) anti-glare IPS display with minimum 300 nits brightness.
+- Ports: At least 2x Thunderbolt 4 / USB-C, 2x USB 3.2 Gen 1, 1x HDMI 2.0, 1x RJ45 Gigabit Ethernet.
+- Wireless: Wi-Fi 6E (802.11ax) and Bluetooth 5.3.
+- Operating System: Windows 11 Pro 64-bit pre-activated with recovery media.
+- Safety & Registration: Laptop and power adapter must have valid registration under the Compulsory Registration Scheme (CRS) of MeitY for Electronic and IT Goods.

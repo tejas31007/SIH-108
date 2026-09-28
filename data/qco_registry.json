@@ -1,0 +1,96 @@
+[
+  {
+    "qco_id": "QCO-STEEL-2018",
+    "order_title": "Steel and Steel Products (Quality Control) Order, 2018",
+    "issuing_ministry": "Ministry of Steel",
+    "gazette_notification_no": "S.O. 4330(E)",
+    "statutory_act": "Section 16 of Bureau of Indian Standards Act, 2016",
+    "mandatory_standards": [
+      "IS 1786",
+      "IS 2062",
+      "IS 1239",
+      "IS 2830",
+      "IS 2831",
+      "IS 432"
+    ],
+    "requirement": "Compulsory BIS Standard Mark (ISI Mark) license mandatory prior to manufacture, storage, sale, or government procurement."
+  },
+  {
+    "qco_id": "QCO-CEMENT-2023",
+    "order_title": "Cement (Quality Control) Order, 2023",
+    "issuing_ministry": "Department for Promotion of Industry and Internal Trade (DPIIT)",
+    "gazette_notification_no": "S.O. 5092(E)",
+    "statutory_act": "Section 16 of Bureau of Indian Standards Act, 2016",
+    "mandatory_standards": [
+      "IS 1489",
+      "IS 269",
+      "IS 455",
+      "IS 8041",
+      "IS 12330",
+      "IS 6909"
+    ],
+    "requirement": "Mandatory ISI mark. No non-certified cement may be transported, marketed, or accepted in civil engineering works."
+  },
+  {
+    "qco_id": "QCO-CABLES-2023",
+    "order_title": "Electrical Wires and Cable (Quality Control) Order, 2023",
+    "issuing_ministry": "Department for Promotion of Industry and Internal Trade (DPIIT)",
+    "gazette_notification_no": "S.O. 3968(E)",
+    "statutory_act": "Section 16 of Bureau of Indian Standards Act, 2016",
+    "mandatory_standards": [
+      "IS 694",
+      "IS 1554",
+      "IS 7098",
+      "IS 9968"
+    ],
+    "requirement": "Compulsory ISI certification for all electric cables used in distribution, household, and industrial circuits."
+  },
+  {
+    "qco_id": "QCO-PLUGS-2021",
+    "order_title": "Plugs and Socket-Outlets (Quality Control) Order, 2021",
+    "issuing_ministry": "DPIIT",
+    "gazette_notification_no": "S.O. 4503(E)",
+    "statutory_act": "Section 16 of Bureau of Indian Standards Act, 2016",
+    "mandatory_standards": [
+      "IS 1293"
+    ],
+    "requirement": "All domestic and industrial plugs and sockets up to 250V and 16A must have BIS certification and child-resistant shutters."
+  },
+  {
+    "qco_id": "QCO-PPE-HELMETS-2021",
+    "order_title": "Personal Protective Equipment (Protective Helmets) Quality Control Order, 2021",
+    "issuing_ministry": "DPIIT",
+    "gazette_notification_no": "S.O. 2489(E)",
+    "statutory_act": "Section 16 of Bureau of Indian Standards Act, 2016",
+    "mandatory_standards": [
+      "IS 2925"
+    ],
+    "requirement": "Industrial safety helmets must strictly bear the ISI mark; non-certified protective gear cannot be purchased in public tenders."
+  },
+  {
+    "qco_id": "QCO-WATER-2017",
+    "order_title": "Food Safety and Standards / Packaged Drinking Water Compulsory Certification Order",
+    "issuing_ministry": "Ministry of Consumer Affairs, Food and Public Distribution / FSSAI",
+    "gazette_notification_no": "F. No. 1-100/FSSAI/SP/2016",
+    "statutory_act": "Section 16 of BIS Act, 2016 & FSS Act 2006",
+    "mandatory_standards": [
+      "IS 14543",
+      "IS 13428"
+    ],
+    "requirement": "Packaged drinking water and natural mineral water require dual statutory compliance (FSSAI license + BIS ISI Mark)."
+  },
+  {
+    "qco_id": "QCO-MEITY-CRS-2021",
+    "order_title": "Electronics and Information Technology Goods (Requirement for Compulsory Registration) Order",
+    "issuing_ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "gazette_notification_no": "S.O. 3274(E)",
+    "statutory_act": "Compulsory Registration Scheme (CRS) under BIS Act, 2016",
+    "mandatory_standards": [
+      "IS 16046",
+      "IS 13252",
+      "IS 616",
+      "IS 302"
+    ],
+    "requirement": "Laptops, batteries, smartphones, displays, and servers must hold valid BIS CRS registration numbers."
+  }
+]

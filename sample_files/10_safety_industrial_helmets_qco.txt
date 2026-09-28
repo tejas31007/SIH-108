@@ -1,0 +1,24 @@
+TENDER: Supply of Industrial Safety Helmets for Tunnel Boring Project Workers
+REFERENCE: BRO/TUNNEL/PPE-HELMET/2026/12
+DEPARTMENT: Border Roads Organisation (BRO) - Strategic Tunnel Construction Unit
+
+BORDER ROADS ORGANISATION - MINISTRY OF DEFENCE
+NIT Reference: BRO/TUNNEL/PPE-HELMET/2026/12
+Project: Rohtang Bypass and High-Altitude Tunnel Works
+
+TECHNICAL SPECIFICATIONS - PERSONAL PROTECTIVE EQUIPMENT (PPE):
+
+1. ITEM SPECIFICATION:
+Supply of Non-Metallic Industrial Safety Helmets with 4-point harness and sweatband for construction workers, miners, and engineers exposed to falling objects and electrical shock hazards.
+
+2. APPROVED MAKES AND BRANDS:
+Helmets shall be procured from reputed safety brands such as Karam or 3M or Karam Safety. Alternate local makes must demonstrate equivalent certification.
+
+3. PERFORMANCE AND TEST REQUIREMENTS:
+- Shell Material: High density virgin polymer (HDPE/ABS) resistant to impact, puncture, and UV degradation.
+- Shock Absorption: Transmitted force through the helmet shell to the headform shall not exceed 5.0 kN when subjected to 5 kg falling striker drop test from 1.0 meter height.
+- Penetration Resistance: Conical striker dropped from 1.0 m shall not make contact with headform.
+- Electrical Insulation: Shell shall withstand high-voltage electrical breakdown test of 2000 Volts AC leakage current <= 3 mA.
+- Flame Resistance: Shell material shall not continue burning for more than 5 seconds after burner flame removal.
+- Chin Strap Retention: Chin strap with minimum 19 mm width with breaking load between 150 N and 250 N.
+- Regulatory Mandate: Helmets must bear mandatory ISI Mark under the Personal Protective Equipment Quality Control Order issued by DPIIT.

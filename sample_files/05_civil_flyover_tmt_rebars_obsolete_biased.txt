@@ -1,0 +1,26 @@
+TENDER: Supply of High Yield Strength Deformed TMT Steel Rebars for Flyover Pier Caps
+REFERENCE: CPWD/DELHI/FLY-03/2026/01
+DEPARTMENT: Central Public Works Department (CPWD) - Flyover Projects
+
+GOVERNMENT OF INDIA - CENTRAL PUBLIC WORKS DEPARTMENT
+NIT No: CPWD/DELHI/FLY-03/2026/01
+Project: Construction of 6-Lane Elevated Corridor and Flyover Interchange
+
+SECTION IV - TECHNICAL SPECIFICATIONS FOR REINFORCEMENT STEEL:
+
+1. MATERIAL SPECIFICATIONS:
+Supply of High Strength Deformed Steel Bars for concrete reinforcement in pier caps, deck slabs, and retaining walls.
+The steel rebars must strictly conform to IS 1139:1966 for cold twisted steel bars.
+
+2. APPROVED BRANDS & RESTRICTIONS:
+Materials shall be procured exclusively from primary producers only: Tata Tiscon or Jindal Panther or SAIL. Rebars from secondary re-rollers or unapproved brands will be summarily rejected.
+
+3. MECHANICAL AND CHEMICAL PARAMETERS:
+- Grade: Fe 500D (Ductile grade for seismic zone IV construction).
+- Nominal Diameters: 12 mm, 16 mm, 20 mm, 25 mm, and 32 mm.
+- Yield Strength (0.2% proof stress): Minimum 500.0 N/mm2.
+- Tensile Strength: Minimum 565.0 N/mm2 (Tensile to Yield ratio >= 1.10).
+- Percentage Elongation at Fracture: Minimum 16.0%.
+- Total Elongation at Maximum Force: Minimum 5.0%.
+- Carbon: Maximum 0.25%, Sulphur: Maximum 0.040%, Phosphorus: Maximum 0.040%, (S+P) max 0.075%.
+- Each bundle must bear manufacturer BIS Standard Mark certification under the Mandatory Steel Quality Control Order.

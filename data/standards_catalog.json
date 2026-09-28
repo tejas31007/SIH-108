@@ -1,0 +1,2826 @@
+[
+  {
+    "is_code": "IS 1786:2008",
+    "base_code": "IS 1786",
+    "part": null,
+    "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification",
+    "publication_year": 2008,
+    "reaffirmed_year": 2018,
+    "edition": "Fourth Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 54 (Concrete Reinforcement)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 1139:1966"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Steel",
+    "qco_order_name": "Steel and Steel Products (Quality Control) Order, 2018",
+    "scope": "This standard covers the technical requirements and methods of test for high strength deformed steel bars and wires produced by thermo-mechanical treatment (TMT) or cold working, for use as reinforcement in concrete in the sizes from 4 mm up to and including 40 mm.",
+    "keywords": [
+      "steel bars",
+      "tmt bars",
+      "rebars",
+      "concrete reinforcement",
+      "sariya",
+      "fe 415",
+      "fe 500",
+      "fe 500d",
+      "fe 550",
+      "fe 550d",
+      "fe 600",
+      "yield stress",
+      "tensile strength",
+      "elongation",
+      "bend test",
+      "rebend test",
+      "ribbed bars",
+      "rcc"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.2",
+        "clause_title": "Grades",
+        "content": "Bars and wires shall be supplied in grades Fe 415, Fe 415D, Fe 500, Fe 500D, Fe 550, Fe 550D, and Fe 600 where 'D' denotes high ductility characterized by higher elongation."
+      },
+      {
+        "clause_number": "Table 3",
+        "clause_title": "Mechanical Properties of High Strength Deformed Bars",
+        "content": "For Fe 500D: Minimum 0.2 percent proof stress/yield stress = 500.0 MPa; Minimum tensile strength = 565.0 MPa (TS/YS ratio >= 1.10); Minimum elongation = 16.0 percent; Total elongation at maximum force = 5.0 percent."
+      },
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Chemical Composition",
+        "content": "For Fe 500D: Carbon max 0.25%, Sulphur max 0.040%, Phosphorus max 0.040%, Sulphur + Phosphorus max 0.075%, Carbon Equivalent max 0.42%."
+      },
+      {
+        "clause_number": "Clause 8.1",
+        "clause_title": "Nominal Sizes and Tolerances",
+        "content": "Nominal sizes are 4, 5, 6, 8, 10, 12, 16, 20, 25, 28, 32, 36, and 40 mm. Mass tolerance on nominal mass per meter ranges from +/- 7% for <= 10mm to +/- 3% for over 16mm."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 456:2000",
+    "base_code": "IS 456",
+    "part": null,
+    "title": "Plain and Reinforced Concrete - Code of Practice",
+    "publication_year": 2000,
+    "reaffirmed_year": 2021,
+    "edition": "Fourth Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 2 (Cement and Concrete)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 456:1978"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "This code of practice deals with the general structural use of plain and reinforced concrete in buildings, structures and civil engineering works. It establishes criteria for design, materials, workmanship, inspection and testing.",
+    "keywords": [
+      "concrete",
+      "rcc",
+      "plain concrete",
+      "reinforced concrete",
+      "compressive strength",
+      "m20",
+      "m25",
+      "m30",
+      "m40",
+      "curing",
+      "slump test",
+      "formwork",
+      "water cement ratio",
+      "durability",
+      "exposure conditions",
+      "nominal mix",
+      "design mix"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Grades of Concrete",
+        "content": "Concrete is graded into Ordinary (M10 to M20), Standard (M25 to M55), and High Strength (M60 to M80) based on 28-day characteristic compressive strength in N/mm2."
+      },
+      {
+        "clause_number": "Table 5",
+        "clause_title": "Minimum Cement Content and Maximum Water-Cement Ratio",
+        "content": "Specifies minimum cement content (300 to 360 kg/m3) and maximum water-cement ratio (0.55 down to 0.40) depending on exposure conditions: Mild, Moderate, Severe, Very Severe, Extreme."
+      },
+      {
+        "clause_number": "Clause 7.1",
+        "clause_title": "Workability of Concrete",
+        "content": "Slump requirements: Low workability (25-75 mm) for mass concrete and light RCC slabs; Medium workability (50-100 mm) for heavily reinforced sections; High workability (100-150 mm) for pumped concrete."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1489 (Part 1):2015",
+    "base_code": "IS 1489",
+    "part": "Part 1",
+    "title": "Portland Pozzolana Cement - Specification - Part 1: Fly Ash Based",
+    "publication_year": 2015,
+    "reaffirmed_year": 2020,
+    "edition": "Third Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 2 (Cement and Concrete)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 1489 (Part 1):1991"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Department for Promotion of Industry and Internal Trade (DPIIT)",
+    "qco_order_name": "Cement (Quality Control) Order, 2023",
+    "scope": "This standard covers the manufacture, chemical and physical requirements for fly ash based Portland Pozzolana Cement (PPC) produced by intergrinding Portland cement clinker, pozzolana (fly ash), and gypsum or by intimate blending.",
+    "keywords": [
+      "cement",
+      "ppc",
+      "portland pozzolana cement",
+      "fly ash cement",
+      "compressive strength",
+      "setting time",
+      "initial setting time",
+      "final setting time",
+      "soundness",
+      "fineness",
+      "mortar",
+      "plastering",
+      "masonry",
+      "blaine fineness",
+      "clinker"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Pozzolana Addition Percentage",
+        "content": "Fly ash constituent shall be not less than 15 percent and not more than 35 percent by mass of Portland Pozzolana Cement."
+      },
+      {
+        "clause_number": "Clause 8.1",
+        "clause_title": "Fineness and Setting Time",
+        "content": "Specific surface (Blaine) shall not be less than 300 m2/kg. Initial setting time shall not be less than 30 minutes; final setting time shall not exceed 600 minutes."
+      },
+      {
+        "clause_number": "Clause 8.2",
+        "clause_title": "Compressive Strength",
+        "content": "Minimum compressive strength: 72 hours +/- 1 hr: not less than 16 MPa; 168 hours +/- 2 hr: not less than 22 MPa; 672 hours +/- 4 hr: not less than 33 MPa."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 269:2015",
+    "base_code": "IS 269",
+    "part": null,
+    "title": "Ordinary Portland Cement - Specification (33 Grade, 43 Grade, and 53 Grade)",
+    "publication_year": 2015,
+    "reaffirmed_year": 2020,
+    "edition": "Sixth Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 2 (Cement and Concrete)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 269:1989",
+      "IS 8112:1989",
+      "IS 12269:1987"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Cement (Quality Control) Order, 2023",
+    "scope": "This standard covers the manufacture, chemical and physical requirements for Ordinary Portland Cement of 33, 43, and 53 grades. Note that 43 grade (formerly IS 8112) and 53 grade (formerly IS 12269) have now been unified into IS 269:2015.",
+    "keywords": [
+      "opc",
+      "ordinary portland cement",
+      "opc 43",
+      "opc 53",
+      "opc 33",
+      "cement grade 53",
+      "cement grade 43",
+      "compressive strength",
+      "clinker",
+      "gypsum",
+      "soundness",
+      "le chatelier"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Compressive Strength Requirements",
+        "content": "28-day minimum compressive strength: 33 Grade: 33 MPa; 43 Grade: 43 MPa (up to 58 MPa); 53 Grade: 53 MPa."
+      },
+      {
+        "clause_number": "Clause 6.2",
+        "clause_title": "Soundness & Setting Time",
+        "content": "Unaffected by Le Chatelier expansion exceeding 10 mm or autoclave expansion exceeding 0.8%. Initial setting time minimum 30 minutes, final setting time maximum 600 minutes."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 694:2010",
+    "base_code": "IS 694",
+    "part": null,
+    "title": "Polyvinyl Chloride (PVC) Insulated Cables for Working Voltages Up to and Including 1100 V - Specification",
+    "publication_year": 2010,
+    "reaffirmed_year": 2020,
+    "edition": "Fourth Revision",
+    "division_code": "ETD",
+    "division_name": "Electrotechnical Division",
+    "sectional_committee": "ETD 9 (Cables, Wires and Waveguides)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 694:1990"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Cables (Quality Control) Order, 2023",
+    "scope": "This standard specifies the requirements and test methods for single-core and multi-core PVC insulated and sheathed/unsheathed power cables, flexible cords, and control cables with copper or aluminum conductors for electric power and lighting working voltages up to and including 1100 V AC.",
+    "keywords": [
+      "cables",
+      "pvc insulated cable",
+      "copper conductor",
+      "aluminium conductor",
+      "1100 v",
+      "flexible wire",
+      "building wire",
+      "wiring",
+      "flame retardant",
+      "fr",
+      "frls",
+      "insulation resistance",
+      "conductor resistance",
+      "spark test",
+      "high voltage test"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Conductor Material",
+        "content": "Conductors shall be either high conductivity plain copper or aluminium conforming to IS 8130, solid or stranded, flexible Class 2 or Class 5."
+      },
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Insulation Types",
+        "content": "PVC insulation shall be Type A (general purpose, max continuous operating temp 70 deg C), Type C (heat resistant, max 85 deg C), or Type D (for flexible cables)."
+      },
+      {
+        "clause_number": "Clause 14.1",
+        "clause_title": "Voltage Test in Water",
+        "content": "Cables shall withstand AC test voltage of 3 kV (rms) applied for 5 minutes after immersion in water at 60 deg C without breakdown."
+      },
+      {
+        "clause_number": "Clause 16.2",
+        "clause_title": "Flame Retardant Properties",
+        "content": "FR / FRLS grade cables must satisfy oxygen index not less than 29% and temperature index not less than 250 deg C."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1554 (Part 1):1988",
+    "base_code": "IS 1554",
+    "part": "Part 1",
+    "title": "PVC Insulated (Heavy Duty) Electric Cables - Specification - Part 1: For Working Voltages Up to and Including 1100 V",
+    "publication_year": 1988,
+    "reaffirmed_year": 2020,
+    "edition": "Third Revision",
+    "division_code": "ETD",
+    "division_name": "Electrotechnical Division",
+    "sectional_committee": "ETD 9 (Cables, Wires and Waveguides)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Cables (Quality Control) Order, 2023",
+    "scope": "This standard specifies requirements for PVC insulated armored and unarmored heavy duty electric power cables for working voltages up to and including 1100 volts, intended for power distribution and industrial plants.",
+    "keywords": [
+      "armored cable",
+      "armoured cable",
+      "unarmoured cable",
+      "heavy duty cable",
+      "power cable",
+      "steel strip armor",
+      "galvanized steel wire",
+      "underground cable",
+      "xlpe alternative",
+      "high current",
+      "substation"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 12.1",
+        "clause_title": "Armouring",
+        "content": "Armouring shall consist of galvanized round steel wires or galvanized steel strips conforming to IS 3975. Minimum coverage of armouring shall be 90%."
+      },
+      {
+        "clause_number": "Clause 13.1",
+        "clause_title": "Outer Sheath",
+        "content": "Outer sheath shall be applied by extrusion over the armouring, consisting of black PVC compound conforming to Type ST1 or ST2."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1293:2019",
+    "base_code": "IS 1293",
+    "part": null,
+    "title": "Plugs and Socket-Outlets for Household and Similar Purposes of Rated Voltage up to and Including 250 V and Rated Current up to and Including 16 A - Specification",
+    "publication_year": 2019,
+    "reaffirmed_year": 2024,
+    "edition": "Fourth Revision",
+    "division_code": "ETD",
+    "division_name": "Electrotechnical Division",
+    "sectional_committee": "ETD 14 (Electrical Accessories)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 1293:2005"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Plugs and Socket-Outlets (Quality Control) Order, 2021",
+    "scope": "This standard applies to plugs and fixed or portable socket-outlets for AC only, with or without earthing contact, with a rated voltage not exceeding 250 V and a rated current not exceeding 16 A, intended for household and commercial applications.",
+    "keywords": [
+      "plugs",
+      "socket outlets",
+      "switches",
+      "6a socket",
+      "16a socket",
+      "3 pin plug",
+      "power socket",
+      "shuttered socket",
+      "earthing pin",
+      "electrical accessory",
+      "domestic wiring"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Standard Ratings",
+        "content": "Standard ratings are: 2.5 A (2-pin), 6 A / 250 V (3-pin), 10 A / 250 V (3-pin), and 16 A / 250 V (3-pin). Combined 6A/16A universal shutters must meet clearance specs."
+      },
+      {
+        "clause_number": "Clause 10.1",
+        "clause_title": "Protection Against Electric Shock",
+        "content": "Sockets must be designed so that live parts are not accessible when the plug is partially or completely engaged. Mandates child-resistant safety shutters for all domestic sockets."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 16046 (Part 1):2018 / IEC 62133-1:2017",
+    "base_code": "IS 16046",
+    "part": "Part 1",
+    "title": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes - Safety Requirements - Part 1: Nickel Systems",
+    "publication_year": 2018,
+    "reaffirmed_year": 2023,
+    "edition": "First Revision",
+    "division_code": "LITD",
+    "division_name": "Electronics & IT Division",
+    "sectional_committee": "LITD 10 (Secondary Cells and Batteries)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 16046:2015"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "qco_order_name": "Electronics and Information Technology Goods (Compulsory Registration Scheme) Order",
+    "scope": "Specifies requirements and tests for the safe operation of portable secondary sealed cells and batteries containing alkaline or other non-acid electrolytes under intended use and reasonably foreseeable misuse.",
+    "keywords": [
+      "battery",
+      "rechargeable battery",
+      "secondary cell",
+      "nickel cadmium",
+      "nimh",
+      "portable battery",
+      "power bank",
+      "ups battery",
+      "safety testing",
+      "thermal abuse",
+      "short circuit"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 7.2",
+        "clause_title": "External Short Circuit Test",
+        "content": "Fully charged cells and batteries are short-circuited with a resistance < 100 mOhm at 20 deg C and 55 deg C; no fire or explosion permitted."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 16046 (Part 2):2018 / IEC 62133-2:2017",
+    "base_code": "IS 16046",
+    "part": "Part 2",
+    "title": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes - Safety Requirements - Part 2: Lithium Systems",
+    "publication_year": 2018,
+    "reaffirmed_year": 2023,
+    "edition": "First Revision",
+    "division_code": "LITD",
+    "division_name": "Electronics & IT Division",
+    "sectional_committee": "LITD 10 (Secondary Cells and Batteries)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 16046:2015"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "MeitY",
+    "qco_order_name": "Compulsory Registration Order (CRS)",
+    "scope": "Specifies requirements and tests for the safe operation of portable sealed secondary lithium cells and batteries (Lithium-ion, Li-polymer) used in smartphones, laptops, power banks, and portable electronics.",
+    "keywords": [
+      "lithium ion",
+      "li-ion battery",
+      "laptop battery",
+      "smartphone battery",
+      "lithium polymer",
+      "power bank battery",
+      "overcharge test",
+      "crush test",
+      "thermal runaway",
+      "bms",
+      "crs registration"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 7.3.2",
+        "clause_title": "External Short-Circuit (Lithium Systems)",
+        "content": "Short-circuit test performed at 55 deg C until case temperature returns to steady state. No explosion or fire."
+      },
+      {
+        "clause_number": "Clause 7.3.6",
+        "clause_title": "Overcharging of Battery",
+        "content": "Battery charged at 2x rated charging current; protective circuit must disconnect charge before hazardous overheating occurs."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1520:1980",
+    "base_code": "IS 1520",
+    "part": null,
+    "title": "Horizontal Centrifugal Pumps for Clear, Cold, Fresh Water - Specification",
+    "publication_year": 1980,
+    "reaffirmed_year": 2019,
+    "edition": "Second Revision",
+    "division_code": "MED",
+    "division_name": "Mechanical Engineering Division",
+    "sectional_committee": "MED 20 (Pumps)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 1520:1972"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Heavy Industries / DPIIT",
+    "qco_order_name": "Pumps (Quality Control) Order",
+    "scope": "Covers horizontal centrifugal pumps, whether of volute or turbine type, suitable for pumping clear, cold, fresh water with total heads up to 100 meters and delivery sizes up to 150 mm.",
+    "keywords": [
+      "centrifugal pump",
+      "water pump",
+      "horizontal pump",
+      "suction head",
+      "discharge head",
+      "impeller",
+      "casing",
+      "cast iron",
+      "flow rate",
+      "lps",
+      "efficiency",
+      "hydrostatic test",
+      "water supply pump",
+      "agricultural pump"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 7.1",
+        "clause_title": "Materials of Construction",
+        "content": "Casing: Grade FG 200 Cast Iron conforming to IS 210; Impeller: Leaded bronze Grade LTB 2 of IS 318 or Phosphor bronze or Cast Iron; Shaft: High tensile steel 40C8 of IS 1570."
+      },
+      {
+        "clause_number": "Clause 14.2",
+        "clause_title": "Hydrostatic Testing of Casing",
+        "content": "Pump casing and suction cover shall withstand hydrostatic pressure test of 1.5 times the maximum discharge pressure or 2 times the shut-off head, whichever is higher, held for at least 5 minutes."
+      },
+      {
+        "clause_number": "Clause 15.1",
+        "clause_title": "Efficiency Tolerance",
+        "content": "Pump overall efficiency must not be less than 95% of guaranteed performance curve at duty point."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 2925:1984",
+    "base_code": "IS 2925",
+    "part": null,
+    "title": "Industrial Safety Helmets - Specification",
+    "publication_year": 1984,
+    "reaffirmed_year": 2020,
+    "edition": "Second Revision",
+    "division_code": "TED",
+    "division_name": "Transport & Safety Division",
+    "sectional_committee": "CHD 8 / TED 28 (Occupational Safety)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 2925:1975"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Personal Protective Equipment (Safety Helmets) Quality Control Order, 2021",
+    "scope": "Specifies physical, performance, and testing requirements for industrial safety helmets intended for use in mining, tunneling, construction, quarrying, shipbuilding, and industrial plants to protect the head from falling objects and impacts.",
+    "keywords": [
+      "helmet",
+      "safety helmet",
+      "hard hat",
+      "ppe",
+      "head protection",
+      "industrial safety",
+      "shock absorption test",
+      "penetration resistance",
+      "flammability",
+      "electrical insulation",
+      "chin strap",
+      "nylon harness",
+      "high density polyethylene",
+      "hdpe"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Shock Absorption Test",
+        "content": "A 5 kg steel striker dropped from 1 meter height onto the crown of helmet; maximum force transmitted to the headform shall not exceed 5.0 kN."
+      },
+      {
+        "clause_number": "Clause 5.2",
+        "clause_title": "Penetration Resistance",
+        "content": "A 3 kg conical striker dropped from 1 meter shall not make electrical contact with the headform."
+      },
+      {
+        "clause_number": "Clause 5.4",
+        "clause_title": "Electrical Resistance",
+        "content": "Helmets designed for electrical environments must withstand 1.2 kV leakage current test without exceeding 3 mA."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 9473:2002",
+    "base_code": "IS 9473",
+    "part": null,
+    "title": "Respiratory Protective Devices - Filtering Half Masks to Protect Against Particles - Specification",
+    "publication_year": 2002,
+    "reaffirmed_year": 2019,
+    "edition": "First Revision",
+    "division_code": "CHD",
+    "division_name": "Chemical Division",
+    "sectional_committee": "CHD 8 (Occupational Safety and Health)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Textiles / DPIIT",
+    "qco_order_name": "Medical Textiles and Respiratory Devices QCO",
+    "scope": "Specifies minimum requirements for filtering half masks (respirators, e.g. N95/FFP equivalents) used as respiratory protective devices against particles like dust, mists, smoke and bio-aerosols.",
+    "keywords": [
+      "mask",
+      "n95 mask",
+      "respirator",
+      "filtering half mask",
+      "ffp1",
+      "ffp2",
+      "ffp3",
+      "particulate respirator",
+      "bacterial filtration",
+      "breathing resistance",
+      "inward leakage",
+      "ppe"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Classification",
+        "content": "Filtering half masks are classified as FFP1 (80% penetration filter efficiency), FFP2 (94% penetration filter efficiency, equivalent to N95), and FFP3 (99% penetration filter efficiency)."
+      },
+      {
+        "clause_number": "Clause 7.12",
+        "clause_title": "Total Inward Leakage (TIL)",
+        "content": "For FFP2 masks, the total inward leakage shall not exceed 8% arithmetic mean for 46 out of 50 individual test results."
+      },
+      {
+        "clause_number": "Clause 7.16",
+        "clause_title": "Breathing Resistance",
+        "content": "Inhalation resistance at 30 L/min shall not exceed 0.7 mbar; at 95 L/min shall not exceed 2.4 mbar for FFP2 class."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1239 (Part 1):2004",
+    "base_code": "IS 1239",
+    "part": "Part 1",
+    "title": "Steel Tubes, Tubulars and Other Wrought Steel Fittings - Specification - Part 1: Steel Tubes",
+    "publication_year": 2004,
+    "reaffirmed_year": 2019,
+    "edition": "Sixth Revision",
+    "division_code": "MTD",
+    "division_name": "Metallurgical Engineering Division",
+    "sectional_committee": "MTD 19 (Steel Tubes, Pipes and Fittings)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 1239 (Part 1):1990"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Steel",
+    "qco_order_name": "Steel and Steel Products QCO",
+    "scope": "Covers requirements for welded (ERW) and seamless screwed and socketed steel tubes and plain end steel tubes suitable for welding or for screwing to pipe threads conforming to IS 554, applicable for water, gas, steam and air distribution.",
+    "keywords": [
+      "steel tubes",
+      "steel pipes",
+      "gi pipe",
+      "ms pipe",
+      "erw pipe",
+      "galvanized pipe",
+      "mild steel tubes",
+      "water supply pipes",
+      "plumbing pipe",
+      "light class",
+      "medium class",
+      "heavy class",
+      "hydrostatic pressure test"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Classes of Tubes",
+        "content": "Tubes are designated as Light (Class A - Yellow color code), Medium (Class B - Blue color code), and Heavy (Class C - Red color code) based on wall thickness."
+      },
+      {
+        "clause_number": "Clause 14.1",
+        "clause_title": "Hydrostatic Test",
+        "content": "Each tube shall be tested at manufacturer's works to a hydrostatic pressure of not less than 5 MPa (50 bar), held for at least 5 seconds without showing any leakage."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 2062:2011",
+    "base_code": "IS 2062",
+    "part": null,
+    "title": "Hot Rolled Medium and High Tensile Structural Steel - Specification",
+    "publication_year": 2011,
+    "reaffirmed_year": 2021,
+    "edition": "Seventh Revision",
+    "division_code": "MTD",
+    "division_name": "Metallurgical Engineering Division",
+    "sectional_committee": "MTD 4 (Wrought Steel Products)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 2062:2006"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Steel",
+    "qco_order_name": "Steel and Steel Products QCO",
+    "scope": "Covers the requirements of steel plates, sections (angles, channels, beams, tees), flats, bars and wide flats for use in bridges, buildings, towers, railway rolling stock and general engineering structures.",
+    "keywords": [
+      "structural steel",
+      "steel plates",
+      "angles",
+      "channels",
+      "i beams",
+      "h beams",
+      "e250",
+      "e300",
+      "e350",
+      "e410",
+      "e450",
+      "yield stress",
+      "impact test",
+      "charpy v-notch",
+      "welding steel",
+      "bridge steel"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Grades Designation",
+        "content": "Steel grades designated as E250, E275, E300, E350, E410, E450, E550, and E650 based on minimum yield strength. Sub-qualities A, BR, B0, C indicate Charpy V-notch impact test temperatures."
+      },
+      {
+        "clause_number": "Table 1",
+        "clause_title": "Mechanical Properties",
+        "content": "Grade E250 (Quality A): Minimum yield strength = 250 MPa (for thickness < 20mm), Tensile strength = 410 MPa, Minimum elongation = 23%."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 14543:2016",
+    "base_code": "IS 14543",
+    "part": null,
+    "title": "Packaged Drinking Water (Other Than Packaged Natural Mineral Water) - Specification",
+    "publication_year": 2016,
+    "reaffirmed_year": 2021,
+    "edition": "Third Revision",
+    "division_code": "FAD",
+    "division_name": "Food and Agriculture Division",
+    "sectional_committee": "FAD 14 (Drinks and Drinking Water)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 14543:2004"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Consumer Affairs, Food & Public Distribution",
+    "qco_order_name": "Packaged Drinking Water (Compulsory Certification Scheme)",
+    "scope": "Prescribes requirements and methods of sampling and testing for packaged drinking water, water derived from any source of potable water subjected to treatments like filtration, demineralization, reverse osmosis, aeration, and disinfection.",
+    "keywords": [
+      "packaged water",
+      "drinking water",
+      "bottled water",
+      "ro water",
+      "reverse osmosis",
+      "water bottle",
+      "mineral water",
+      "tds",
+      "ph level",
+      "turbidity",
+      "coliform",
+      "potable water"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Table 1",
+        "clause_title": "Physical and Chemical Parameters",
+        "content": "TDS max 500 mg/L (min 75 mg/L after remineralization); pH range 6.5 to 8.5; Turbidity max 2 NTU; Total hardness as CaCO3 max 200 mg/L."
+      },
+      {
+        "clause_number": "Table 2",
+        "clause_title": "Microbiological Requirements",
+        "content": "Escherichia coli, Coliform bacteria, Faecal streptococci, Pseudomonas aeruginosa shall be absent in any 250 mL sample."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1061:1997",
+    "base_code": "IS 1061",
+    "part": null,
+    "title": "Disinfectant Fluids, Phenolic Type - Specification",
+    "publication_year": 1997,
+    "reaffirmed_year": 2019,
+    "edition": "Fourth Revision",
+    "division_code": "CHD",
+    "division_name": "Chemical Division",
+    "sectional_committee": "CHD 34 (Soaps and Detergents)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 1061:1982"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Prescribes requirements and methods of test for phenolic disinfectant fluids, black fluids and white fluids, used for general sanitation, hospital disinfection and industrial floors.",
+    "keywords": [
+      "phenyle",
+      "phenyl",
+      "disinfectant",
+      "floor cleaner",
+      "phenolic disinfectant",
+      "rideal walker coefficient",
+      "germicide",
+      "sanitation fluid",
+      "antiseptic"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Types and Grades",
+        "content": "Classified into Black fluids (Class A and B) and White fluids (Class A and B). Grades based on Rideal-Walker (RW) coefficient from Grade 1 (RW min 18) to Grade 3 (RW min 5)."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 5607:2001",
+    "base_code": "IS 5607",
+    "part": null,
+    "title": "Liquid Hand Wash - Specification",
+    "publication_year": 2001,
+    "reaffirmed_year": 2020,
+    "edition": "First Revision",
+    "division_code": "CHD",
+    "division_name": "Chemical Division",
+    "sectional_committee": "CHD 34 (Soaps and Detergents)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Prescribes requirements and methods of sampling and test for liquid hand wash used for general cleansing and sanitizing of hands.",
+    "keywords": [
+      "liquid hand wash",
+      "hand soap",
+      "handwash",
+      "sanitizer soap",
+      "skin cleanser",
+      "total active matter",
+      "ph",
+      "foam height",
+      "skin irritation"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Requirements",
+        "content": "Total active matter shall be not less than 10.0 percent by mass; pH of 10% aqueous solution shall be between 5.5 and 8.0; Foam height min 100 mm."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1077:1992",
+    "base_code": "IS 1077",
+    "part": null,
+    "title": "Common Burnt Clay Building Bricks - Specification",
+    "publication_year": 1992,
+    "reaffirmed_year": 2021,
+    "edition": "Fifth Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 30 (Clay and Ceramic Products)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 1077:1986"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Covers dimensions, compressive strength, water absorption, efflorescence and warpage requirements for common burnt clay building bricks used in masonry construction.",
+    "keywords": [
+      "bricks",
+      "clay bricks",
+      "building bricks",
+      "red bricks",
+      "masonry bricks",
+      "compressive strength",
+      "water absorption",
+      "efflorescence",
+      "class 10",
+      "class 7.5",
+      "class 5"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Classification by Compressive Strength",
+        "content": "Bricks classified from Class 35 (min 35 N/mm2) down to Class 3.5 (min 3.5 N/mm2). Standard modular dimensions: 190 mm x 90 mm x 90 mm."
+      },
+      {
+        "clause_number": "Clause 7.2",
+        "clause_title": "Water Absorption",
+        "content": "Water absorption after 24 hr immersion in cold water shall not exceed 20 percent by weight for bricks up to Class 12.5 and 15 percent for higher classes."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 17782:2021",
+    "base_code": "IS 17782",
+    "part": null,
+    "title": "Fortified Rice Kernels (FRK) - Specification",
+    "publication_year": 2021,
+    "reaffirmed_year": null,
+    "edition": "First Edition",
+    "division_code": "FAD",
+    "division_name": "Food and Agriculture Division",
+    "sectional_committee": "FAD 16 (Foodgrains, Starches and Ready to Eat Foods)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Consumer Affairs, Food & Public Distribution",
+    "qco_order_name": "Fortified Rice Kernels (Quality Control & Compulsory Certification) Mandate",
+    "scope": "Prescribes requirements, methods of sampling and test for Fortified Rice Kernels (FRK) produced through extrusion technology, blended with normal milled rice at a ratio of 1:100 for distribution under Targeted Public Distribution System (TPDS), PM POSHAN, and ICDS welfare schemes.",
+    "keywords": [
+      "fortified rice kernels",
+      "frk",
+      "fortified rice",
+      "rice fortification",
+      "iron",
+      "folic acid",
+      "vitamin b12",
+      "fssai",
+      "fci",
+      "public distribution system",
+      "pds",
+      "extrusion",
+      "broken rice",
+      "rice flour",
+      "premix",
+      "anaemia eradication",
+      "tpds"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Raw Material Composition",
+        "content": "FRK shall be manufactured from broken rice grains ground into flour, blended with micronutrient premix (Ferric Pyrophosphate/Sodium Iron EDTA, Folic Acid, and Vitamin B12) using hot extrusion technology."
+      },
+      {
+        "clause_number": "Table 1",
+        "clause_title": "Micronutrient Levels per 100g of FRK",
+        "content": "Iron: 280 to 425 mg/100g; Folic Acid: 750 to 1250 mcg/100g; Vitamin B12: 7.5 to 12.5 mcg/100g. When blended at 1:100 ratio, 1 kg fortified rice provides 28 to 42.5 mg iron."
+      },
+      {
+        "clause_number": "Clause 5.2",
+        "clause_title": "Moisture and Physical Standards",
+        "content": "Moisture content shall not exceed 12.0 percent by mass. Grain length shall closely match conventional rice (between 5.0 mm and 7.5 mm), with true density between 1.30 and 1.50 g/cm3."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1155:1968",
+    "base_code": "IS 1155",
+    "part": null,
+    "title": "Wheat Atta - Specification",
+    "publication_year": 1968,
+    "reaffirmed_year": 2020,
+    "edition": "Second Revision",
+    "division_code": "FAD",
+    "division_name": "Food and Agriculture Division",
+    "sectional_committee": "FAD 16 (Foodgrains and Starches)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": "Ministry of Consumer Affairs, Food & Public Distribution",
+    "qco_order_name": null,
+    "scope": "Prescribes requirements and methods of sampling and test for wheat atta (whole meal and partially debranned) for human consumption, widely procured by state food civil supplies corporations for ration shops.",
+    "keywords": [
+      "wheat atta",
+      "atta",
+      "wheat flour",
+      "flour",
+      "chappati flour",
+      "pds atta",
+      "gluten",
+      "crude fibre",
+      "alcoholic acidity",
+      "total ash",
+      "moisture",
+      "fci"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "General Description",
+        "content": "Wheat atta shall be obtained by milling sound, clean wheat grains. It shall be free from grit, rancidity, insect infestation, and artificial coloring matter."
+      },
+      {
+        "clause_number": "Table 1",
+        "clause_title": "Chemical Requirements",
+        "content": "Moisture max 13.0%; Total ash on dry basis max 2.0%; Acid insoluble ash on dry basis max 0.15%; Gluten dry basis min 7.0%; Alcoholic acidity max 0.18%."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 12650:2018",
+    "base_code": "IS 12650",
+    "part": null,
+    "title": "Textiles - Jute Bags for Packing 50 kg Foodgrains - Specification",
+    "publication_year": 2018,
+    "reaffirmed_year": 2023,
+    "edition": "Third Revision",
+    "division_code": "TXD",
+    "division_name": "Textiles Division (Food Packaging)",
+    "sectional_committee": "TXD 3 (Jute and Jute Products)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 12650:2003"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Textiles & Department of Food & Public Distribution",
+    "qco_order_name": "Jute Packaging Materials (Compulsory Use in Packing Commodities) Order",
+    "scope": "Prescribes constructional details and requirements of lightweight B.Twill jute bags for packing 50 kg foodgrains (wheat and paddy) procured by the Food Corporation of India (FCI) and State Procuring Agencies.",
+    "keywords": [
+      "jute bags",
+      "gunny bags",
+      "b twill",
+      "fci jute bag",
+      "grain packaging",
+      "foodgrain bags",
+      "50 kg bag",
+      "warp",
+      "weft",
+      "breaking strength",
+      "seam strength",
+      "jute sacking",
+      "pds packaging"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Dimensions & Mass",
+        "content": "Outside length: 940 mm (+20/-10 mm); Outside width: 570 mm (+20/-10 mm); Nominal mass of bag: 580 grams (+/- 6%)."
+      },
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Tensile and Seam Strength",
+        "content": "Breaking strength: Warp min 320 N; Weft min 350 N; Seam strength along side and bottom min 240 N."
+      },
+      {
+        "clause_number": "Clause 8.1",
+        "clause_title": "Freedom from Hydrocarbons",
+        "content": "Jute bags must be manufactured using non-mineral batching oil (vegetable oil based) with unsaponifiable hydrocarbon content <= 1250 mg/kg to prevent contamination of edible grain."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 7224:2006",
+    "base_code": "IS 7224",
+    "part": null,
+    "title": "Iodized Salt (Vacuum Evaporated) - Specification",
+    "publication_year": 2006,
+    "reaffirmed_year": 2021,
+    "edition": "Second Revision",
+    "division_code": "FAD",
+    "division_name": "Food and Agriculture Division",
+    "sectional_committee": "FAD 8 (Food Additives and Common Salt)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 7224:1985"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Consumer Affairs, Food & Public Distribution / FSSAI",
+    "qco_order_name": "Iodized Salt (Quality Control & Public Distribution) Order",
+    "scope": "Prescribes requirements and methods of sampling and test for vacuum evaporated iodized salt used for direct human consumption, institutional feeding, and PDS welfare distribution.",
+    "keywords": [
+      "salt",
+      "iodized salt",
+      "iodised salt",
+      "table salt",
+      "vacuum salt",
+      "sodium chloride",
+      "iodine content",
+      "potassium iodate",
+      "water insoluble matter",
+      "pds salt",
+      "ration salt"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Table 1",
+        "clause_title": "Chemical Requirements",
+        "content": "Sodium Chloride (NaCl) on dry basis min 99.0%; Iodine content at manufacturing level min 30 ppm (min 15 ppm at distribution level); Water insoluble matter max 0.05%."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 383:2016",
+    "base_code": "IS 383",
+    "part": null,
+    "title": "Coarse and Fine Aggregate for Concrete - Specification",
+    "publication_year": 2016,
+    "reaffirmed_year": 2021,
+    "edition": "Third Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 2 (Cement and Concrete)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 383:1970"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Covers chemical and physical requirements and methods of test for coarse aggregate, fine aggregate (natural sand, crushed stone sand, manufactured sand), and all-in aggregate for use in concrete.",
+    "keywords": [
+      "coarse aggregate",
+      "fine aggregate",
+      "sand",
+      "gravel",
+      "crushed stone",
+      "m-sand",
+      "manufactured sand",
+      "grading zone",
+      "flakiness index",
+      "elongation index",
+      "crushing value"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Types of Aggregates",
+        "content": "Aggregates are classified into Natural Aggregate, Manufactured Aggregate (M-Sand), and Recycled Concrete Aggregate (RCA)."
+      },
+      {
+        "clause_number": "Table 2",
+        "clause_title": "Grading Limits for Fine Aggregates",
+        "content": "Specifies passing percentages for 4.75mm, 2.36mm, 1.18mm, 600 micron, 300 micron, and 150 micron across Grading Zones I, II, III, and IV."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 800:2007",
+    "base_code": "IS 800",
+    "part": null,
+    "title": "General Construction in Steel - Code of Practice",
+    "publication_year": 2007,
+    "reaffirmed_year": 2022,
+    "edition": "Third Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 7 (Structural Engineering and Structural Sections)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 800:1984"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Provides criteria for design and construction of steel structures using Limit State Method (LSM) for hot rolled steel sections and plate girders in industrial buildings, bridges, and infrastructure.",
+    "keywords": [
+      "structural steel design",
+      "steel construction",
+      "limit state design",
+      "bolted connections",
+      "welded connections",
+      "girders",
+      "trusses",
+      "buckling",
+      "deflection limit"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Design Principles",
+        "content": "Structures shall be designed by limit state method for Limit State of Strength and Limit State of Serviceability."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 4984:2016",
+    "base_code": "IS 4984",
+    "part": null,
+    "title": "High Density Polyethylene (HDPE) Pipes for Water Supply - Specification",
+    "publication_year": 2016,
+    "reaffirmed_year": 2021,
+    "edition": "Fifth Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 53 (Pipes and Fittings)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 4984:1995"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Polyethylene Pipes and Fittings (Quality Control) Order",
+    "scope": "Prescribes requirements for high density polyethylene (HDPE) pipes made from PE 63, PE 80, and PE 100 materials for water supply for domestic and industrial purposes.",
+    "keywords": [
+      "hdpe pipe",
+      "polyethylene pipe",
+      "pe 100",
+      "pe 80",
+      "water supply pipe",
+      "pn 6",
+      "pn 10",
+      "pn 16",
+      "butt fusion",
+      "electrofusion",
+      "hydrostatic strength"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Material Designation",
+        "content": "Pipes shall be manufactured from carbon black compound PE 63, PE 80, or PE 100 with density >= 940 kg/m3."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1536:2001",
+    "base_code": "IS 1536",
+    "part": null,
+    "title": "Centrifugally Cast (Spun) Iron Pressure Pipes for Water, Gas and Sewage - Specification",
+    "publication_year": 2001,
+    "reaffirmed_year": 2021,
+    "edition": "Fourth Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 53 (Pipes and Fittings)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Steel",
+    "qco_order_name": "Ductile and Cast Iron Pipes QCO",
+    "scope": "Covers centrifugally cast ductile and grey iron pressure pipes with socket and spigot ends or flanged ends for transmitting water, gas and sewage.",
+    "keywords": [
+      "di pipe",
+      "ductile iron pipe",
+      "cast iron pipe",
+      "spun pipe",
+      "water mains",
+      "sewage pipe",
+      "socket and spigot",
+      "k9 pipe",
+      "k7 pipe",
+      "hydrostatic test"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Classification",
+        "content": "Pipes classified into Class K7, K9, and K12 based on wall thickness and working pressure."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 7098 (Part 1):1988",
+    "base_code": "IS 7098",
+    "part": "Part 1",
+    "title": "Crosslinked Polyethylene (XLPE) Insulated PVC Sheathed Cables - Specification - Part 1: For Working Voltage Up to and Including 1100 V",
+    "publication_year": 1988,
+    "reaffirmed_year": 2020,
+    "edition": "Second Revision",
+    "division_code": "ETD",
+    "division_name": "Electrotechnical Division",
+    "sectional_committee": "ETD 9 (Cables and Wires)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Cables (Quality Control) Order, 2023",
+    "scope": "Specifies requirements for crosslinked polyethylene (XLPE) insulated and PVC sheathed armored and unarmored power cables for voltages up to 1100 V.",
+    "keywords": [
+      "xlpe cable",
+      "armoured cable",
+      "power distribution",
+      "copper conductor",
+      "aluminium conductor",
+      "crosslinked polyethylene",
+      "90 deg operating temp"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Conductor",
+        "content": "Conductors shall be Class 2 stranded aluminum or copper conforming to IS 8130."
+      },
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Insulation",
+        "content": "Insulation shall be cross-linked polyethylene (XLPE) applied by extrusion, rated for 90 deg C continuous operating temperature."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1180 (Part 1):2014",
+    "base_code": "IS 1180",
+    "part": "Part 1",
+    "title": "Outdoor Type Oil-Immersed Distribution Transformers Up to and Including 2500 kVA, 33 kV - Specification",
+    "publication_year": 2014,
+    "reaffirmed_year": 2021,
+    "edition": "Fourth Revision",
+    "division_code": "ETD",
+    "division_name": "Electrotechnical Division",
+    "sectional_committee": "ETD 16 (Transformers)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 1180 (Part 1):1989"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Power / DPIIT",
+    "qco_order_name": "Distribution Transformers (Quality Control) Order",
+    "scope": "Covers outdoor type oil immersed distribution transformers up to 2500 kVA and 33 kV with standard energy efficiency star ratings (Energy Level 1, 2, and 3).",
+    "keywords": [
+      "transformer",
+      "distribution transformer",
+      "100 kva transformer",
+      "250 kva",
+      "oil immersed",
+      "bee star rating",
+      "energy efficient transformer",
+      "discom procurement"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Table 3",
+        "clause_title": "Maximum Total Losses",
+        "content": "Specifies maximum total losses at 50% and 100% loading for Energy Level 1, 2, and 3 to ensure BEE energy efficiency compliance."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 8828:1996",
+    "base_code": "IS 8828",
+    "part": null,
+    "title": "Electrical Accessories - Circuit-Breakers for Overcurrent Protection for Household and Similar Installations (MCBs)",
+    "publication_year": 1996,
+    "reaffirmed_year": 2021,
+    "edition": "Second Revision",
+    "division_code": "ETD",
+    "division_name": "Electrotechnical Division",
+    "sectional_committee": "ETD 14 (Electrical Accessories)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Circuit Breakers (Quality Control) Order",
+    "scope": "Applies to AC air-break miniature circuit-breakers (MCBs) for operation at 50 Hz, with rated voltage <= 440 V and rated current <= 125 A, with rated breaking capacity up to 10,000 A.",
+    "keywords": [
+      "mcb",
+      "miniature circuit breaker",
+      "circuit breaker",
+      "overcurrent protection",
+      "short circuit protection",
+      "10ka mcb",
+      "c curve",
+      "b curve",
+      "distribution board"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.2",
+        "clause_title": "Tripping Characteristics",
+        "content": "Standard instantaneous tripping curves designated as Type B (3 In to 5 In), Type C (5 In to 10 In), and Type D (10 In to 20 In)."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 16221 (Part 2):2015",
+    "base_code": "IS 16221",
+    "part": "Part 2",
+    "title": "Safety of Power Converters for Use in Photovoltaic Power Systems - Part 2: Particular Requirements for Inverters",
+    "publication_year": 2015,
+    "reaffirmed_year": 2020,
+    "edition": "First Edition",
+    "division_code": "ETD",
+    "division_name": "Electrotechnical Division",
+    "sectional_committee": "ETD 28 (Solar Photovoltaic Energy Systems)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of New and Renewable Energy (MNRE)",
+    "qco_order_name": "Solar Photovoltaics, Systems, Devices and Components Goods (Requirements for Compulsory Registration) Order",
+    "scope": "Provides safety requirements for grid-connected and off-grid utility-interconnected solar photovoltaic inverters converting DC solar array power to AC electricity.",
+    "keywords": [
+      "solar inverter",
+      "pv inverter",
+      "photovoltaic power converter",
+      "grid tied inverter",
+      "mnre",
+      "solar power plant",
+      "anti-islanding",
+      "solar rooftop"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Anti-Islanding Protection",
+        "content": "Grid-connected solar inverters must automatically disconnect within 2 seconds upon loss of main grid power to prevent hazardous islanding."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 16102 (Part 1):2012",
+    "base_code": "IS 16102",
+    "part": "Part 1",
+    "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
+    "publication_year": 2012,
+    "reaffirmed_year": 2021,
+    "edition": "First Edition",
+    "division_code": "ETD",
+    "division_name": "Electrotechnical Division",
+    "sectional_committee": "ETD 23 (Electric Lamps and Accessories)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "MeitY / DPIIT",
+    "qco_order_name": "Compulsory Registration Scheme for LED Lighting",
+    "scope": "Specifies safety and interchangeability requirements for self-ballasted LED lamps for domestic and similar general lighting services with rated wattage up to 60 W and voltage up to 250 V.",
+    "keywords": [
+      "led lamp",
+      "led bulb",
+      "b22 cap",
+      "e27 cap",
+      "energy saving bulb",
+      "luminaire",
+      "lighting safety",
+      "meity crs"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Insulation Resistance and Electric Strength",
+        "content": "Insulation resistance shall not be less than 4 MOhm, and lamp must withstand high voltage dielectric test."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 13252 (Part 1):2010",
+    "base_code": "IS 13252",
+    "part": "Part 1",
+    "title": "Information Technology Equipment - Safety - General Requirements",
+    "publication_year": 2010,
+    "reaffirmed_year": 2020,
+    "edition": "Second Edition",
+    "division_code": "LITD",
+    "division_name": "Electronics & IT Division",
+    "sectional_committee": "LITD 8 (Information Technology Hardware)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "MeitY",
+    "qco_order_name": "Electronics and Information Technology Goods Compulsory Registration Order",
+    "scope": "Applies to mains-powered or battery-powered information technology equipment, including personal computers, laptops, servers, printers, displays, scanners, and data storage systems.",
+    "keywords": [
+      "computer safety",
+      "laptop",
+      "server",
+      "printer",
+      "it hardware",
+      "desktop pc",
+      "meity registration",
+      "crs registration",
+      "electrical safety for computers"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 1.5",
+        "clause_title": "Components Protection",
+        "content": "Components such as power supply modules, capacitors, and transformers must meet fire hazard and thermal limits."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 16333 (Part 3):2022",
+    "base_code": "IS 16333",
+    "part": "Part 3",
+    "title": "Mobile Phone Handsets - Part 3: Language Support for Indian Languages",
+    "publication_year": 2022,
+    "reaffirmed_year": null,
+    "edition": "Second Revision",
+    "division_code": "LITD",
+    "division_name": "Electronics & IT Division",
+    "sectional_committee": "LITD 13 (Telecommunications)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 16333 (Part 3):2016"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "MeitY",
+    "qco_order_name": "Indian Language Support for Mobile Handsets Mandate",
+    "scope": "Specifies Indian language support requirements for all mobile phone handsets sold or procured in India, mandating display and input support for all 22 official Indian languages.",
+    "keywords": [
+      "mobile phone",
+      "smartphone",
+      "indian language support",
+      "devanagari",
+      "meity smartphone mandate",
+      "sar value",
+      "handset procurement"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Mandatory Script Display",
+        "content": "Handset must render message reading and text entry in English, Hindi, and at least one official regional language."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 9079:2002",
+    "base_code": "IS 9079",
+    "part": null,
+    "title": "Electric Monobloc Pumpsets for Clear, Cold, Fresh Water - Specification",
+    "publication_year": 2002,
+    "reaffirmed_year": 2022,
+    "edition": "Second Revision",
+    "division_code": "MED",
+    "division_name": "Mechanical Engineering Division",
+    "sectional_committee": "MED 20 (Pumps)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 9079:1989"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Heavy Industries",
+    "qco_order_name": "Monobloc Pumps Quality Control Order",
+    "scope": "Covers electric monobloc centrifugal pumpsets where pump and motor form an integral compact unit for agricultural and drinking water supply with total heads up to 90 meters.",
+    "keywords": [
+      "monobloc pump",
+      "agricultural pump",
+      "irrigation pump",
+      "electric pumpset",
+      "domestic water pump",
+      "overall efficiency",
+      "head vs discharge"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 8.1",
+        "clause_title": "Minimum Efficiency Requirement",
+        "content": "Overall efficiency shall comply with prescribed minimum values based on rated power (kW) and specific speed."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 8034:2002",
+    "base_code": "IS 8034",
+    "part": null,
+    "title": "Submersible Pumpsets for Clear, Cold, Fresh Water - Specification",
+    "publication_year": 2002,
+    "reaffirmed_year": 2021,
+    "edition": "Second Revision",
+    "division_code": "MED",
+    "division_name": "Mechanical Engineering Division",
+    "sectional_committee": "MED 20 (Pumps)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Heavy Industries",
+    "qco_order_name": "Submersible Pumps QCO",
+    "scope": "Covers design, manufacturing and performance testing of multistage submersible centrifugal pumpsets for deep tube-wells and borewells.",
+    "keywords": [
+      "submersible pump",
+      "borewell pump",
+      "deep well pump",
+      "multistage pump",
+      "tube well",
+      "rural water supply",
+      "thrust bearing"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Hydrostatic Testing",
+        "content": "Pump bowl and discharge casing shall withstand test pressure of 1.5 times maximum shut-off head for 5 minutes."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 2825:1969",
+    "base_code": "IS 2825",
+    "part": null,
+    "title": "Code for Unfired Pressure Vessels",
+    "publication_year": 1969,
+    "reaffirmed_year": 2021,
+    "edition": "First Edition",
+    "division_code": "MED",
+    "division_name": "Mechanical Engineering Division",
+    "sectional_committee": "MED 22 (Pressure Vessels)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "PESO / DPIIT",
+    "qco_order_name": "Pressure Vessels Quality Mandate",
+    "scope": "Specifies design, material selection, fabrication, inspection and testing of unfired fusion-welded pressure vessels for chemical, petroleum, and power plants.",
+    "keywords": [
+      "pressure vessel",
+      "unfired vessel",
+      "boiler alternative",
+      "chemical reactor",
+      "compressed air tank",
+      "storage vessel",
+      "weld joint efficiency",
+      "radiography"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 3.1",
+        "clause_title": "Vessel Classes",
+        "content": "Pressure vessels classified into Class I (fully radiographed), Class II (spot radiographed), and Class III (visual inspection only)."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 277:2018",
+    "base_code": "IS 277",
+    "part": null,
+    "title": "Galvanized Steel Sheets (Plain and Corrugated) - Specification",
+    "publication_year": 2018,
+    "reaffirmed_year": 2023,
+    "edition": "Seventh Revision",
+    "division_code": "MED",
+    "division_name": "Mechanical & Materials Division",
+    "sectional_committee": "MTD 4 (Wrought Steel)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 277:2003"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Steel",
+    "qco_order_name": "Steel and Steel Products QCO",
+    "scope": "Prescribes requirements for zinc-coated galvanized plain and corrugated steel sheets and coils used for roofing, cladding, and packaging.",
+    "keywords": [
+      "galvanized sheets",
+      "gi sheet",
+      "corrugated roofing sheet",
+      "zinc coating",
+      "tin sheet",
+      "roofing shed",
+      "warehouse roof"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Zinc Coating Mass",
+        "content": "Coating designations range from 120 g/m2 up to 450 g/m2 total both sides."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 73:2013",
+    "base_code": "IS 73",
+    "part": null,
+    "title": "Paving Bitumen - Specification",
+    "publication_year": 2013,
+    "reaffirmed_year": 2023,
+    "edition": "Fourth Revision",
+    "division_code": "PCD",
+    "division_name": "Petroleum, Coal and Related Products Division",
+    "sectional_committee": "PCD 6 (Bitumen, Tar and Related Products)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 73:2006"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Petroleum and Natural Gas",
+    "qco_order_name": "Bitumen Quality Control Order",
+    "scope": "Covers viscosity graded paving bitumen (VG 10, VG 20, VG 30, VG 40) used in road construction, highway pavements, and airport runways.",
+    "keywords": [
+      "bitumen",
+      "tar",
+      "asphalt",
+      "vg 30",
+      "vg 40",
+      "paving bitumen",
+      "highway construction",
+      "viscosity grade",
+      "penetration test",
+      "ductility"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Table 1",
+        "clause_title": "Requirements for Paving Bitumen",
+        "content": "For VG 30: Absolute viscosity at 60 deg C = 2400 to 3600 Poises; Kinematic viscosity at 135 deg C min 350 cSt; Penetration at 25 deg C = 45; Softening point min 47 deg C."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1460:2017",
+    "base_code": "IS 1460",
+    "part": null,
+    "title": "Automotive Diesel Fuel - Specification (Bharat Stage VI)",
+    "publication_year": 2017,
+    "reaffirmed_year": 2022,
+    "edition": "Sixth Revision",
+    "division_code": "PCD",
+    "division_name": "Petroleum, Coal and Related Products Division",
+    "sectional_committee": "PCD 3 (Petroleum Products)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 1460:2005"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Petroleum and Natural Gas",
+    "qco_order_name": "Automotive Fuels (Quality Standards) Order",
+    "scope": "Specifies requirements for high speed diesel (HSD) fuel conforming to Bharat Stage VI (BS-VI) automotive emission norms with ultra-low sulphur content.",
+    "keywords": [
+      "diesel",
+      "hsd",
+      "high speed diesel",
+      "bs-vi diesel",
+      "cetane number",
+      "sulphur 10 ppm",
+      "automotive fuel",
+      "transport fuel"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Table 1",
+        "clause_title": "BS-VI Diesel Requirements",
+        "content": "Sulphur content maximum 10 mg/kg (10 ppm); Cetane index minimum 46 (Cetane number min 51); Flash point min 35 deg C; Density at 15 deg C = 820 to 845 kg/m3."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 4148:1989",
+    "base_code": "IS 4148",
+    "part": null,
+    "title": "Surgical Rubber Gloves - Specification",
+    "publication_year": 1989,
+    "reaffirmed_year": 2020,
+    "edition": "Second Revision",
+    "division_code": "MHD",
+    "division_name": "Medical Equipment & Hospital Planning Division",
+    "sectional_committee": "MHD 12 (Hospital Equipment and Surgical Supplies)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Health and Family Welfare / CDSCO",
+    "qco_order_name": "Medical Devices (Quality and Safety) Rules",
+    "scope": "Specifies dimensions, tensile strength, elongation, pinhole freedom and water tightness requirements for sterile, packaged disposable surgical rubber gloves.",
+    "keywords": [
+      "surgical gloves",
+      "rubber gloves",
+      "latex gloves",
+      "sterile gloves",
+      "hospital gloves",
+      "medical supplies",
+      "pinhole test",
+      "tensile strength"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Tensile Properties",
+        "content": "Tensile strength before accelerated aging shall not be less than 24.0 MPa; Ultimate elongation min 750%."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 10245 (Part 2):1994",
+    "base_code": "IS 10245",
+    "part": "Part 2",
+    "title": "Breathing Apparatus - Specification - Part 2: Open Circuit Self-Contained Compressed Air Breathing Apparatus",
+    "publication_year": 1994,
+    "reaffirmed_year": 2020,
+    "edition": "First Revision",
+    "division_code": "MHD",
+    "division_name": "Medical Equipment & Safety Division",
+    "sectional_committee": "CHD 8 / MHD (Safety Equipment)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Personal Protective Equipment Quality Mandate",
+    "scope": "Specifies minimum requirements for open-circuit compressed air self-contained breathing apparatus (SCBA) used by fire fighters and chemical response teams.",
+    "keywords": [
+      "scba",
+      "breathing apparatus",
+      "fire fighting equipment",
+      "compressed air cylinder",
+      "face mask",
+      "toxic gas protection",
+      "respiratory protection"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Air Delivery Capacity",
+        "content": "Apparatus must supply min 300 L/min of air without negative pressure developing inside face piece."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1363 (Part 1):2019",
+    "base_code": "IS 1363",
+    "part": "Part 1",
+    "title": "Hexagon Head Bolts, Screws and Nuts of Product Grade C - Part 1: Hexagon Head Bolts (Size Range M5 to M64)",
+    "publication_year": 2019,
+    "reaffirmed_year": 2024,
+    "edition": "Fifth Revision",
+    "division_code": "PGD",
+    "division_name": "Production & General Engineering Division",
+    "sectional_committee": "PGD 31 (Bolts, Nuts and Fasteners)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 1363 (Part 1):2002"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Fasteners (Quality Control) Order, 2023",
+    "scope": "Specifies characteristics of hexagon head bolts with metric threads from M5 to M64 of product grade C for general engineering and construction assemblies.",
+    "keywords": [
+      "bolts",
+      "hex bolts",
+      "nuts and bolts",
+      "fasteners",
+      "threaded fasteners",
+      "property class 4.6",
+      "m16 bolt",
+      "m20 bolt",
+      "structural fasteners"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Mechanical Properties",
+        "content": "Fasteners shall conform to property classes 4.6, 5.6, or 8.8 as specified in IS 1367 (Part 3)."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 6438:1980",
+    "base_code": "IS 6438",
+    "part": null,
+    "title": "Aluminium Phosphide Formulations - Specification",
+    "publication_year": 1980,
+    "reaffirmed_year": 2020,
+    "edition": "First Revision",
+    "division_code": "PGD",
+    "division_name": "Production & Chemical Division (Grain Preservation)",
+    "sectional_committee": "FAD 1 / PGD (Pest Management)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Agriculture / Central Insecticides Board",
+    "qco_order_name": "Insecticides & Fumigants Mandate",
+    "scope": "Prescribes requirements and methods of test for aluminium phosphide tablet and pellet formulations used for grain fumigation in FCI silos and CWC warehouses against pests.",
+    "keywords": [
+      "aluminium phosphide",
+      "grain fumigant",
+      "phosphine gas",
+      "godown fumigation",
+      "fci grain preservation",
+      "pest control tablets",
+      "cwc warehouse"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 3.1",
+        "clause_title": "Phosphine Generation Content",
+        "content": "Each 3.0 g tablet shall release not less than 1.0 g of phosphine gas (PH3) upon exposure to atmospheric moisture."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 778:1984",
+    "base_code": "IS 778",
+    "part": null,
+    "title": "Copper Alloy Gate, Globe and Check Valves for Water Works Purposes - Specification",
+    "publication_year": 1984,
+    "reaffirmed_year": 2020,
+    "edition": "Fourth Revision",
+    "division_code": "WRD",
+    "division_name": "Water Resources Division",
+    "sectional_committee": "WRD 22 (Valves and Sluices)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Valves Quality Control Order",
+    "scope": "Covers copper alloy (bronze and brass) gate valves, globe valves and check valves suitable for water works pipelines with working pressures up to 1.6 MPa.",
+    "keywords": [
+      "valves",
+      "gate valve",
+      "check valve",
+      "globe valve",
+      "bronze valve",
+      "water distribution",
+      "irrigation sluice",
+      "plumbing valve"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 8.1",
+        "clause_title": "Hydraulic Test",
+        "content": "Body test pressure shall be 1.5 times the maximum rated working pressure, held for 2 minutes without leakage."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 2951 (Part 1):1965",
+    "base_code": "IS 2951",
+    "part": "Part 1",
+    "title": "Recommendation for Estimation of Flow of Water in Open Channels - Part 1: Velocity Area Methods",
+    "publication_year": 1965,
+    "reaffirmed_year": 2021,
+    "edition": "First Edition",
+    "division_code": "WRD",
+    "division_name": "Water Resources Division",
+    "sectional_committee": "WRD 1 (Hydrometry)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Lays down recommendations for estimating flow velocity and discharge of water in rivers, irrigation canals and open channels using current meters and float methods.",
+    "keywords": [
+      "flow measurement",
+      "open channel",
+      "canal flow",
+      "water resources",
+      "discharge estimation",
+      "irrigation canal",
+      "current meter"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Velocity Measurement",
+        "content": "Specifies two-point method (0.2 and 0.8 depth) and one-point method (0.6 depth) for determining mean vertical velocity."
+      }
+    ]
+  },
+  {
+    "is_code": "IS/ISO 9001:2015",
+    "base_code": "IS/ISO 9001",
+    "part": null,
+    "title": "Quality Management Systems - Requirements",
+    "publication_year": 2015,
+    "reaffirmed_year": 2021,
+    "edition": "Fifth Edition",
+    "division_code": "MSD",
+    "division_name": "Management & Systems Division",
+    "sectional_committee": "MSD 2 (Quality Management)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS/ISO 9001:2008"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Specifies requirements for a quality management system (QMS) when an organization needs to demonstrate its ability to consistently provide products and services that meet customer and applicable statutory requirements.",
+    "keywords": [
+      "iso 9001",
+      "qms",
+      "quality management",
+      "vendor qualification",
+      "quality audit",
+      "process control",
+      "statutory compliance"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 8.4",
+        "clause_title": "Control of Externally Provided Processes, Products and Services",
+        "content": "The organization shall ensure that externally provided processes, products and services conform to requirements and do not adversely affect quality."
+      }
+    ]
+  },
+  {
+    "is_code": "IS/ISO 14001:2015",
+    "base_code": "IS/ISO 14001",
+    "part": null,
+    "title": "Environmental Management Systems - Requirements with Guidance for Use",
+    "publication_year": 2015,
+    "reaffirmed_year": 2021,
+    "edition": "Third Edition",
+    "division_code": "MSD",
+    "division_name": "Management & Systems Division",
+    "sectional_committee": "MSD 12 (Environmental Management)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS/ISO 14001:2004"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Specifies requirements for an environmental management system that an organization can use to enhance its environmental performance, fulfill compliance obligations, and achieve environmental objectives.",
+    "keywords": [
+      "iso 14001",
+      "ems",
+      "environmental management",
+      "pollution control",
+      "green procurement",
+      "sustainability"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Environmental Aspects",
+        "content": "Organization shall determine environmental aspects of activities, products and services that it can control."
+      }
+    ]
+  },
+  {
+    "is_code": "IS/ISO 45001:2018",
+    "base_code": "IS/ISO 45001",
+    "part": null,
+    "title": "Occupational Health and Safety Management Systems - Requirements with Guidance for Use",
+    "publication_year": 2018,
+    "reaffirmed_year": 2023,
+    "edition": "First Edition",
+    "division_code": "MSD",
+    "division_name": "Management & Systems Division",
+    "sectional_committee": "MSD 14 (Occupational Safety and Health)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 18001:2007"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Specifies requirements for an occupational health and safety (OH&S) management system to enable organizations to provide safe and healthy workplaces, prevent work-related injury and ill health.",
+    "keywords": [
+      "iso 45001",
+      "occupational safety",
+      "worker health",
+      "hazard identification",
+      "safety management"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 8.1",
+        "clause_title": "Operational Planning and Control",
+        "content": "Organization shall establish processes for the elimination of hazards and reduction of OH&S risks."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 16186:2014",
+    "base_code": "IS 16186",
+    "part": null,
+    "title": "Textiles - Jute Bags for Packing 50 kg Sugar - Specification",
+    "publication_year": 2014,
+    "reaffirmed_year": 2020,
+    "edition": "First Edition",
+    "division_code": "TXD",
+    "division_name": "Textiles Division (Food Packaging)",
+    "sectional_committee": "TXD 3 (Jute Products)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Textiles & DFPD",
+    "qco_order_name": "Jute Packaging Materials (Compulsory Use in Packing Commodities) Mandate",
+    "scope": "Prescribes constructional details and requirements of lightweight B.Twill jute bags for packing 50 kg sugar produced by sugar mills for central pool and PDS allocation.",
+    "keywords": [
+      "sugar bags",
+      "jute sugar bags",
+      "fci sugar",
+      "pds sugar packing",
+      "50 kg sugar sack",
+      "b twill sugar bag"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Dimensions",
+        "content": "Outside length: 910 mm; Outside width: 560 mm; Mass: 580 g."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 16654:2017",
+    "base_code": "IS 16654",
+    "part": null,
+    "title": "Geosynthetics - Polypropylene Nonwoven Geotextiles for Highways - Specification",
+    "publication_year": 2017,
+    "reaffirmed_year": 2022,
+    "edition": "First Edition",
+    "division_code": "TXD",
+    "division_name": "Textiles Division (Technical Textiles)",
+    "sectional_committee": "TXD 30 (Geosynthetics)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Textiles / MoRTH",
+    "qco_order_name": "Technical Textiles Quality Control Order",
+    "scope": "Covers mechanical, hydraulic, and endurance requirements of polypropylene nonwoven needle-punched geotextiles used in subgrade separation and stabilization of roads and expressways.",
+    "keywords": [
+      "geotextile",
+      "polypropylene geotextile",
+      "road stabilization",
+      "subgrade separation",
+      "drainage fabric",
+      "highway construction",
+      "morth specification"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Tensile and Puncture Strength",
+        "content": "Trapezoidal tear strength min 250 N; CBR puncture resistance min 1500 N; Apparent opening size (AOS) <= 150 microns."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 515:1959",
+    "base_code": "IS 515",
+    "part": null,
+    "title": "Specification for Bleaching Powder, Stable",
+    "publication_year": 1959,
+    "reaffirmed_year": 2020,
+    "edition": "First Revision",
+    "division_code": "CHD",
+    "division_name": "Chemical Division",
+    "sectional_committee": "CHD 1 (Inorganic Chemicals)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Prescribes requirements and methods of sampling and test for stable bleaching powder (chlorinated lime) for water treatment, public health sanitation and municipal disinfection.",
+    "keywords": [
+      "bleaching powder",
+      "chlorinated lime",
+      "water disinfection",
+      "available chlorine",
+      "calcium hypochlorite",
+      "sanitation chemical",
+      "water works chemical"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Available Chlorine Content",
+        "content": "Available chlorine shall be not less than 32.0 percent by mass; Moisture max 0.3%."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 15477:2019",
+    "base_code": "IS 15477",
+    "part": null,
+    "title": "Adhesives for Use with Ceramic, Mosaic and Stone Tiles - Specification",
+    "publication_year": 2019,
+    "reaffirmed_year": 2024,
+    "edition": "Second Revision",
+    "division_code": "CHD",
+    "division_name": "Chemical Division",
+    "sectional_committee": "CED 30 / CHD (Adhesives)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 15477:2004"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Specifies chemical and physical requirements for polymer-modified cementitious adhesives used for fixing ceramic, vitrified and natural stone tiles.",
+    "keywords": [
+      "tile adhesive",
+      "ceramic adhesive",
+      "polymer modified adhesive",
+      "vitrified tile fixing",
+      "tensile adhesion strength",
+      "shear adhesion"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Types of Adhesives",
+        "content": "Classified into Type 1 (standard tile adhesive), Type 2 (for heavy vitreous tiles), Type 3 (for external facade), and Type 4 (for dry wall installation)."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1893 (Part 1):2016",
+    "base_code": "IS 1893",
+    "part": "Part 1",
+    "title": "Criteria for Earthquake Resistant Design of Structures - Part 1: General Provisions and Buildings",
+    "publication_year": 2016,
+    "reaffirmed_year": 2021,
+    "edition": "Sixth Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 39 (Earthquake Engineering)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 1893:2002"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Provides criteria for calculating design seismic forces for buildings and structures located in Seismic Zones II, III, IV, and V across India.",
+    "keywords": [
+      "earthquake design",
+      "seismic zone",
+      "zone iv",
+      "zone v",
+      "base shear",
+      "response reduction factor",
+      "importance factor",
+      "spectral acceleration"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.4",
+        "clause_title": "Design Horizontal Seismic Coefficient",
+        "content": "Calculates horizontal design seismic coefficient Ah using zone factor Z, importance factor I, and response reduction factor R."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 13920:2016",
+    "base_code": "IS 13920",
+    "part": null,
+    "title": "Ductile Design and Detailing of Reinforced Concrete Structures Subjected to Seismic Forces - Code of Practice",
+    "publication_year": 2016,
+    "reaffirmed_year": 2021,
+    "edition": "First Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 39 (Earthquake Engineering)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 13920:1993"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Covers requirements for designing and detailing of members of reinforced concrete structures required to resist earthquake effects through high ductility.",
+    "keywords": [
+      "ductile detailing",
+      "seismic detailing",
+      "stirrup spacing",
+      "beam column joint",
+      "confining reinforcement",
+      "earthquake resistance"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.2",
+        "clause_title": "Longitudinal Reinforcement in Beams",
+        "content": "Minimum longitudinal steel ratio shall be not less than 0.24 sqrt(fck)/fy; both top and bottom bars shall extend into column."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 2185 (Part 1):2005",
+    "base_code": "IS 2185",
+    "part": "Part 1",
+    "title": "Concrete Masonry Units - Specification - Part 1: Hollow and Solid Concrete Blocks",
+    "publication_year": 2005,
+    "reaffirmed_year": 2020,
+    "edition": "Third Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 30 (Clay and Ceramic Products)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Covers solid and hollow precast concrete blocks for use in load bearing and non-load bearing masonry construction.",
+    "keywords": [
+      "concrete blocks",
+      "hollow blocks",
+      "solid concrete blocks",
+      "masonry units",
+      "compressive strength",
+      "drying shrinkage",
+      "moisture movement"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Table 1",
+        "clause_title": "Compressive Strength of Concrete Blocks",
+        "content": "Specifies minimum average compressive strength of hollow blocks from 3.5 MPa to 15.0 MPa based on grade."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 1200 (Part 1):1992",
+    "base_code": "IS 1200",
+    "part": "Part 1",
+    "title": "Methods of Measurement of Building and Civil Engineering Works - Part 1: Earthwork",
+    "publication_year": 1992,
+    "reaffirmed_year": 2022,
+    "edition": "Fourth Revision",
+    "division_code": "CED",
+    "division_name": "Civil Engineering Division",
+    "sectional_committee": "CED 44 (Method of Measurement)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Prescribes standard methods of measurement for earthwork excavation, trenching, backfilling and leveling in civil engineering contracts and tenders.",
+    "keywords": [
+      "earthwork measurement",
+      "excavation",
+      "trenching",
+      "civil engineering measurement",
+      "boq measurement",
+      "cpwd measurement"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Classification of Soils",
+        "content": "Classifies soils for excavation payment into Ordinary Soil, Hard Soil, Soft Rock, and Hard Rock requiring blasting."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 3043:2018",
+    "base_code": "IS 3043",
+    "part": null,
+    "title": "Code of Practice for Earthing",
+    "publication_year": 2018,
+    "reaffirmed_year": 2023,
+    "edition": "Second Revision",
+    "division_code": "ETD",
+    "division_name": "Electrotechnical Division",
+    "sectional_committee": "ETD 20 (Electrical Installation)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 3043:1987"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Applies to electrical installation earthing systems for power generation, transmission, industrial plants, commercial and domestic buildings to ensure safety against electric shock and equipment damage.",
+    "keywords": [
+      "earthing",
+      "grounding",
+      "earth electrode",
+      "plate earthing",
+      "pipe earthing",
+      "earth pit",
+      "soil resistivity",
+      "copper electrode",
+      "substation earthing"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 9.1",
+        "clause_title": "Earth Electrode Types",
+        "content": "Specifies design of rod electrodes, pipe electrodes (min 38mm dia GI pipe), and plate electrodes (600x600mm copper or GI plate) embedded in soil with bentonite or charcoal/salt backfill."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 2026 (Part 1):2011",
+    "base_code": "IS 2026",
+    "part": "Part 1",
+    "title": "Power Transformers - Part 1: General",
+    "publication_year": 2011,
+    "reaffirmed_year": 2021,
+    "edition": "Second Revision",
+    "division_code": "ETD",
+    "division_name": "Electrotechnical Division",
+    "sectional_committee": "ETD 16 (Transformers)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 2026 (Part 1):1977"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Power / DPIIT",
+    "qco_order_name": "Power Transformers Quality Mandate",
+    "scope": "Specifies requirements for three-phase and single-phase power transformers (including auto-transformers) used in transmission and industrial power grids.",
+    "keywords": [
+      "power transformer",
+      "high voltage transformer",
+      "substation transformer",
+      "66 kv",
+      "132 kv",
+      "oil temperature rise",
+      "winding resistance",
+      "impedance voltage"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Rating and Cooling",
+        "content": "Specifies ONAN, ONAF, and OFAF cooling methods and temperature rise limits for oil and windings."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 12640 (Part 1):2016",
+    "base_code": "IS 12640",
+    "part": "Part 1",
+    "title": "Residual Current Operated Circuit-Breakers (RCCBs) - Part 1: Without Integral Overcurrent Protection for Household Installations",
+    "publication_year": 2016,
+    "reaffirmed_year": 2021,
+    "edition": "Second Revision",
+    "division_code": "ETD",
+    "division_name": "Electrotechnical Division",
+    "sectional_committee": "ETD 14 (Electrical Accessories)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 12640 (Part 1):2000"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Circuit Breakers Quality Control Order",
+    "scope": "Applies to residual current operated circuit-breakers (RCCB / ELCB) for protecting human life against electrocution and electrical fire hazards.",
+    "keywords": [
+      "rccb",
+      "elcb",
+      "residual current breaker",
+      "earth leakage circuit breaker",
+      "30ma rccb",
+      "100ma rccb",
+      "human shock protection",
+      "electrical safety"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.3",
+        "clause_title": "Rated Residual Operating Current",
+        "content": "Standard rated residual operating currents (I Delta n) are 10 mA, 30 mA, 100 mA, 300 mA, and 500 mA. 30 mA mandated for direct human contact protection."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 12615:2018",
+    "base_code": "IS 12615",
+    "part": null,
+    "title": "Line Operated Three-Phase A.C. Motors (IE Code) - Energy Efficient Motors - Specification",
+    "publication_year": 2018,
+    "reaffirmed_year": 2023,
+    "edition": "Third Revision",
+    "division_code": "ETD",
+    "division_name": "Electrotechnical Division",
+    "sectional_committee": "ETD 15 (Rotating Machinery)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 12615:2011"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Electric Motors (Quality Control) Order",
+    "scope": "Specifies energy efficiency classes (IE2, IE3, and IE4) for three-phase squirrel cage induction motors from 0.12 kW up to 1000 kW operating at 50 Hz.",
+    "keywords": [
+      "electric motor",
+      "induction motor",
+      "ie2 motor",
+      "ie3 motor",
+      "energy efficient motor",
+      "three phase motor",
+      "bee motor star rating"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Table 1",
+        "clause_title": "Nominal Efficiency Limits",
+        "content": "Defines strict minimum percentage full-load efficiency across 2-pole, 4-pole, 6-pole and 8-pole ratings for IE2 and premium IE3 classes."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 616:2017",
+    "base_code": "IS 616",
+    "part": null,
+    "title": "Audio, Video and Similar Electronic Apparatus - Safety Requirements",
+    "publication_year": 2017,
+    "reaffirmed_year": 2022,
+    "edition": "Fourth Edition",
+    "division_code": "LITD",
+    "division_name": "Electronics & IT Division",
+    "sectional_committee": "LITD 7 (Audio, Video and Multimedia Systems)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 616:2010"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "MeitY",
+    "qco_order_name": "Electronics & IT Goods Compulsory Registration Order",
+    "scope": "Applies to electronic apparatus designed to be fed from mains, supplying power, or battery for reception, generation, recording or reproduction of audio and video.",
+    "keywords": [
+      "audio video safety",
+      "television",
+      "display monitor",
+      "sound system",
+      "meity crs",
+      "amplifier",
+      "electronic equipment safety"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "General Test Conditions",
+        "content": "Apparatus must operate without hazard under normal operation and under single fault condition."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 814:2004",
+    "base_code": "IS 814",
+    "part": null,
+    "title": "Covered Electrodes for Manual Metal Arc Welding of Carbon and Carbon Manganese Steel - Specification",
+    "publication_year": 2004,
+    "reaffirmed_year": 2019,
+    "edition": "Sixth Revision",
+    "division_code": "MTD",
+    "division_name": "Metallurgical Engineering Division",
+    "sectional_committee": "MTD 11 (Welding)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Steel",
+    "qco_order_name": "Welding Consumables Quality Control Order",
+    "scope": "Specifies requirements for covered electrodes for manual metal arc welding of mild, normal and medium tensile structural steels.",
+    "keywords": [
+      "welding electrodes",
+      "arc welding",
+      "welding rod",
+      "e6013",
+      "e7018",
+      "weld metal tensile strength",
+      "charpy v notch",
+      "structural welding"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 5.1",
+        "clause_title": "Electrode Classification",
+        "content": "Classified by 6-letter designation representing tensile strength, yield stress, elongation, impact values, flux coating and welding position."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 2830:2012",
+    "base_code": "IS 2830",
+    "part": null,
+    "title": "Carbon Steel Cast Billet Ingots, Billets, Blooms and Slabs for Re-Rolling into Steel for General Structural Purposes - Specification",
+    "publication_year": 2012,
+    "reaffirmed_year": 2022,
+    "edition": "Fourth Revision",
+    "division_code": "MTD",
+    "division_name": "Metallurgical Engineering Division",
+    "sectional_committee": "MTD 4 (Wrought Steel)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 2830:1992"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Steel",
+    "qco_order_name": "Steel and Steel Products QCO",
+    "scope": "Covers chemical and physical requirements of continuously cast carbon steel billets, blooms and slabs used for re-rolling into TMT bars and structural sections.",
+    "keywords": [
+      "steel billets",
+      "cast billets",
+      "re-rolling billets",
+      "continuous casting",
+      "carbon steel bloom",
+      "steel slab",
+      "primary steel producer"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Chemical Composition",
+        "content": "Specifies strict maximum limits for Carbon, Manganese, Phosphorus (max 0.050%) and Sulphur (max 0.050%)."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 10001:1981",
+    "base_code": "IS 10001",
+    "part": null,
+    "title": "Specification for Performance Requirements for Constant Speed Compression Ignition (Diesel) Engines for Agricultural and Industrial Use",
+    "publication_year": 1981,
+    "reaffirmed_year": 2020,
+    "edition": "First Edition",
+    "division_code": "MED",
+    "division_name": "Mechanical Engineering Division",
+    "sectional_committee": "MED 3 (Internal Combustion Engines)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Diesel Engines Quality Mandate",
+    "scope": "Specifies performance, fuel consumption, governor characteristics and testing requirements for single cylinder constant speed diesel engines up to 20 kW.",
+    "keywords": [
+      "diesel engine",
+      "agricultural engine",
+      "constant speed engine",
+      "irrigation diesel engine",
+      "specific fuel consumption",
+      "governor test"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Specific Fuel Consumption",
+        "content": "Specific fuel consumption at rated continuous output shall not exceed manufacturer guaranteed value by more than 5%."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 8148:2003",
+    "base_code": "IS 8148",
+    "part": null,
+    "title": "Packaged Air Conditioners - Specification",
+    "publication_year": 2003,
+    "reaffirmed_year": 2019,
+    "edition": "First Revision",
+    "division_code": "MED",
+    "division_name": "Mechanical Engineering Division",
+    "sectional_committee": "MED 3 (Air Conditioning and Refrigeration)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 8148:1976"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "DPIIT",
+    "qco_order_name": "Air Conditioners Quality Control Order",
+    "scope": "Prescribes constructional and performance requirements for factory-assembled packaged air conditioners with water-cooled or air-cooled condensers.",
+    "keywords": [
+      "packaged air conditioner",
+      "central ac",
+      "ductable ac",
+      "cooling capacity",
+      "cop",
+      "refrigerant",
+      "commercial air conditioning"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 8.1",
+        "clause_title": "Cooling Capacity Test",
+        "content": "Total cooling capacity shall not be less than 95% of rated capacity at standard rating conditions."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 13428:2005",
+    "base_code": "IS 13428",
+    "part": null,
+    "title": "Packaged Natural Mineral Water - Specification",
+    "publication_year": 2005,
+    "reaffirmed_year": 2021,
+    "edition": "Second Revision",
+    "division_code": "FAD",
+    "division_name": "Food and Agriculture Division",
+    "sectional_committee": "FAD 14 (Drinks and Drinking Water)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 13428:1998"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Consumer Affairs / FSSAI",
+    "qco_order_name": "Natural Mineral Water Compulsory Certification Order",
+    "scope": "Prescribes requirements and methods of test for packaged natural mineral water obtained directly from natural subterranean or spring sources.",
+    "keywords": [
+      "mineral water",
+      "natural mineral water",
+      "spring water",
+      "packaged water",
+      "compulsory isi mark",
+      "tds minerals",
+      "potable water"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Table 1",
+        "clause_title": "Physico-Chemical Characteristics",
+        "content": "Total dissolved solids between 150 mg/L and 700 mg/L naturally derived without demineralization."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 4151:2015",
+    "base_code": "IS 4151",
+    "part": null,
+    "title": "Protective Helmets for Two-Wheeler Riders - Specification",
+    "publication_year": 2015,
+    "reaffirmed_year": 2020,
+    "edition": "Fourth Revision",
+    "division_code": "TED",
+    "division_name": "Transport Engineering Division",
+    "sectional_committee": "TED 28 (Safety Equipment)",
+    "status": "ACTIVE",
+    "supersedes": [
+      "IS 4151:1993"
+    ],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "qco_order_name": "Two-Wheeler Helmets (Quality Control) Order",
+    "scope": "Specifies requirements regarding construction, materials, shock absorption, retention system, and penetration resistance for two-wheeler protective helmets.",
+    "keywords": [
+      "helmet",
+      "motorcycle helmet",
+      "two wheeler helmet",
+      "rider helmet",
+      "isi helmet",
+      "shock absorption",
+      "chin strap retention",
+      "visor light transmission"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 6.1",
+        "clause_title": "Impact Shock Absorption",
+        "content": "Peak acceleration imparted to headform shall not exceed 300 g at any impact test site."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 3237 (Part 1):1985",
+    "base_code": "IS 3237",
+    "part": "Part 1",
+    "title": "Hypodermic Syringes for Single Use - Part 1: Sterile Medical Syringes",
+    "publication_year": 1985,
+    "reaffirmed_year": 2021,
+    "edition": "Second Revision",
+    "division_code": "MHD",
+    "division_name": "Medical Equipment & Hospital Planning Division",
+    "sectional_committee": "MHD 12 (Hospital Supplies)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": true,
+    "qco_ministry": "CDSCO / Ministry of Health",
+    "qco_order_name": "Sterile Medical Devices Quality Mandate",
+    "scope": "Prescribes requirements for sterile single-use hypodermic syringes made of plastic or glass for aspiration and injection of fluids.",
+    "keywords": [
+      "disposable syringe",
+      "hypodermic syringe",
+      "sterile syringe",
+      "medical supplies",
+      "hospital tender",
+      "luer taper",
+      "plunger leak test"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Liquid and Air Leakage Test",
+        "content": "No leakage past piston and seal shall occur under 300 kPa internal hydrostatic pressure."
+      }
+    ]
+  },
+  {
+    "is_code": "IS 745:1990",
+    "base_code": "IS 745",
+    "part": null,
+    "title": "Handloom Cotton Bed Sheets - Specification",
+    "publication_year": 1990,
+    "reaffirmed_year": 2021,
+    "edition": "Second Revision",
+    "division_code": "TXD",
+    "division_name": "Textiles Division",
+    "sectional_committee": "TXD 7 (Handloom and Khadi)",
+    "status": "ACTIVE",
+    "supersedes": [],
+    "superseded_by": null,
+    "mandatory_qco": false,
+    "qco_ministry": null,
+    "qco_order_name": null,
+    "scope": "Prescribes constructional particulars and other performance requirements for grey, scoured, bleached, dyed, striped, checked or printed handloom and powerloom cotton bed sheets used in hospitals and institutions.",
+    "keywords": [
+      "cotton bed sheets",
+      "hospital bedsheets",
+      "hospital linen",
+      "bleached cotton",
+      "bedsheets",
+      "cotton sheets",
+      "thread count",
+      "gsm",
+      "breaking strength",
+      "medical textiles",
+      "dghs linen",
+      "patient bedsheets"
+    ],
+    "clauses": [
+      {
+        "clause_number": "Clause 4.1",
+        "clause_title": "Physical and Dimensional Requirements",
+        "content": "Dimensions as specified; Mass per unit area min 140 g/m2; Breaking strength warp min 350 N, weft min 300 N; Thread count min 180 TC."
+      },
+      {
+        "clause_number": "Clause 5.2",
+        "clause_title": "Whiteness and Fastness",
+        "content": "Whiteness index min 80%; Dimensional shrinkage after wash not exceeding 3.0% warp and 2.0% weft; Colour fastness rating min 4."
+      }
+    ]
+  }
+]

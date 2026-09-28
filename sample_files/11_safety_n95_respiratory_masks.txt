@@ -1,0 +1,23 @@
+TENDER: Procurement of Particulate Respirator Face Masks (N95 / FFP2) for Hospitals
+REFERENCE: AIIMS/PROC/COVID-PPE/2026/41
+DEPARTMENT: All India Institute of Medical Sciences (AIIMS) - Hospital Stores
+
+ALL INDIA INSTITUTE OF MEDICAL SCIENCES
+Tender Reference: AIIMS/PROC/COVID-PPE/2026/41
+Division: Central Hospital Stores - Emergency Infection Control
+
+TECHNICAL REQUIREMENTS:
+
+1. SCOPE:
+Supply of particulate filtering half masks (respiratory protective devices) without exhalation valve for clinical staff dealing with airborne aerosol pathogens and fine particulates.
+
+2. FUNCTIONAL CRITERIA:
+- Particle Filtration Efficiency: Minimum 95.0% against Sodium Chloride (NaCl) solid aerosols and paraffin oil mist at test flow rate of 95 Litres/minute.
+- Total Inward Leakage (TIL): Shall not exceed 8% of the inhalation air.
+- Breathing Resistance:
+  * Inhalation at 30 L/min: Maximum 70 Pa
+  * Inhalation at 95 L/min: Maximum 240 Pa
+  * Exhalation at 160 L/min: Maximum 300 Pa
+- Fluid Splash Resistance: Minimum synthetic blood penetration resistance at 120 mm Hg pressure.
+- Fit and Fastening: Dual synthetic elastic headbands (not ear loops) providing uniform seal tension; adjustable aluminium nose clip with internal soft foam padding.
+- Standard Conformity: Mask must be certified under the Indian Standard for Respiratory Protective Devices.

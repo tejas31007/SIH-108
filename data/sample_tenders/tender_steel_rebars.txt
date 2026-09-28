@@ -1,0 +1,19 @@
+MUNICIPAL CORPORATION ENGINEERING DEPARTMENT
+NOTICE INVITING TENDER (NIT) - SCHEDULE OF TECHNICAL SPECIFICATIONS
+
+Item Description: Supply and Delivery of Thermo-Mechanically Treated (TMT) Steel Reinforcement Bars for Flyover Construction Project.
+
+1. Technical Requirements:
+   a. Material & Grade: High strength deformed steel rebar Grade Fe 500D with high ductility.
+   b. Nominal Sizes: 12 mm, 16 mm, 20 mm, and 25 mm diameter in standard 12-meter lengths.
+   c. Mechanical Properties:
+      - 0.2% Proof Stress / Yield Stress: Minimum 500.0 N/mm2 (MPa).
+      - Tensile Strength (Rm): Minimum 565.0 N/mm2.
+      - Ratio of Tensile Strength to Yield Stress (Rm/Re): Not less than 1.10.
+      - Elongation at gauge length: Minimum 16.0%.
+   d. Chemical Composition:
+      - Carbon: Max 0.25%
+      - Sulphur: Max 0.040%
+      - Phosphorus: Max 0.040%
+   e. Testing: Bend and Rebend test shall be conducted on selected samples from each 50-tonne heat.
+   f. Reference Standard: Conforming to IS 1139 specification.

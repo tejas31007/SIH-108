@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BharatStandards AI - Indian Standards Recommendation Engine (SIH26108)</title>
+  
+  <!-- Tailwind CSS & Google Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    code, pre, .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .tab-active { border-bottom: 2px solid #2563eb; color: #1d4ed8; font-weight: 600; }
+    .tab-inactive { border-bottom: 2px solid transparent; color: #64748b; }
+    .tab-inactive:hover { color: #1e293b; border-color: #cbd5e1; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+  <!-- Sovereign Tricolor Accent -->
+  <div class="w-full h-1 flex">
+    <div class="w-1/3 bg-[#FF9933]"></div>
+    <div class="w-1/3 bg-[#FFFFFF]"></div>
+    <div class="w-1/3 bg-[#138808]"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo & Title -->
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xl shadow-md">
+            IS
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-lg text-slate-900 tracking-tight">BharatStandards AI</span>
+              <span class="bg-blue-100 text-blue-700 text-xs px-2 py-0.5 rounded font-semibold uppercase tracking-wider">SIH26108</span>
+            </div>
+            <p class="text-xs text-slate-500">Ministry of Consumer Affairs & Bureau of Indian Standards (BIS)</p>
+          </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <nav class="hidden md:flex space-x-6 h-full">
+          <button id="nav-tab-auditor" onclick="switchMainTab('auditor')" class="h-full px-2 flex items-center gap-1.5 text-sm tab-active transition-colors">
+            <span>📋 Specification Auditor</span>
+          </button>
+          <button id="nav-tab-catalog" onclick="switchMainTab('catalog')" class="h-full px-2 flex items-center gap-1.5 text-sm tab-inactive transition-colors">
+            <span>📚 Standards Catalog</span>
+          </button>
+          <button id="nav-tab-qco" onclick="switchMainTab('qco')" class="h-full px-2 flex items-center gap-1.5 text-sm tab-inactive transition-colors">
+            <span>⚖️ QCO Registry</span>
+          </button>
+        </nav>
+
+        <!-- Status Indicator -->
+        <div class="flex items-center gap-3">
+          <div id="api-status-badge" class="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>API: Connected (Port 8000)</span>
+          </div>
+          <a href="http://127.0.0.1:8000/docs" target="_blank" class="hidden sm:inline-flex items-center text-xs font-medium text-slate-600 hover:text-blue-600 bg-slate-100 px-2.5 py-1 rounded border border-slate-200">
+            API Docs ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- ========================================== -->
+    <!-- TAB 1: SPECIFICATION AUDITOR & RECOMMENDER -->
+    <!-- ========================================== -->
+    <div id="section-auditor" class="space-y-6">
+
+      <!-- Hero Banner -->
+      <div class="bg-gradient-to-r from-blue-900 to-indigo-900 rounded-xl text-white p-6 sm:p-8 shadow-sm">
+        <div class="max-w-3xl space-y-2">
+          <span class="bg-blue-800 text-blue-200 text-xs font-medium px-2.5 py-1 rounded-full uppercase tracking-wider">
+            Smart Procurement Automation
+          </span>
+          <h1 class="text-2xl sm:text-3xl font-bold tracking-tight">
+            Indian Standards Recommender & Anti-Bias Audit
+          </h1>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Upload tender documents or paste technical specifications. The AI automatically extracts technical parameters, identifies applicable Indian Standards (BIS), checks mandatory Quality Control Orders (QCO), and removes single-vendor brand bias under GFR 144(i).
+          </p>
+        </div>
+
+        <!-- Quick Sample Test Buttons -->
+        <div class="mt-6 pt-5 border-t border-blue-800/80 flex flex-wrap items-center gap-2">
+          <span class="text-xs text-blue-200 font-medium mr-1">Try Sample Tenders:</span>
+          <button onclick="loadSample(1)" class="text-xs bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg border border-white/20 transition-colors flex items-center gap-1.5">
+            <span>🌾</span>
+            <span>Fortified Rice Kernels (IS 17782)</span>
+            <span class="text-[10px] bg-amber-400 text-amber-950 px-1.5 py-0.5 rounded font-bold">FCI / PDS</span>
+          </button>
+          <button onclick="loadSample(2)" class="text-xs bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg border border-white/20 transition-colors flex items-center gap-1.5">
+            <span>🍞</span>
+            <span>PDS Wheat Atta (IS 1155)</span>
+            <span class="text-[10px] bg-red-400 text-red-950 px-1.5 py-0.5 rounded font-bold">Brand Biased</span>
+          </button>
+          <button onclick="loadSample(3)" class="text-xs bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg border border-white/20 transition-colors flex items-center gap-1.5">
+            <span>🌉</span>
+            <span>Steel Rebars (IS 1786)</span>
+            <span class="text-[10px] bg-blue-500/50 px-1.5 py-0.5 rounded">Fe 500D</span>
+          </button>
+          <button onclick="loadSample(4)" class="text-xs bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg border border-white/20 transition-colors flex items-center gap-1.5">
+            <span>⚡</span>
+            <span>PVC Cables (IS 694)</span>
+            <span class="text-[10px] bg-amber-400/80 text-amber-950 px-1.5 py-0.5 rounded font-bold">Brand Biased</span>
+          </button>
+          <button onclick="loadSample(5)" class="text-xs bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg border border-white/20 transition-colors flex items-center gap-1.5">
+            <span>🪖</span>
+            <span>Safety Helmets (IS 2925)</span>
+            <span class="text-[10px] bg-emerald-400/80 text-emerald-950 px-1.5 py-0.5 rounded font-bold">Mandatory QCO</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Input Workspace Grid -->
+      <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6 space-y-5">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-md bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm">1</span>
+            <h2 class="text-base font-semibold text-slate-900">Input Procurement Specifications</h2>
+          </div>
+          <span class="text-xs text-slate-500">Supports Raw Text, PDF, or DOCX</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- File Dropzone -->
+          <div class="space-y-2">
+            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600">
+              Upload Tender Document
+            </label>
+            <div id="dropzone" class="border-2 border-dashed border-slate-300 hover:border-blue-500 rounded-lg p-5 flex flex-col items-center justify-center text-center bg-slate-50 cursor-pointer transition-colors min-h-[160px]">
+              <input type="file" id="file-input" class="hidden" accept=".pdf,.docx,.txt" onchange="handleFileSelect(event)" />
+              <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mb-2">
+                📁
+              </div>
+              <p class="text-xs font-medium text-slate-800">Click to upload or drag & drop</p>
+              <p class="text-[11px] text-slate-500 mt-0.5">PDF, DOCX, or TXT (Max 25MB)</p>
+            </div>
+            <!-- Attached File Pill -->
+            <div id="file-pill" class="hidden items-center justify-between p-2.5 bg-blue-50 border border-blue-200 rounded-lg text-xs">
+              <span id="file-name" class="font-medium text-blue-900 truncate max-w-[200px]">filename.pdf</span>
+              <button onclick="clearFile()" class="text-slate-400 hover:text-red-500 font-bold ml-2">✕</button>
+            </div>
+          </div>
+
+          <!-- Text Input -->
+          <div class="lg:col-span-2 space-y-2 flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <label for="spec-text" class="text-xs font-semibold uppercase tracking-wider text-slate-600">
+                Technical Specification Text
+              </label>
+              <span id="char-count" class="text-xs text-slate-400">0 characters</span>
+            </div>
+            <textarea id="spec-text" rows="6" class="w-full text-xs font-mono p-3 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 leading-relaxed resize-none" placeholder="Paste procurement specification schedule, requirements, or bill of quantities here..."></textarea>
+            
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+              <div class="flex items-center gap-2">
+                <label for="dept-filter" class="text-xs text-slate-600 font-medium">Department:</label>
+                <select id="dept-filter" class="text-xs border border-slate-300 rounded px-2.5 py-1.5 bg-white text-slate-700 focus:outline-none focus:ring-1 focus:ring-blue-500">
+                  <option value="">All Sectors</option>
+                  <option value="FAD">Food & Public Distribution (DFPD / FCI - Grains & Fortification)</option>
+                  <option value="CED">Civil Engineering (CED - Cements & Steel)</option>
+                  <option value="ETD">Electrotechnical (ETD - Cables & Power)</option>
+                  <option value="MED">Mechanical (MED - Pumps & Machinery)</option>
+                  <option value="TED">Safety & Transport (TED - PPE & Helmets)</option>
+                  <option value="TXD">Textiles (TXD - Jute Bags for Foodgrains)</option>
+                  <option value="LITD">Electronics & IT (LITD)</option>
+                </select>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <button onclick="clearAll()" class="text-xs text-slate-600 hover:text-slate-900 px-3 py-2 rounded border border-slate-200 hover:bg-slate-100 transition-colors">
+                  Clear
+                </button>
+                <button id="btn-analyze" onclick="runAnalysis()" class="text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg shadow-sm transition-all flex items-center gap-2">
+                  <span id="btn-spinner" class="hidden w-3 h-3 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                  <span id="btn-label">🔍 Analyze & Recommend Standards</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================= -->
+      <!-- RESULTS SECTION (LIVE DATA)  -->
+      <!-- ============================= -->
+      <div id="results-container" class="hidden space-y-6">
+
+        <!-- Results Header Strip -->
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm">
+              ✓
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-slate-900">Analysis Complete</h3>
+              <p id="execution-meta" class="text-xs text-slate-500">Execution time: 42ms • Powered by Hybrid BM25 & Semantic Reranking</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="scrollToExport()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium px-3 py-1.5 rounded-lg border border-slate-200 transition-colors">
+              📄 Jump to Clean Export
+            </button>
+          </div>
+        </div>
+
+        <!-- 3 Cards Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+          <!-- CARD 1: Extracted Parameters -->
+          <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-base">📋</span>
+                <h3 class="text-sm font-semibold text-slate-900">1. Extracted Parameters</h3>
+              </div>
+              <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-medium">NLP Parsed</span>
+            </div>
+
+            <div class="space-y-3 text-xs">
+              <div>
+                <span class="text-slate-500 block text-[11px] uppercase font-semibold">Commodity</span>
+                <p id="res-commodity" class="font-semibold text-slate-900 mt-0.5 text-sm">—</p>
+              </div>
+
+              <div>
+                <span class="text-slate-500 block text-[11px] uppercase font-semibold">Material / Grade</span>
+                <div id="res-grade" class="mt-0.5 flex flex-wrap gap-1">—</div>
+              </div>
+
+              <div>
+                <span class="text-slate-500 block text-[11px] uppercase font-semibold">Dimensions & Sizes</span>
+                <p id="res-dimensions" class="text-slate-800 font-mono mt-0.5">—</p>
+              </div>
+
+              <div>
+                <span class="text-slate-500 block text-[11px] uppercase font-semibold">Ratings & Properties</span>
+                <div id="res-ratings" class="mt-0.5 space-y-1 text-slate-800 font-mono">—</div>
+              </div>
+
+              <div>
+                <span class="text-slate-500 block text-[11px] uppercase font-semibold">Tests Prescribed</span>
+                <div id="res-tests" class="mt-1 flex flex-wrap gap-1">—</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: GFR 144(i) Anti-Bias & QCO Audit -->
+          <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-base">⚖️</span>
+                <h3 class="text-sm font-semibold text-slate-900">2. GFR 144(i) Compliance</h3>
+              </div>
+              <span id="res-gfr-badge" class="text-[11px] px-2 py-0.5 rounded font-bold">—</span>
+            </div>
+
+            <!-- Health Score Bar -->
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-3 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-slate-500 block font-semibold uppercase">Compliance Score</span>
+                <span id="res-health-score" class="text-2xl font-bold text-slate-900">100/100</span>
+              </div>
+              <div class="text-right">
+                <span id="res-violations-count" class="text-xs font-semibold text-slate-700">0 Violations</span>
+                <p class="text-[10px] text-slate-500">Under Rule 144(i)</p>
+              </div>
+            </div>
+
+            <!-- Mandatory QCO Status Box -->
+            <div id="res-qco-banner" class="hidden p-3 bg-red-50 border border-red-200 rounded-lg text-xs space-y-1">
+              <div class="flex items-center gap-1.5 font-bold text-red-800">
+                <span>🛡️</span>
+                <span>MANDATORY QUALITY CONTROL ORDER</span>
+              </div>
+              <p id="res-qco-desc" class="text-red-700 text-[11px] leading-relaxed">
+                Item is governed by statutory QCO. Valid BIS ISI Mark is mandatory by law before procurement.
+              </p>
+            </div>
+
+            <!-- Violations Feed -->
+            <div class="space-y-2">
+              <span class="text-[11px] text-slate-500 uppercase font-semibold block">Audit Findings</span>
+              <div id="res-violations-list" class="space-y-2 text-xs">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: Recommended Indian Standards -->
+          <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-base">🎯</span>
+                <h3 class="text-sm font-semibold text-slate-900">3. Recommended Standards</h3>
+              </div>
+              <span class="text-[11px] bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-semibold">Ranked by Fit</span>
+            </div>
+
+            <!-- List of Standard Cards -->
+            <div id="res-standards-list" class="space-y-3">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ============================================== -->
+        <!-- SANITIZED SPECIFICATION & EXPORT WORKSPACE     -->
+        <!-- ============================================== -->
+        <div id="export-section" class="bg-white rounded-xl border border-slate-200 shadow-sm p-6 space-y-5">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
+            <div>
+              <h3 class="text-base font-semibold text-slate-900">Sanitized, GFR-Compliant Tender Specification</h3>
+              <p class="text-xs text-slate-500">Neutralized specification citing official Indian Standards, ready for GeM or CPPP tenders.</p>
+            </div>
+            <!-- Export Action Buttons -->
+            <div class="flex flex-wrap items-center gap-2">
+              <button onclick="downloadExport('html')" class="text-xs font-semibold bg-blue-600 hover:bg-blue-700 text-white px-3.5 py-2 rounded-lg transition-colors flex items-center gap-1.5 shadow-sm">
+                <span>📥</span>
+                <span>Download GeM HTML</span>
+              </button>
+              <button onclick="downloadExport('markdown')" class="text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 px-3.5 py-2 rounded-lg border border-slate-200 transition-colors flex items-center gap-1.5">
+                <span>📄</span>
+                <span>Markdown</span>
+              </button>
+              <button onclick="downloadExport('json')" class="text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 px-3.5 py-2 rounded-lg border border-slate-200 transition-colors flex items-center gap-1.5">
+                <span>⚙️</span>
+                <span>JSON</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Side-by-Side Comparison -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="space-y-1.5">
+              <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Original Tender Text</span>
+              <div id="export-original-text" class="p-3 bg-slate-50 border border-slate-200 rounded-lg text-xs font-mono whitespace-pre-wrap max-h-64 overflow-y-auto leading-relaxed text-slate-700"></div>
+            </div>
+            <div class="space-y-1.5">
+              <span class="text-xs font-semibold uppercase tracking-wider text-emerald-700 flex items-center gap-1">
+                <span>✓</span>
+                <span>Sanitized Generic Text (GFR 144(i) Compliant)</span>
+              </span>
+              <div id="export-sanitized-text" class="p-3 bg-emerald-50/50 border border-emerald-200 rounded-lg text-xs font-mono whitespace-pre-wrap max-h-64 overflow-y-auto leading-relaxed text-slate-900"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ========================================== -->
+    <!-- TAB 2: BIS STANDARDS CATALOG               -->
+    <!-- ========================================== -->
+    <div id="section-catalog" class="hidden space-y-6">
+      <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm space-y-4">
+        <div>
+          <h2 class="text-xl font-bold text-slate-900">Bureau of Indian Standards (BIS) Repository</h2>
+          <p class="text-xs text-slate-500">Browse verified national standards across civil, electrical, mechanical, safety, and chemical divisions.</p>
+        </div>
+
+        <!-- Search & Filter Controls -->
+        <div class="flex flex-col sm:flex-row gap-3">
+          <input type="text" id="catalog-search" oninput="filterCatalog()" placeholder="Search by IS code, title, material, or keyword (e.g., IS 1786, cement, cable)..." class="flex-1 text-xs border border-slate-300 rounded-lg px-3.5 py-2.5 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <select id="catalog-division-filter" onchange="filterCatalog()" class="text-xs border border-slate-300 rounded-lg px-3 py-2 bg-white text-slate-700 focus:outline-none focus:ring-1 focus:ring-blue-500">
+            <option value="">All Divisions</option>
+            <option value="CED">Civil Engineering (CED)</option>
+            <option value="ETD">Electrotechnical (ETD)</option>
+            <option value="MED">Mechanical (MED)</option>
+            <option value="MTD">Metallurgical (MTD)</option>
+            <option value="TED">Transport & Safety (TED)</option>
+            <option value="LITD">Electronics & IT (LITD)</option>
+            <option value="FAD">Food & Consumables (FAD)</option>
+            <option value="CHD">Chemical (CHD)</option>
+          </select>
+        </div>
+
+        <!-- Catalog Grid -->
+        <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- TAB 3: QUALITY CONTROL ORDERS REGISTRY    -->
+    <!-- ========================================== -->
+    <div id="section-qco" class="hidden space-y-6">
+      <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm space-y-4">
+        <div>
+          <h2 class="text-xl font-bold text-slate-900">Statutory Quality Control Orders (QCO) Registry</h2>
+          <p class="text-xs text-slate-500">Mandatory BIS Certification Orders issued under Section 16 of the BIS Act, 2016.</p>
+        </div>
+
+        <div id="qco-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
+    <p>Smart India Hackathon 2026 • Problem Statement SIH26108</p>
+    <p class="text-slate-400 mt-1">Ministry of Consumer Affairs, Food & Public Distribution | Bureau of Indian Standards (BIS)</p>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- JAVASCRIPT: LIVE FASTAPI BACKEND CLIENT    -->
+  <!-- ========================================== -->
+  <script>
+    const API_BASE = (window.location.protocol.startsWith("http")) ? window.location.origin : "http://127.0.0.1:8000";
+    let currentAnalysis = null;
+    let selectedFile = null;
+    let catalogStandards = [];
+    let qcoRecords = [];
+
+    // Sample data for instant one-click testing
+    const SAMPLES = {
+      1: {
+        text: `DEPARTMENT OF FOOD & PUBLIC DISTRIBUTION (DFPD)\nSTATE CIVIL SUPPLIES CORPORATION LIMITED\nSCHEDULE OF TECHNICAL SPECIFICATIONS - WELFARE GRAIN FORTIFICATION\n\nItem Description: Procurement and Supply of Fortified Rice Kernels (FRK) for Blending in Targeted Public Distribution System (TPDS) and PM-POSHAN Welfare Schemes.\n\n1. Product Definition & Process:\n   - Commodity: Fortified Rice Kernels (FRK) produced via hot extrusion technology.\n   - Raw Material: Clean broken rice grains milled into rice flour and blended with micronutrient premix.\n   - Blending Intent: FRK shall be homogeneously blended with milled raw/parboiled rice at a 1:100 ratio (1 kg FRK per 100 kg conventional rice).\n\n2. Technical & Micronutrient Specifications:\n   a. Iron (as Ferric Pyrophosphate / Sodium Feredetate): 280 to 425 mg per 100g of FRK.\n   b. Folic Acid: 750 to 1250 micrograms per 100g of FRK.\n   c. Vitamin B12: 7.5 to 12.5 micrograms per 100g of FRK.\n   d. Moisture Content: Shall not exceed 12.0 percent by mass.\n   e. Grain Dimensions: Length between 5.0 mm and 7.5 mm; true density between 1.30 and 1.50 g/cm3.\n\n3. Statutory Quality Mandate:\n   - The manufacturing unit must possess a valid Bureau of Indian Standards (BIS) License for Standard Mark (ISI Mark).\n   - Reference Standards: In strict accordance with Ministry of Consumer Affairs, Food & Public Distribution guidelines and FSSAI regulations.`,
+        dept: "FAD"
+      },
+      2: {
+        text: `FOOD & CIVIL SUPPLIES DEPARTMENT\nGOVERNMENT CONSUMER COOPERATIVE STORES FEDERATION\nNOTICE INVITING TENDER - SUPPLY OF PACKAGED WHOLE WHEAT FLOUR (ATTA)\n\nSubject: Procurement of 25,000 Metric Tonnes of Milled Whole Wheat Atta for Public Distribution System (PDS) Fair Price Shops.\n\n1. Technical Specification Schedule:\n   a. Product: Whole wheat atta obtained from sound, clean milling quality wheat grains, free from rodent contamination, insect infestation, or artificial coloring.\n   b. Chemical Parameters:\n      - Moisture: Not more than 13.0% by mass.\n      - Total Ash (on dry basis): Not more than 2.0%.\n      - Acid Insoluble Ash: Not more than 0.15% on dry basis.\n      - Gluten (dry basis): Minimum 7.0%.\n      - Alcoholic Acidity: Not more than 0.18%.\n   c. Packing: Poly-laminated 10 kg consumer pouches with tamper-evident seal.\n   d. Sourcing Condition: Material shall strictly be sourced from Aashirvaad Atta or Fortune Atta brand packaging.`,
+        dept: "FAD"
+      },
+      3: {
+        text: `MUNICIPAL CORPORATION ENGINEERING DEPARTMENT\nNOTICE INVITING TENDER (NIT)\n\nItem Description: Supply and Delivery of Thermo-Mechanically Treated (TMT) Steel Reinforcement Bars for Flyover Construction Project.\n\n1. Technical Requirements:\n   a. Material & Grade: High strength deformed steel rebar Grade Fe 500D with high ductility.\n   b. Nominal Sizes: 12 mm, 16 mm, 20 mm, and 25 mm diameter in standard 12-meter lengths.\n   c. Mechanical Properties:\n      - 0.2% Proof Stress / Yield Stress: Minimum 500.0 N/mm2 (MPa).\n      - Tensile Strength (Rm): Minimum 565.0 N/mm2.\n      - Ratio of Tensile Strength to Yield Stress (Rm/Re): Not less than 1.10.\n      - Elongation at gauge length: Minimum 16.0%.\n   d. Testing: Bend and Rebend test shall be conducted.\n   e. Reference Standard: Conforming to IS 1139 specification.`,
+        dept: "CED"
+      },
+      4: {
+        text: `STATE ELECTRICITY TRANSMISSION CORPORATION LIMITED\nTECHNICAL SPECIFICATION SCHEDULE\n\nItem Name: Low Tension Power and Control Flexible Cables for Substation Control Room.\n\n1. Scope: Supply of single-core and multi-core PVC insulated copper conductor flexible cables.\n2. Technical Specifications:\n   a. Operating Voltage: Suitable for working voltages up to and including 1100 Volts AC, 50 Hz.\n   b. Conductor: High conductivity plain electrolytic copper conductor, flexible Class 5 stranded.\n   c. Insulation: Special Flame Retardant (FR) PVC insulation compound Type A.\n   d. Voltage Test: Withstand 3.0 kV AC rms test voltage in water for 5 minutes without breakdown.\n   e. Preferred Brands: Material shall strictly be sourced from Havells or Polycab manufacturer catalogue.`,
+        dept: "ETD"
+      },
+      5: {
+        text: `PUBLIC WORKS & INFRASTRUCTURE MONITORING AUTHORITY\nTENDER SPECIFICATION - PERSONAL PROTECTIVE EQUIPMENT (PPE)\n\nSubject: Procurement of Industrial Safety Helmets for Highway Tunnel Construction Staff.\n\n1. Product Specifications:\n   - Type: Industrial protective hard hat / safety helmet with adjustable ratchet suspension.\n   - Shell Material: UV-stabilized High Density Polyethylene (HDPE) shell with reinforced crown ribs.\n   - Suspension: 6-point nylon webbing harness with replaceable sweatband and chin strap.\n   - Impact Protection: Must withstand shock absorption test where 5 kg striker dropped from 1 meter imparts <= 5.0 kN peak force.\n   - Penetration Resistance: Must resist 3 kg conical striker impact from 1 meter.\n   - Electrical Resistance: Insulation resistance withstanding 1.2 kV leakage current test (<= 3 mA).\n   - Compliance: Vendor must hold valid BIS Certification License.`,
+        dept: "TED"
+      }
+    };
+
+    // Initialize on load
+    document.addEventListener("DOMContentLoaded", () => {
+      checkApiStatus();
+      loadCatalogData();
+      loadQcoData();
+      setupDropzone();
+      
+      const specArea = document.getElementById("spec-text");
+      specArea.addEventListener("input", () => {
+        document.getElementById("char-count").innerText = `${specArea.value.length} characters`;
+      });
+
+      // Default load sample 1
+      loadSample(1);
+    });
+
+    // Check backend health
+    async function checkApiStatus() {
+      const badge = document.getElementById("api-status-badge");
+      try {
+        const res = await fetch(`${API_BASE}/health`, { method: "GET" });
+        if (res.ok) {
+          badge.className = "flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200";
+          badge.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span>API: Connected (Port 8000)</span>`;
+        } else {
+          throw new Error();
+        }
+      } catch (err) {
+        badge.className = "flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-700 border border-amber-200";
+        badge.innerHTML = `<span class="w-2 h-2 rounded-full bg-amber-500"></span><span>API: Offline (Run run_server.py)</span>`;
+      }
+    }
+
+    // Tab switcher
+    function switchMainTab(tab) {
+      const secAuditor = document.getElementById("section-auditor");
+      const secCatalog = document.getElementById("section-catalog");
+      const secQco = document.getElementById("section-qco");
+
+      const btnAuditor = document.getElementById("nav-tab-auditor");
+      const btnCatalog = document.getElementById("nav-tab-catalog");
+      const btnQco = document.getElementById("nav-tab-qco");
+
+      secAuditor.classList.add("hidden");
+      secCatalog.classList.add("hidden");
+      secQco.classList.add("hidden");
+
+      btnAuditor.className = "h-full px-2 flex items-center gap-1.5 text-sm tab-inactive transition-colors";
+      btnCatalog.className = "h-full px-2 flex items-center gap-1.5 text-sm tab-inactive transition-colors";
+      btnQco.className = "h-full px-2 flex items-center gap-1.5 text-sm tab-inactive transition-colors";
+
+      if (tab === 'auditor') {
+        secAuditor.classList.remove("hidden");
+        btnAuditor.className = "h-full px-2 flex items-center gap-1.5 text-sm tab-active transition-colors";
+      } else if (tab === 'catalog') {
+        secCatalog.classList.remove("hidden");
+        btnCatalog.className = "h-full px-2 flex items-center gap-1.5 text-sm tab-active transition-colors";
+      } else if (tab === 'qco') {
+        secQco.classList.remove("hidden");
+        btnQco.className = "h-full px-2 flex items-center gap-1.5 text-sm tab-active transition-colors";
+      }
+    }
+
+    // Load sample tender into input
+    function loadSample(id) {
+      const s = SAMPLES[id];
+      if (!s) return;
+      document.getElementById("spec-text").value = s.text;
+      document.getElementById("char-count").innerText = `${s.text.length} characters`;
+      if (s.dept) {
+        document.getElementById("dept-filter").value = s.dept;
+      }
+      clearFile();
+    }
+
+    // Setup drag and drop
+    function setupDropzone() {
+      const dropzone = document.getElementById("dropzone");
+      const fileInput = document.getElementById("file-input");
+
+      dropzone.addEventListener("click", () => fileInput.click());
+
+      dropzone.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        dropzone.classList.add("border-blue-500", "bg-blue-50/50");
+      });
+
+      dropzone.addEventListener("dragleave", () => {
+        dropzone.classList.remove("border-blue-500", "bg-blue-50/50");
+      });
+
+      dropzone.addEventListener("drop", (e) => {
+        e.preventDefault();
+        dropzone.classList.remove("border-blue-500", "bg-blue-50/50");
+        if (e.dataTransfer.files.length > 0) {
+          setAttachedFile(e.dataTransfer.files[0]);
+        }
+      });
+    }
+
+    function handleFileSelect(e) {
+      if (e.target.files.length > 0) {
+        setAttachedFile(e.target.files[0]);
+      }
+    }
+
+    function setAttachedFile(file) {
+      selectedFile = file;
+      document.getElementById("file-pill").classList.remove("hidden");
+      document.getElementById("file-pill").classList.add("flex");
+      document.getElementById("file-name").innerText = `${file.name} (${Math.round(file.size / 1024)} KB)`;
+    }
+
+    function clearFile() {
+      selectedFile = null;
+      document.getElementById("file-input").value = "";
+      document.getElementById("file-pill").classList.add("hidden");
+      document.getElementById("file-pill").classList.remove("flex");
+    }
+
+    function clearAll() {
+      clearFile();
+      document.getElementById("spec-text").value = "";
+      document.getElementById("char-count").innerText = "0 characters";
+      document.getElementById("results-container").classList.add("hidden");
+    }
+
+    // Run live analysis via FastAPI
+    async function runAnalysis() {
+      const text = document.getElementById("spec-text").value.trim();
+      if (!selectedFile && text.length < 10) {
+        alert("Please enter a technical specification or upload a tender file.");
+        return;
+      }
+
+      const btn = document.getElementById("btn-analyze");
+      const spinner = document.getElementById("btn-spinner");
+      const label = document.getElementById("btn-label");
+
+      btn.disabled = true;
+      spinner.classList.remove("hidden");
+      label.innerText = "Analyzing Tender...";
+
+      try {
+        let response;
+        if (selectedFile) {
+          // File upload endpoint
+          const formData = new FormData();
+          formData.append("file", selectedFile);
+          const dept = document.getElementById("dept-filter").value;
+          if (dept) formData.append("department_hint", dept);
+
+          response = await fetch(`${API_BASE}/api/v1/analyze-file`, {
+            method: "POST",
+            body: formData
+          });
+        } else {
+          // Direct text endpoint
+          response = await fetch(`${API_BASE}/api/v1/analyze`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              specification_text: text,
+              department_hint: document.getElementById("dept-filter").value || null
+            })
+          });
+        }
+
+        if (!response.ok) {
+          throw new Error(`API Error: ${response.statusText}`);
+        }
+
+        currentAnalysis = await response.json();
+        renderResults(currentAnalysis);
+
+      } catch (err) {
+        console.error(err);
+        alert(`Analysis failed: ${err.message}. Make sure the FastAPI server is running with 'python run_server.py'`);
+      } finally {
+        btn.disabled = false;
+        spinner.classList.add("hidden");
+        label.innerText = "🔍 Analyze & Recommend Standards";
+      }
+    }
+
+    // Render returned analysis results
+    function renderResults(data) {
+      document.getElementById("results-container").classList.remove("hidden");
+      document.getElementById("execution-meta").innerText = `Execution time: ${data.execution_time_ms}ms • Powered by Hybrid BM25 & Semantic Reranking`;
+
+      // 1. Extracted Parameters
+      const p = data.extracted_parameters;
+      document.getElementById("res-commodity").innerText = p.commodity_name || "General Commodity";
+
+      const gradeContainer = document.getElementById("res-grade");
+      if (p.material_grade) {
+        gradeContainer.innerHTML = p.material_grade.split(',').map(g => 
+          `<span class="bg-blue-100 text-blue-800 font-semibold px-2 py-0.5 rounded">${g.trim()}</span>`
+        ).join('');
+      } else {
+        gradeContainer.innerHTML = `<span class="text-slate-400">Not specified</span>`;
+      }
+
+      document.getElementById("res-dimensions").innerText = p.physical_dimensions.length > 0 
+        ? p.physical_dimensions.map(d => `${d.parameter_name}: ${d.value}`).join(' • ')
+        : "Standard commercial dimensions";
+
+      document.getElementById("res-ratings").innerHTML = p.mechanical_ratings.concat(p.electrical_ratings).length > 0
+        ? p.mechanical_ratings.concat(p.electrical_ratings).map(r => `<div class="bg-slate-50 border border-slate-200 px-2 py-1 rounded">${r}</div>`).join('')
+        : "<div class='text-slate-400'>Standard ratings apply</div>";
+
+      document.getElementById("res-tests").innerHTML = p.testing_requirements.length > 0
+        ? p.testing_requirements.map(t => `<span class="bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded text-[11px] font-medium">${t}</span>`).join('')
+        : "<span class='text-slate-400'>Standard testing criteria</span>";
+
+      // 2. Compliance Audit
+      const audit = data.compliance_audit;
+      const scoreElem = document.getElementById("res-health-score");
+      scoreElem.innerText = `${audit.health_score}/100`;
+
+      const gfrBadge = document.getElementById("res-gfr-badge");
+      if (audit.is_gfr_compliant) {
+        gfrBadge.className = "text-[11px] px-2 py-0.5 rounded font-bold bg-emerald-100 text-emerald-800";
+        gfrBadge.innerText = "GFR Compliant";
+        scoreElem.className = "text-2xl font-bold text-emerald-600";
+      } else {
+        gfrBadge.className = "text-[11px] px-2 py-0.5 rounded font-bold bg-red-100 text-red-800";
+        gfrBadge.innerText = "Violations Flagged";
+        scoreElem.className = "text-2xl font-bold text-red-600";
+      }
+
+      document.getElementById("res-violations-count").innerText = `${audit.violations_count} Issue${audit.violations_count === 1 ? '' : 's'}`;
+
+      // Mandatory QCO Banner
+      const qcoBanner = document.getElementById("res-qco-banner");
+      if (audit.is_qco_mandatory) {
+        qcoBanner.classList.remove("hidden");
+        document.getElementById("res-qco-desc").innerText = audit.qco_order_title 
+          ? `Notified under ${audit.qco_order_title} (${audit.qco_ministry}). Valid BIS ISI Mark is legally mandatory.`
+          : "Mandatory Quality Control Order in effect. Valid BIS ISI Mark required.";
+      } else {
+        qcoBanner.classList.add("hidden");
+      }
+
+      // Violations list
+      const violationsContainer = document.getElementById("res-violations-list");
+      if (audit.violations.length === 0) {
+        violationsContainer.innerHTML = `<div class="p-2.5 bg-emerald-50 text-emerald-700 rounded border border-emerald-200 text-xs">No brand bias or obsolete standard violations detected. Complies with GFR 144(i).</div>`;
+      } else {
+        violationsContainer.innerHTML = audit.violations.map(v => {
+          const isCritical = v.severity === "CRITICAL";
+          const borderClass = isCritical ? "border-red-200 bg-red-50/70" : "border-amber-200 bg-amber-50/70";
+          const tagClass = isCritical ? "bg-red-200 text-red-800" : "bg-amber-200 text-amber-800";
+          return `
+            <div class="p-2.5 rounded-lg border ${borderClass} space-y-1">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded ${tagClass}">${v.type.replace(/_/g, ' ')}</span>
+                <span class="text-[10px] text-slate-500 font-mono">${v.gfr_rule}</span>
+              </div>
+              <p class="text-slate-800 text-[11px] leading-snug">${v.explanation}</p>
+              <div class="pt-1 text-[11px] text-slate-600 font-medium">
+                💡 <span class="text-slate-900 font-semibold">Suggested Generic:</span> ${v.suggested_replacement}
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      // 3. Recommended Standards Cards
+      const stdContainer = document.getElementById("res-standards-list");
+      stdContainer.innerHTML = data.recommendations.map((std, idx) => {
+        const isTop = idx === 0;
+        const borderClass = isTop ? "border-blue-400 bg-blue-50/20 ring-1 ring-blue-300" : "border-slate-200 bg-white";
+        const scoreColor = std.match_score >= 75 ? "text-emerald-600" : "text-blue-600";
+        return `
+          <div class="p-3.5 rounded-lg border ${borderClass} space-y-2 transition-all hover:shadow-sm">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  <span class="font-bold text-sm text-slate-900 font-mono">${std.is_code}</span>
+                  ${isTop ? `<span class="bg-blue-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded uppercase">Top Match</span>` : ''}
+                  ${std.mandatory_qco ? `<span class="bg-red-100 text-red-800 text-[10px] font-bold px-1.5 py-0.5 rounded">Mandatory ISI</span>` : ''}
+                </div>
+                <h4 class="text-xs font-semibold text-slate-800 mt-0.5 leading-snug">${std.title}</h4>
+              </div>
+              <div class="text-right shrink-0">
+                <span class="font-bold text-sm ${scoreColor}">${std.match_score}%</span>
+                <span class="text-[10px] text-slate-400 block uppercase font-medium">${std.match_confidence}</span>
+              </div>
+            </div>
+
+            ${std.superseded_warning ? `
+              <div class="text-[11px] bg-amber-50 text-amber-800 px-2 py-1 rounded border border-amber-200">
+                ℹ️ <strong>Supersedes obsolete code:</strong> ${std.superseded_warning}
+              </div>
+            ` : ''}
+
+            <!-- Clause Evidence -->
+            ${std.clause_citations.length > 0 ? `
+              <div class="pt-1.5 border-t border-slate-100 space-y-1">
+                <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Matching Clauses:</span>
+                ${std.clause_citations.map(c => `
+                  <div class="text-[11px] text-slate-700 bg-slate-50 p-1.5 rounded border border-slate-100">
+                    <strong class="text-slate-900">${c.clause_number} (${c.clause_title}):</strong> ${c.alignment_reason}
+                  </div>
+                `).join('')}
+              </div>
+            ` : ''}
+          </div>
+        `;
+      }).join('');
+
+      // 4. Export Comparison
+      document.getElementById("export-original-text").innerText = document.getElementById("spec-text").value.trim() || selectedFile?.name || "Tender text analyzed.";
+      document.getElementById("export-sanitized-text").innerText = data.sanitized_specification_text;
+
+      // Scroll to results
+      document.getElementById("results-container").scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function scrollToExport() {
+      document.getElementById("export-section").scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Download export via FastAPI
+    async function downloadExport(format) {
+      if (!currentAnalysis) {
+        alert("Please run an analysis first.");
+        return;
+      }
+
+      const reqBody = {
+        tender_title: currentAnalysis.extracted_parameters.commodity_name || "Procurement_Specification",
+        sanitized_text: currentAnalysis.sanitized_specification_text,
+        selected_standard: currentAnalysis.recommendations[0],
+        compliance_audit: currentAnalysis.compliance_audit,
+        export_format: format
+      };
+
+      try {
+        const res = await fetch(`${API_BASE}/api/v1/export`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(reqBody)
+        });
+
+        if (!res.ok) throw new Error("Export failed");
+        const exportData = await res.json();
+
+        // Trigger browser download
+        const blob = new Blob([exportData.content], {
+          type: format === 'json' ? 'application/json' : format === 'html' ? 'text/html' : 'text/markdown'
+        });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = exportData.download_filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      } catch (err) {
+        alert(`Export failed: ${err.message}`);
+      }
+    }
+
+    // Load Catalog Data for Tab 2
+    async function loadCatalogData() {
+      try {
+        const res = await fetch(`${API_BASE}/api/v1/standards`);
+        if (res.ok) {
+          catalogStandards = await res.json();
+          renderCatalog(catalogStandards);
+        }
+      } catch (e) {}
+    }
+
+    function renderCatalog(standards) {
+      const grid = document.getElementById("catalog-grid");
+      if (standards.length === 0) {
+        grid.innerHTML = `<div class="col-span-full p-8 text-center text-xs text-slate-400">No matching Indian Standards found.</div>`;
+        return;
+      }
+      grid.innerHTML = standards.map(s => `
+        <div class="bg-white border border-slate-200 rounded-lg p-4 space-y-2 hover:border-blue-300 transition-colors">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm font-mono text-blue-700">${s.is_code}</span>
+            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-medium">${s.division_name || s.division_code}</span>
+          </div>
+          <h4 class="text-xs font-semibold text-slate-900 leading-snug">${s.title}</h4>
+          <p class="text-[11px] text-slate-500 line-clamp-2">${s.scope}</p>
+          <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+            <span class="${s.mandatory_qco ? 'text-red-700 font-bold' : 'text-slate-500'}">
+              ${s.mandatory_qco ? '🛡️ Mandatory ISI Mark' : 'Voluntary Standard'}
+            </span>
+            <button onclick="useStandardInAuditor('${s.is_code}', '${s.title.replace(/'/g, "\\'")}')" class="text-blue-600 hover:text-blue-800 font-medium">Use in Tender →</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterCatalog() {
+      const q = document.getElementById("catalog-search").value.toLowerCase();
+      const div = document.getElementById("catalog-division-filter").value.toLowerCase();
+
+      const filtered = catalogStandards.filter(s => {
+        const matchQ = !q || s.is_code.toLowerCase().includes(q) || s.title.toLowerCase().includes(q) || s.scope.toLowerCase().includes(q);
+        const matchDiv = !div || s.division_code.toLowerCase() === div;
+        return matchQ && matchDiv;
+      });
+      renderCatalog(filtered);
+    }
+
+    function useStandardInAuditor(code, title) {
+      document.getElementById("spec-text").value = `Procurement of goods strictly conforming to ${code}: ${title}.`;
+      document.getElementById("char-count").innerText = `${document.getElementById("spec-text").value.length} characters`;
+      switchMainTab('auditor');
+      runAnalysis();
+    }
+
+    // Load QCO Data for Tab 3
+    async function loadQcoData() {
+      try {
+        const res = await fetch(`${API_BASE}/api/v1/qco-list`);
+        if (res.ok) {
+          qcoRecords = await res.json();
+          renderQco(qcoRecords);
+        }
+      } catch (e) {}
+    }
+
+    function renderQco(records) {
+      const grid = document.getElementById("qco-grid");
+      grid.innerHTML = records.map(q => `
+        <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-3">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <span class="text-[10px] bg-red-100 text-red-800 font-bold px-2 py-0.5 rounded uppercase">Statutory QCO</span>
+              <h4 class="text-sm font-bold text-slate-900 mt-1">${q.order_title}</h4>
+            </div>
+            <span class="text-xs font-mono text-slate-400 shrink-0">${q.gazette_notification_no}</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">${q.requirement}</p>
+          <div class="text-xs text-slate-500 pt-2 border-t border-slate-100">
+            <strong>Governed Standards:</strong> ${q.mandatory_standards.map(isCode => `<span class="inline-block bg-slate-100 text-slate-800 font-mono px-1.5 py-0.5 rounded text-[11px] mr-1">${isCode}</span>`).join('')}
+          </div>
+        </div>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

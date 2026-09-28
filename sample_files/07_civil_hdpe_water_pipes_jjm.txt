@@ -1,0 +1,22 @@
+TENDER: Procurement of HDPE Pipes for Rural Piped Drinking Water Supply
+REFERENCE: JJM/PHED/PIPE-HDPE/2026/142
+DEPARTMENT: Jal Jeevan Mission - Public Health Engineering Department (PHED)
+
+JAL JEEVAN MISSION - PUBLIC HEALTH ENGINEERING DEPARTMENT
+Tender No: JJM/PHED/PIPE-HDPE/2026/142
+Sub-Mission: Har Ghar Jal Rural Water Supply Network
+
+SCHEDULE OF REQUIREMENTS:
+
+1. SCOPE OF SUPPLY:
+Supply and delivery of High Density Polyethylene (HDPE) solid wall pipes for pressurized conveyance of potable drinking water from headworks to village distribution networks.
+
+2. TECHNICAL CHARACTERISTICS:
+- Raw Material: 100% virgin pre-compounded PE 100 polyethylene granules with carbon black content 2.0% to 2.5% uniformly dispersed.
+- Nominal Outside Diameter (DN): 110 mm.
+- Standard Dimension Ratio: SDR 17.
+- Pressure Rating: PN 10 (1.0 MPa working pressure at 27 deg C).
+- Minimum Required Strength (MRS): 10.0 MPa.
+- Hydrostatic Strength: No rupture or burst during 100 hours test at 20 deg C at 12.4 MPa induced hoop stress, and 165 hours test at 80 deg C.
+- Melt Flow Rate (MFR): Between 0.2 and 1.4 g/10 min at 190 deg C / 5 kg load.
+- Pipes must possess mandatory BIS ISI certification as per the DPIIT Polyethylene Material Quality Control Order.

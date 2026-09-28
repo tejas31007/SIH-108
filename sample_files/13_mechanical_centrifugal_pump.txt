@@ -1,0 +1,27 @@
+TENDER: Procurement of Horizontal End Suction Centrifugal Pumps for Water Works
+REFERENCE: UWSSB/MECH/PUMP-WATER/2026/19
+DEPARTMENT: Urban Water Supply and Sewerage Board
+
+MUNICIPAL WATER SUPPLY AND SEWERAGE BOARD
+Tender Notice No: UWSSB/MECH/PUMP-WATER/2026/19
+Project: Augmentation of Clear Water Pumping Station at Sector 4
+
+SCHEDULE OF TECHNICAL SPECIFICATIONS:
+
+1. EQUIPMENT DETAILS:
+Supply, testing, and delivery of horizontal end-suction back pull-out centrifugal water pumps driven by continuous duty squirrel cage induction motors.
+
+2. OPERATING DUTY PARAMETERS:
+- Handled Liquid: Clear, potable drinking water at ambient temperature (5 to 45 deg C).
+- Rated Discharge Capacity: 150 cubic meters per hour (m3/hr).
+- Total Dynamic Head (TDH): 45.0 meters at rated discharge.
+- Pump Speed: 1450 RPM synchronous speed.
+- Minimum Pump Efficiency at Best Efficiency Point (BEP): 78.0%.
+- Motor Rating: 30 kW, 415 V (+/- 10%), 3-Phase, 50 Hz, TEFC enclosure, IP55 protection, Class F insulation.
+
+3. MATERIAL OF CONSTRUCTION:
+- Pump Casing: Heavy duty Cast Iron FG 200 / FG 260 with minimum corrosion allowance 3 mm.
+- Impeller: Phosphor Bronze or Stainless Steel Grade CF8M dynamically balanced.
+- Pump Shaft: High tensile stainless steel Grade AISI 410.
+- Shaft Sealing: Mechanical seal with silicon carbide faces.
+- Standards Conformity: Designed and tested strictly in compliance with Indian Standard for Centrifugal Pumps.

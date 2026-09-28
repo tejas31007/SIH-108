@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-bright": "#f8f9ff", "primary": "#1f108e", "secondary-container": "#dae2fd", "outline-variant": "#c8c4d5", "surface-container-highest": "#d3e4fe", "tertiary": "#003422", "surface-tint": "#544fc0", "error-container": "#ffdad6", "tertiary-fixed-dim": "#68dba9", "on-error": "#ffffff", "outline": "#777584", "on-primary": "#ffffff", "on-tertiary-fixed": "#002114", "error": "#ba1a1a", "primary-container": "#3730a3", "on-primary-container": "#a9a7ff", "on-tertiary-fixed-variant": "#005137", "surface-container": "#e5eeff", "on-secondary-container": "#5c647a", "surface": "#f8f9ff", "on-secondary-fixed-variant": "#3f465c", "secondary": "#565e74", "surface-container-low": "#eff4ff", "background": "#f8f9ff", "on-secondary-fixed": "#131b2e", "on-secondary": "#ffffff", "tertiary-container": "#004d34", "on-primary-fixed": "#0f0069", "on-background": "#0b1c30", "on-surface": "#0b1c30", "on-error-container": "#93000a", "surface-variant": "#d3e4fe", "inverse-primary": "#c3c0ff", "on-primary-fixed-variant": "#3b35a7", "primary-fixed-dim": "#c3c0ff", "on-surface-variant": "#464553", "surface-container-high": "#dce9ff", "inverse-on-surface": "#eaf1ff", "primary-fixed": "#e2dfff", "inverse-surface": "#213145", "on-tertiary": "#ffffff", "on-tertiary-container": "#4ec493", "secondary-fixed": "#dae2fd", "surface-container-lowest": "#ffffff", "surface-dim": "#cbdbf5", "tertiary-fixed": "#85f8c4", "secondary-fixed-dim": "#bec6e0" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1.5rem", "space-xs": "0.25rem", "space-lg": "1rem", "margin-compact": "1rem", "space-sm": "0.5rem", "space-2xl": "2rem", "space-md": "0.75rem", "gutter-compact": "0.5rem", "gutter": "1rem", "space-xl": "1.5rem" }, fontFamily: { "body-md": ["Geist"], "body-lg": ["Geist"], "label-lg": ["Geist"], "label-sm": ["Geist"], "headline-md": ["Geist"], "headline-lg": ["Geist"], "label-md": ["Geist"], "body-sm": ["Geist"], "display-lg": ["Geist"], "headline-xl": ["Geist"], "code-md": ["Geist"], "headline-xl-mobile": ["Geist"] }, fontSize: { "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "code-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-xl-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } }</script>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-outline-variant">
+        <div class="w-full h-[3px] flex">
+            <div class="w-1/3 h-full bg-[#FF9933]"></div>
+            <div class="w-1/3 h-full bg-[#FFFFFF]"></div>
+            <div class="w-1/3 h-full bg-[#138808]"></div>
+        </div>
+        <div class="w-full bg-surface-container-low border-b border-outline-variant px-margin py-space-xs">
+            <div
+                class="w-full flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+                <div class="flex items-center gap-space-sm"><span>Ministry of Consumer Affairs, Food &amp; Public
+                        Distribution</span><span class="text-outline">|</span><span>Bureau of Indian Standards
+                        (BIS)</span><span class="text-outline">|</span><span class="text-primary font-bold">Government
+                        of India Sovereign Portal</span></div>
+                <div class="flex items-center gap-space-md"><span
+                        class="flex items-center gap-space-xs font-code-md text-code-md text-on-surface"><span
+                            class="w-2 h-2 rounded-full bg-tertiary-container ring-2 ring-tertiary-fixed"></span>BIS
+                        Standards Engine: Online (v4.2.1-prod)</span><span class="text-outline">|</span><span
+                        class="font-label-sm text-label-sm text-tertiary font-bold bg-tertiary-fixed/30 px-space-xs py-[2px] border border-tertiary-fixed-dim">GeM
+                        Sync: Verified</span></div>
+            </div>
+        </div>
+        <div class="w-full px-margin">
+            <div class="h-16 flex items-center justify-between gap-space-lg">
+                <div class="flex items-center gap-space-md shrink-0">
+                    <div
+                        class="w-9 h-9 bg-primary-container text-on-primary flex items-center justify-center font-headline-md text-headline-md border border-primary shadow-sm">
+                        <span class="material-symbols-outlined text-[20px]">verified</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-space-xs"><span
+                                class="font-headline-md text-headline-md text-primary font-bold tracking-tight">BharatStandards
+                                AI</span><span
+                                class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-space-xs py-[1px] uppercase">SIH26108</span>
+                        </div><span
+                            class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">मानक:
+                            पथप्रदर्शक: • Standards &amp; Spec Sentinel</span>
+                    </div>
+                </div>
+                <nav class="hidden xl:flex items-center h-full gap-space-xs"
+                    data-active-classes="border-b-2 border-primary text-primary font-label-lg font-bold bg-surface-container-low">
+                    <a class="h-full flex items-center px-space-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-lg text-label-lg border-b-2 border-transparent transition-colors"
+                        data-path="dashboard-spec-sentinel" href="#">Back to Procurement Dashboard</a><a
+                        class="h-full flex items-center px-space-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-lg text-label-lg border-b-2 border-transparent transition-colors"
+                        data-path="bis-standards-catalog-qco-registry" href="#">Standards Catalog</a><a
+                        class="h-full flex items-center px-space-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-lg text-label-lg border-b-2 border-transparent transition-colors"
+                        data-path="qco-registry" href="#">QCO Registry</a><a
+                        class="h-full flex items-center px-space-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-lg text-label-lg border-b-2 border-transparent transition-colors"
+                        data-path="documentation" href="#">Documentation</a>
+                </nav>
+                <div class="flex items-center gap-space-md shrink-0">
+                    <div
+                        class="hidden md:flex items-center bg-surface-container-low px-space-sm py-space-xs border border-outline-variant">
+                        <span
+                            class="font-label-sm text-label-sm text-on-surface-variant mr-space-xs uppercase">Org:</span><span
+                            class="font-label-md text-label-md text-on-surface font-semibold">CPWD / Central
+                            Works</span><span
+                            class="material-symbols-outlined text-[16px] text-on-surface-variant ml-space-xs">expand_more</span>
+                    </div>
+                    <div class="flex items-center gap-space-sm border-l border-outline-variant pl-space-md"><button
+                            aria-label="Help Docs"
+                            class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container"
+                            type="button"><span
+                                class="material-symbols-outlined text-[20px]">help</span></button><button
+                            aria-label="Notifications"
+                            class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container"
+                            type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span
+                                class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button>
+                        <div class="flex items-center gap-space-sm pl-space-xs">
+                            <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                                    class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+                            <div class="hidden 2xl:flex flex-col"><span
+                                    class="font-label-md text-label-md text-on-surface font-semibold leading-tight">S.
+                                    Ramanathan</span><span
+                                    class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Procurement
+                                    Director (Grade I)</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-surface-container border-t border-outline-variant px-margin py-space-xs">
+            <div class="w-full flex items-center justify-between font-label-sm text-label-sm">
+                <div class="flex items-center gap-space-xs text-on-surface-variant"><span
+                        class="text-primary font-bold uppercase">Initiative:</span><span>Smart India Hackathon 2026
+                        (SIH26108)</span><span class="text-outline">/</span><span>Statutory Compliance
+                        Architecture</span><span class="text-outline">/</span><span
+                        class="text-tertiary font-bold">IS-Mark Verification Layer Active</span></div>
+                <div class="hidden sm:flex items-center gap-space-md text-on-surface-variant font-code-md text-code-md">
+                    <span>MANAKONLINE API: 200 OK</span><span class="text-outline">•</span><span>RULE 144(I) PARSER:
+                        ACTIVE</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-32 bg-surface min-h-[calc(100vh-140px)]">
+        <div class="flex flex-col w-full">
+            <!-- Sub-Header Breadcrumb & Page Banner -->
+            <div class="w-full bg-surface-container-low px-margin py-space-md shadow-sm">
+                <div class="flex flex-col gap-space-sm">
+                    <div
+                        class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+                        <span class="hover:text-primary cursor-pointer transition-colors">Bureau of Indian
+                            Standards</span>
+                        <span>&gt;</span>
+                        <span class="hover:text-primary cursor-pointer transition-colors">Standards National
+                            Repository</span>
+                        <span>&gt;</span>
+                        <span class="text-primary font-bold">Search &amp; QCO Compliance Matrix</span>
+                    </div>
+                    <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg">
+                        <div class="flex flex-col gap-space-xs max-w-4xl">
+                            <div class="flex items-center gap-space-sm">
+                                <span
+                                    class="px-space-xs py-[2px] bg-primary text-on-primary font-label-sm text-label-sm tracking-widest uppercase">Mandatory
+                                    Rule 144(i)</span>
+                                <span
+                                    class="px-space-xs py-[2px] bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm tracking-widest uppercase">Gazette
+                                    Synced</span>
+                            </div>
+                            <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">National Indian
+                                Standards Repository &amp; Statutory QCO Explorer</h1>
+                            <p class="font-body-md text-body-md text-on-surface-variant">
+                                Comprehensive database of gazetted Indian Standards (IS), statutory Quality Control
+                                Orders (QCOs), and superseded technical codes for centralized public procurement and
+                                statutory technical audits.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-space-sm shrink-0">
+                            <button
+                                class="h-9 px-space-md bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg flex items-center gap-space-xs shadow-sm">
+                                <span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+                                <span>Export Catalog (CSV/Excel)</span>
+                            </button>
+                            <button
+                                class="h-9 px-space-md bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg flex items-center gap-space-xs shadow-sm">
+                                <span class="material-symbols-outlined text-[18px] text-primary">terminal</span>
+                                <span>API Documentation</span>
+                            </button>
+                            <button
+                                class="h-9 px-space-md bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-lg text-label-lg flex items-center gap-space-xs shadow-md">
+                                <span class="material-symbols-outlined text-[18px]">sync</span>
+                                <span>Bulk Sync Manakonline</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-margin py-space-xl flex flex-col gap-space-2xl">
+                <!-- Quick Stats Metric Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+                    <div
+                        class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group">
+                        <div class="w-full h-1 bg-primary absolute top-0 left-0"></div>
+                        <div class="flex items-start justify-between">
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total
+                                    Standards Indexed</span>
+                                <div class="flex items-baseline gap-space-xs mt-space-xs">
+                                    <span
+                                        class="font-display-lg text-display-lg text-on-surface tracking-tight">22,410</span>
+                                    <span class="font-headline-md text-headline-md text-primary">+</span>
+                                </div>
+                            </div>
+                            <div class="w-10 h-10 bg-surface-container flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-[24px]">menu_book</span>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-space-md pt-space-sm bg-surface-container-low px-space-sm py-space-xs flex items-center justify-between">
+                            <span class="font-body-sm text-body-sm text-on-surface-variant">14 Division Councils (CED,
+                                ETD, etc.)</span>
+                            <span
+                                class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-space-xs py-[1px]">+18
+                                this month</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group">
+                        <div class="w-full h-1 bg-error absolute top-0 left-0"></div>
+                        <div class="flex items-start justify-between">
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active
+                                    Mandatory QCOs</span>
+                                <div class="flex items-baseline gap-space-xs mt-space-xs">
+                                    <span
+                                        class="font-display-lg text-display-lg text-on-surface tracking-tight">142</span>
+                                    <span
+                                        class="font-label-lg text-label-lg text-error uppercase font-bold">Orders</span>
+                                </div>
+                            </div>
+                            <div class="w-10 h-10 bg-error-container flex items-center justify-center text-error">
+                                <span class="material-symbols-outlined text-[24px]">gavel</span>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-space-md pt-space-sm bg-surface-container-low px-space-sm py-space-xs flex items-center justify-between">
+                            <span class="font-body-sm text-body-sm text-on-surface-variant">712+ Regulated Product
+                                Lines</span>
+                            <span
+                                class="font-label-sm text-label-sm bg-error-container text-on-error-container px-space-xs py-[1px]">Statutory
+                                ISI</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group">
+                        <div class="w-full h-1 bg-tertiary-container absolute top-0 left-0"></div>
+                        <div class="flex items-start justify-between">
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active
+                                    Division Councils</span>
+                                <div class="flex items-baseline gap-space-xs mt-space-xs">
+                                    <span
+                                        class="font-display-lg text-display-lg text-on-surface tracking-tight">14</span>
+                                    <span
+                                        class="font-label-lg text-label-lg text-tertiary uppercase font-bold">Councils</span>
+                                </div>
+                            </div>
+                            <div class="w-10 h-10 bg-surface-container flex items-center justify-center text-tertiary">
+                                <span class="material-symbols-outlined text-[24px]">account_balance</span>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-space-md pt-space-sm bg-surface-container-low px-space-sm py-space-xs flex items-center justify-between">
+                            <span class="font-body-sm text-body-sm text-on-surface-variant">418 Sectional
+                                Committees</span>
+                            <span
+                                class="font-label-sm text-label-sm text-on-surface-variant font-code-md text-code-md">PAN-INDIA</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group">
+                        <div class="w-full h-1 bg-secondary absolute top-0 left-0"></div>
+                        <div class="flex items-start justify-between">
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Superseded
+                                    Tracked Codes</span>
+                                <div class="flex items-baseline gap-space-xs mt-space-xs">
+                                    <span
+                                        class="font-display-lg text-display-lg text-on-surface tracking-tight">548</span>
+                                    <span
+                                        class="font-label-lg text-label-lg text-secondary uppercase font-bold">Deprecated</span>
+                                </div>
+                            </div>
+                            <div class="w-10 h-10 bg-surface-container flex items-center justify-center text-secondary">
+                                <span class="material-symbols-outlined text-[24px]">history_toggle_off</span>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-space-md pt-space-sm bg-surface-container-low px-space-sm py-space-xs flex items-center justify-between">
+                            <span class="font-body-sm text-body-sm text-on-surface-variant">Audit Traps
+                                Auto-Flagged</span>
+                            <span
+                                class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-xs py-[1px]">Real-Time
+                                Mapping</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Search & Multi-Faceted Filter Control Center -->
+                <div class="bg-surface-container-lowest shadow-sm flex flex-col p-space-lg gap-space-lg">
+                    <div class="flex flex-col gap-space-sm">
+                        <label
+                            class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center justify-between"
+                            for="standards-search">
+                            <span>Search Repository &amp; Gazette Harmonized Index</span>
+                            <span class="font-code-md text-code-md text-primary">Indexed to Gazette of India
+                                Extraordinaries</span>
+                        </label>
+                        <div class="relative w-full flex items-center">
+                            <span
+                                class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[24px]">search</span>
+                            <input
+                                class="w-full h-12 pl-12 pr-32 bg-surface-container-low text-on-surface font-body-lg text-body-lg focus:bg-surface-container-lowest transition-all focus:outline-none"
+                                id="standards-search"
+                                placeholder="Search by IS Number, Commodity, Material Grade, or Keyword (e.g., IS 1786, PVC Cable, Fe 500D, Portland Cement, Safety Helmet)..."
+                                type="text" value="Fe 500D Reinforcement Steel / Cables / Cement" />
+                            <div class="absolute right-space-sm flex items-center gap-space-xs">
+                                <button
+                                    class="h-8 px-space-sm bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-xs shadow-sm">
+                                    <span>Execute Filter</span>
+                                    <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Quick Filter Chips -->
+                    <div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+                        <span
+                            class="font-label-sm text-label-sm text-on-surface-variant mr-space-xs uppercase tracking-wider">Fast
+                            Presets:</span>
+                        <button
+                            class="px-space-sm py-[4px] bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-xs shadow-sm">
+                            <span class="material-symbols-outlined text-[14px]">check</span>
+                            <span>Mandatory QCO Only (Checked)</span>
+                        </button>
+                        <button
+                            class="px-space-sm py-[4px] bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs">
+                            <span>Civil Engineering (CED)</span>
+                        </button>
+                        <button
+                            class="px-space-sm py-[4px] bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs">
+                            <span>Electrotechnical (ETD)</span>
+                        </button>
+                        <button
+                            class="px-space-sm py-[4px] bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs">
+                            <span>Mechanical (MED)</span>
+                        </button>
+                        <button
+                            class="px-space-sm py-[4px] bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs">
+                            <span>Safety &amp; PPE (TED)</span>
+                        </button>
+                        <button
+                            class="px-space-sm py-[4px] bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs">
+                            <span>Chemical (CHD)</span>
+                        </button>
+                    </div>
+                    <!-- Faceted Dropdowns -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md pt-space-xs">
+                        <div class="flex flex-col gap-space-xs">
+                            <label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Division
+                                Council</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full h-9 px-space-sm bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none appearance-none pr-8 cursor-pointer">
+                                    <option>All Councils</option>
+                                    <option selected="">CED - Civil Engineering</option>
+                                    <option>ETD - Electrotechnical</option>
+                                    <option>MED - Mechanical Engineering</option>
+                                    <option>TED - Transport &amp; Safety</option>
+                                    <option>CHD - Chemical</option>
+                                    <option>FAD - Food &amp; Agriculture</option>
+                                    <option>TXD - Textiles</option>
+                                </select>
+                                <span
+                                    class="material-symbols-outlined pointer-events-none absolute right-2 top-2 text-on-surface-variant text-[18px]">expand_more</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-space-xs">
+                            <label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Certification
+                                Status</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full h-9 px-space-sm bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none appearance-none pr-8 cursor-pointer">
+                                    <option>All Certification Regimes</option>
+                                    <option selected="">Mandatory QCO Only (ISI Mark Statutory)</option>
+                                    <option>Voluntary Standard Scheme-I</option>
+                                    <option>Compulsory Registration Scheme (CRS / IT)</option>
+                                </select>
+                                <span
+                                    class="material-symbols-outlined pointer-events-none absolute right-2 top-2 text-on-surface-variant text-[18px]">expand_more</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-space-xs">
+                            <label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Standard Life
+                                State</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full h-9 px-space-sm bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none appearance-none pr-8 cursor-pointer">
+                                    <option selected="">Active (Current Gazetted)</option>
+                                    <option>Superseded / Withdrawn</option>
+                                    <option>Under Revision / Draft Circulated</option>
+                                    <option>All Life States</option>
+                                </select>
+                                <span
+                                    class="material-symbols-outlined pointer-events-none absolute right-2 top-2 text-on-surface-variant text-[18px]">expand_more</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-space-xs">
+                            <label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Sectional
+                                Committee</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full h-9 px-space-sm bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none appearance-none pr-8 cursor-pointer">
+                                    <option selected="">All Committees</option>
+                                    <option>CED 54 (Concrete &amp; Steel)</option>
+                                    <option>CED 02 (Cement &amp; Lime)</option>
+                                    <option>ETD 09 (Power Cables)</option>
+                                    <option>TED 14 (Protective Equipment)</option>
+                                </select>
+                                <span
+                                    class="material-symbols-outlined pointer-events-none absolute right-2 top-2 text-on-surface-variant text-[18px]">expand_more</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Action Row & State Bar -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs">
+                        <div class="flex items-center gap-space-sm">
+                            <span
+                                class="px-space-sm py-[2px] bg-secondary-container text-on-secondary-container font-label-md text-label-md">
+                                Showing 18 of 22,410 Standards
+                            </span>
+                            <span class="text-outline text-label-sm font-label-sm">•</span>
+                            <span class="font-body-sm text-body-sm text-on-surface-variant">Active filter set applied:
+                                <strong class="text-on-surface">Mandatory QCOs + Active</strong></span>
+                        </div>
+                        <div class="flex items-center gap-space-sm">
+                            <button
+                                class="px-space-sm py-1 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors">
+                                Reset Filters
+                            </button>
+                            <button
+                                class="px-space-sm py-1 bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md flex items-center gap-space-xs transition-colors">
+                                <span class="material-symbols-outlined text-[16px]">bookmark</span>
+                                <span>Saved Filter: CPWD Civil Works</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Interactive Standards Catalog Section -->
+                <div class="flex flex-col gap-space-lg">
+                    <div class="flex items-center justify-between bg-surface-container px-space-md py-space-sm">
+                        <div class="flex items-center gap-space-sm">
+                            <span class="material-symbols-outlined text-primary text-[20px]">dataset</span>
+                            <h2 class="font-headline-md text-headline-md text-on-surface">Standards Inspection Catalog
+                            </h2>
+                            <span
+                                class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider ml-space-sm">Manakonline
+                                Mirror</span>
+                        </div>
+                        <!-- View Mode Switcher -->
+                        <div class="flex items-center bg-surface-container-lowest p-[2px] shadow-sm">
+                            <button
+                                class="px-space-sm py-[4px] bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-xs transition-all"
+                                id="view-card-btn">
+                                <span class="material-symbols-outlined text-[16px]">grid_view</span>
+                                <span>Card View</span>
+                            </button>
+                            <button
+                                class="px-space-sm py-[4px] text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-all"
+                                id="view-table-btn">
+                                <span class="material-symbols-outlined text-[16px]">table_rows</span>
+                                <span>Compact Table</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Standards Grid (Card View) -->
+                    <div class="grid grid-cols-1 gap-space-md" id="standards-card-view">
+                        <!-- Entry 1: IS 1786 : 2008 -->
+                        <div
+                            class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md relative hover:shadow-md transition-shadow">
+                            <div class="w-full h-[3px] bg-primary absolute top-0 left-0"></div>
+                            <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+                                <div class="flex flex-col gap-space-xs">
+                                    <div class="flex flex-wrap items-center gap-space-xs">
+                                        <span class="font-headline-md text-headline-md text-primary font-bold">IS 1786 :
+                                            2008</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container text-on-surface font-label-sm text-label-sm uppercase">Reaffirmed
+                                            2023</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase">CED
+                                            54 (Civil - Concrete)</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container-low text-on-surface-variant font-code-md text-code-md">ICS
+                                            77.140.15</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-error-container text-on-error-container font-label-sm text-label-sm uppercase font-bold flex items-center gap-[2px]">
+                                            <span class="material-symbols-outlined text-[12px]">verified</span>
+                                            <span>Mandatory ISI Mark (QCO 2024)</span>
+                                        </span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase">Active
+                                            Standard</span>
+                                    </div>
+                                    <h3 class="font-headline-md text-headline-md text-on-surface font-semibold">
+                                        High Strength Deformed Steel Bars and Wires for Concrete Reinforcement —
+                                        Specification (Fourth Revision with Amendments 1 to 3)
+                                    </h3>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-5xl">
+                                        Covers technical requirements, chemical limits (C, S, P, CEq), and mechanical
+                                        properties for Fe 415, Fe 500, Fe 500D, Fe 550D, and Fe 600 grades used in
+                                        earthquake-resistant, critical infrastructure, and public works under CPWD/NHAI
+                                        frameworks.
+                                    </p>
+                                </div>
+                                <div class="flex flex-row lg:flex-col items-end gap-space-xs shrink-0">
+                                    <button
+                                        class="w-full lg:w-48 h-9 px-space-md bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-sm"
+                                        onclick="document.getElementById('clause-inspector-modal').classList.remove('hidden')">
+                                        <span class="material-symbols-outlined text-[18px]">auto_stories</span>
+                                        <span>View Scope &amp; Clauses</span>
+                                    </button>
+                                    <button
+                                        class="w-full lg:w-48 h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors font-label-md text-label-md flex items-center justify-center gap-space-xs">
+                                        <span
+                                            class="material-symbols-outlined text-[16px] text-error">picture_as_pdf</span>
+                                        <span>Official Gazette PDF</span>
+                                    </button>
+                                    <button
+                                        class="w-full lg:w-48 h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-primary transition-colors font-label-md text-label-md flex items-center justify-center gap-space-xs">
+                                        <span class="material-symbols-outlined text-[16px]">content_paste</span>
+                                        <span>Tender Snippet</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-surface-container-low px-space-md py-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+                                <div class="flex items-center gap-space-sm">
+                                    <span
+                                        class="font-label-sm text-label-sm uppercase text-secondary font-bold">Historical
+                                        Lineage:</span>
+                                    <span>Supersedes: <strong class="text-on-surface font-semibold">IS
+                                            1139:1966</strong> (Cold twisted deformed bars - Formally Withdrawn)</span>
+                                </div>
+                                <div class="flex items-center gap-space-md font-code-md text-code-md">
+                                    <span>Section 16 Mandated: Steel QCO S.O. 1294(E)</span>
+                                    <span>•</span>
+                                    <span class="text-tertiary font-bold">1,842 BIS Licenses Active</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Entry 2: IS 694 : 2010 -->
+                        <div
+                            class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md relative hover:shadow-md transition-shadow">
+                            <div class="w-full h-[3px] bg-primary absolute top-0 left-0"></div>
+                            <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+                                <div class="flex flex-col gap-space-xs">
+                                    <div class="flex flex-wrap items-center gap-space-xs">
+                                        <span class="font-headline-md text-headline-md text-primary font-bold">IS 694 :
+                                            2010</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container text-on-surface font-label-sm text-label-sm uppercase">Reaffirmed
+                                            2020</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase">ETD
+                                            09 (Electrotechnical)</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container-low text-on-surface-variant font-code-md text-code-md">ICS
+                                            29.060.20</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-error-container text-on-error-container font-label-sm text-label-sm uppercase font-bold flex items-center gap-[2px]">
+                                            <span class="material-symbols-outlined text-[12px]">verified</span>
+                                            <span>Mandatory ISI Mark (QCO 2023)</span>
+                                        </span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase">Active
+                                            Standard</span>
+                                    </div>
+                                    <h3 class="font-headline-md text-headline-md text-on-surface font-semibold">
+                                        Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and
+                                        Flexible Conductor for Working Voltages up to and Including 450/750 V
+                                    </h3>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-5xl">
+                                        Mandates copper/aluminum conductor resistance, PVC insulation thermal endurance,
+                                        voltage withstand parameters, and fire-retardant performance under DPIIT
+                                        Electrical Cables QCO. Critical for building electrification contracts.
+                                    </p>
+                                </div>
+                                <div class="flex flex-row lg:flex-col items-end gap-space-xs shrink-0">
+                                    <button
+                                        class="w-full lg:w-48 h-9 px-space-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg flex items-center justify-center gap-space-xs"
+                                        onclick="document.getElementById('clause-inspector-modal').classList.remove('hidden')">
+                                        <span class="material-symbols-outlined text-[18px]">visibility</span>
+                                        <span>View Scope &amp; Clauses</span>
+                                    </button>
+                                    <button
+                                        class="w-full lg:w-48 h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors font-label-md text-label-md flex items-center justify-center gap-space-xs">
+                                        <span
+                                            class="material-symbols-outlined text-[16px] text-error">picture_as_pdf</span>
+                                        <span>Download PDF</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-surface-container-low px-space-md py-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+                                <div class="flex items-center gap-space-sm">
+                                    <span
+                                        class="font-label-sm text-label-sm uppercase text-secondary font-bold">Lineage:</span>
+                                    <span>Replaces IS 694 (Part 1 &amp; 2) : 1977. Fourth revision consolidated.</span>
+                                </div>
+                                <div class="flex items-center gap-space-md font-code-md text-code-md">
+                                    <span>Gazette Ref: S.O. 4218(E)</span>
+                                    <span>•</span>
+                                    <span class="text-tertiary font-bold">924 Active Manufacturers</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Entry 3: IS 2925 : 1984 -->
+                        <div
+                            class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md relative hover:shadow-md transition-shadow">
+                            <div class="w-full h-[3px] bg-primary absolute top-0 left-0"></div>
+                            <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+                                <div class="flex flex-col gap-space-xs">
+                                    <div class="flex flex-wrap items-center gap-space-xs">
+                                        <span class="font-headline-md text-headline-md text-primary font-bold">IS 2925 :
+                                            1984</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container text-on-surface font-label-sm text-label-sm uppercase">Reaffirmed
+                                            2021</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase">TED
+                                            14 (Transport &amp; Safety PPE)</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container-low text-on-surface-variant font-code-md text-code-md">ICS
+                                            13.340.20</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-error-container text-on-error-container font-label-sm text-label-sm uppercase font-bold flex items-center gap-[2px]">
+                                            <span class="material-symbols-outlined text-[12px]">verified</span>
+                                            <span>Mandatory ISI Mark (QCO 2021)</span>
+                                        </span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase">Active
+                                            Standard</span>
+                                    </div>
+                                    <h3 class="font-headline-md text-headline-md text-on-surface font-semibold">
+                                        Specification for Industrial Safety Helmets (Second Revision)
+                                    </h3>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-5xl">
+                                        Specifies physical dimensions, shock absorption capacity, penetration
+                                        resistance, flammability, and electrical insulation tests for industrial
+                                        workers' protective headgear on mining, construction, and power generation
+                                        sites.
+                                    </p>
+                                </div>
+                                <div class="flex flex-row lg:flex-col items-end gap-space-xs shrink-0">
+                                    <button
+                                        class="w-full lg:w-48 h-9 px-space-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg flex items-center justify-center gap-space-xs"
+                                        onclick="document.getElementById('clause-inspector-modal').classList.remove('hidden')">
+                                        <span class="material-symbols-outlined text-[18px]">visibility</span>
+                                        <span>View Scope &amp; Clauses</span>
+                                    </button>
+                                    <button
+                                        class="w-full lg:w-48 h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors font-label-md text-label-md flex items-center justify-center gap-space-xs">
+                                        <span
+                                            class="material-symbols-outlined text-[16px] text-error">picture_as_pdf</span>
+                                        <span>Download PDF</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-surface-container-low px-space-md py-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+                                <div class="flex items-center gap-space-sm">
+                                    <span
+                                        class="font-label-sm text-label-sm uppercase text-secondary font-bold">Statutory
+                                        Notice:</span>
+                                    <span>Strictly required for all industrial worker protective headgear tenders under
+                                        MoL&amp;E.</span>
+                                </div>
+                                <div class="flex items-center gap-space-md font-code-md text-code-md">
+                                    <span>Gazette Ref: S.O. 5022(E)</span>
+                                    <span>•</span>
+                                    <span class="text-tertiary font-bold">218 Licenses</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Entry 4: IS 12269 : 2013 -->
+                        <div
+                            class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md relative hover:shadow-md transition-shadow">
+                            <div class="w-full h-[3px] bg-primary absolute top-0 left-0"></div>
+                            <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+                                <div class="flex flex-col gap-space-xs">
+                                    <div class="flex flex-wrap items-center gap-space-xs">
+                                        <span class="font-headline-md text-headline-md text-primary font-bold">IS 12269
+                                            : 2013</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container text-on-surface font-label-sm text-label-sm uppercase">Reaffirmed
+                                            2019</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase">CED
+                                            02 (Cement and Concrete)</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container-low text-on-surface-variant font-code-md text-code-md">ICS
+                                            91.100.10</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-error-container text-on-error-container font-label-sm text-label-sm uppercase font-bold flex items-center gap-[2px]">
+                                            <span class="material-symbols-outlined text-[12px]">verified</span>
+                                            <span>Mandatory ISI Mark (Cement QCO 2023)</span>
+                                        </span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase">Active
+                                            Standard</span>
+                                    </div>
+                                    <h3 class="font-headline-md text-headline-md text-on-surface font-semibold">
+                                        53 Grade Ordinary Portland Cement — Specification (First Revision)
+                                    </h3>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-5xl">
+                                        Defines compressive strength thresholds (minimum 53 MPa at 28 days), chemical
+                                        composition limits (insoluble residue, magnesia, total loss on ignition),
+                                        soundness (Le Chatelier &amp; Autoclave tests), and minimum initial setting time
+                                        (30 mins).
+                                    </p>
+                                </div>
+                                <div class="flex flex-row lg:flex-col items-end gap-space-xs shrink-0">
+                                    <button
+                                        class="w-full lg:w-48 h-9 px-space-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg flex items-center justify-center gap-space-xs"
+                                        onclick="document.getElementById('clause-inspector-modal').classList.remove('hidden')">
+                                        <span class="material-symbols-outlined text-[18px]">visibility</span>
+                                        <span>View Scope &amp; Clauses</span>
+                                    </button>
+                                    <button
+                                        class="w-full lg:w-48 h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors font-label-md text-label-md flex items-center justify-center gap-space-xs">
+                                        <span
+                                            class="material-symbols-outlined text-[16px] text-error">picture_as_pdf</span>
+                                        <span>Download PDF</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-surface-container-low px-space-md py-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+                                <div class="flex items-center gap-space-sm">
+                                    <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">QCO
+                                        Order:</span>
+                                    <span>Cement (Quality Control) Order 2023. Mandatory for structural load-bearing
+                                        concrete.</span>
+                                </div>
+                                <div class="flex items-center gap-space-md font-code-md text-code-md">
+                                    <span>Gazette Ref: S.O. 3145(E)</span>
+                                    <span>•</span>
+                                    <span class="text-tertiary font-bold">485 Plants Licensed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Entry 5: IS 1139 : 1966 (Superseded warning code) -->
+                        <div
+                            class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md relative hover:shadow-md transition-shadow">
+                            <div class="w-full h-[3px] bg-secondary absolute top-0 left-0"></div>
+                            <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+                                <div class="flex flex-col gap-space-xs">
+                                    <div class="flex flex-wrap items-center gap-space-xs">
+                                        <span
+                                            class="font-headline-md text-headline-md text-secondary font-bold line-through">IS
+                                            1139 : 1966</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-error-container text-on-error-container font-label-sm text-label-sm uppercase font-bold">
+                                            Superseded / Withdrawn (Obsolete)
+                                        </span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container text-on-surface font-label-sm text-label-sm uppercase">CED
+                                            54</span>
+                                        <span
+                                            class="px-space-xs py-[2px] bg-surface-container-low text-on-surface-variant font-code-md text-code-md">Deprecated
+                                            Scheme</span>
+                                    </div>
+                                    <h3 class="font-headline-md text-headline-md text-on-surface-variant font-semibold">
+                                        Specification for Hot Rolled Mild Steel, Medium Tensile Steel and High Yield
+                                        Strength Steel Deformed Bars for Concrete Reinforcement
+                                    </h3>
+                                    <div
+                                        class="p-space-sm bg-error-container/20 text-on-error-container font-body-md text-body-md flex items-center gap-space-sm">
+                                        <span
+                                            class="material-symbols-outlined text-error text-[20px] shrink-0">warning</span>
+                                        <span>
+                                            <strong>GFR Rule 144(i) Compliance Warning:</strong> This specification is
+                                            formally superseded by <span
+                                                class="font-bold underline text-primary cursor-pointer">IS
+                                                1786:2008</span>. Use of this standard in any state or central
+                                            procurement bids constitutes a statutory compliance breach.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row lg:flex-col items-end gap-space-xs shrink-0">
+                                    <button
+                                        class="w-full lg:w-48 h-9 px-space-md bg-secondary text-on-secondary hover:bg-on-surface transition-colors font-label-lg text-label-lg flex items-center justify-center gap-space-xs">
+                                        <span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+                                        <span>Migration Guide</span>
+                                    </button>
+                                    <button
+                                        class="w-full lg:w-48 h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors font-label-md text-label-md flex items-center justify-center gap-space-xs">
+                                        <span class="material-symbols-outlined text-[16px]">history</span>
+                                        <span>Archived Notice</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-surface-container-low px-space-md py-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+                                <span class="font-code-md text-code-md text-error">Status: Null &amp; Void for public
+                                    expenditure. Automated auditor rule rule_is1139_block active.</span>
+                                <span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Deprecation
+                                    Gazetted: 1980</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Compact Table View (Hidden by default, toggled via JS) -->
+                    <div class="hidden bg-surface-container-lowest shadow-sm overflow-x-auto" id="standards-table-view">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr
+                                    class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">
+                                    <th class="p-space-sm">Standard Number</th>
+                                    <th class="p-space-sm">Title &amp; Scope Summary</th>
+                                    <th class="p-space-sm">Council</th>
+                                    <th class="p-space-sm">Status / QCO</th>
+                                    <th class="p-space-sm">Year/Reaffirm</th>
+                                    <th class="p-space-sm text-right">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="font-body-md text-body-md divide-y divide-surface-container">
+                                <tr class="hover:bg-surface-container-low">
+                                    <td class="p-space-sm font-code-md text-code-md font-bold text-primary">IS 1786</td>
+                                    <td class="p-space-sm max-w-md truncate">High Strength Deformed Steel Bars for
+                                        Concrete Reinforcement</td>
+                                    <td class="p-space-sm font-label-sm text-label-sm">CED 54</td>
+                                    <td class="p-space-sm"><span
+                                            class="px-space-xs py-[1px] bg-error-container text-on-error-container font-label-sm text-label-sm">Mandatory
+                                            ISI</span></td>
+                                    <td class="p-space-sm text-on-surface-variant font-code-md text-code-md">2008 (R:
+                                        2023)</td>
+                                    <td class="p-space-sm text-right">
+                                        <button
+                                            class="px-space-xs py-[2px] bg-primary text-on-primary font-label-sm text-label-sm"
+                                            onclick="document.getElementById('clause-inspector-modal').classList.remove('hidden')">Inspect</button>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-surface-container-low">
+                                    <td class="p-space-sm font-code-md text-code-md font-bold text-primary">IS 694</td>
+                                    <td class="p-space-sm max-w-md truncate">PVC Insulated Cables for Working Voltages
+                                        up to 1100V</td>
+                                    <td class="p-space-sm font-label-sm text-label-sm">ETD 09</td>
+                                    <td class="p-space-sm"><span
+                                            class="px-space-xs py-[1px] bg-error-container text-on-error-container font-label-sm text-label-sm">Mandatory
+                                            ISI</span></td>
+                                    <td class="p-space-sm text-on-surface-variant font-code-md text-code-md">2010 (R:
+                                        2020)</td>
+                                    <td class="p-space-sm text-right">
+                                        <button
+                                            class="px-space-xs py-[2px] bg-surface-container text-on-surface font-label-sm text-label-sm"
+                                            onclick="document.getElementById('clause-inspector-modal').classList.remove('hidden')">Inspect</button>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-surface-container-low">
+                                    <td class="p-space-sm font-code-md text-code-md font-bold text-primary">IS 2925</td>
+                                    <td class="p-space-sm max-w-md truncate">Specification for Industrial Safety Helmets
+                                    </td>
+                                    <td class="p-space-sm font-label-sm text-label-sm">TED 14</td>
+                                    <td class="p-space-sm"><span
+                                            class="px-space-xs py-[1px] bg-error-container text-on-error-container font-label-sm text-label-sm">Mandatory
+                                            ISI</span></td>
+                                    <td class="p-space-sm text-on-surface-variant font-code-md text-code-md">1984 (R:
+                                        2021)</td>
+                                    <td class="p-space-sm text-right">
+                                        <button
+                                            class="px-space-xs py-[2px] bg-surface-container text-on-surface font-label-sm text-label-sm"
+                                            onclick="document.getElementById('clause-inspector-modal').classList.remove('hidden')">Inspect</button>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-surface-container-low">
+                                    <td class="p-space-sm font-code-md text-code-md font-bold text-primary">IS 12269
+                                    </td>
+                                    <td class="p-space-sm max-w-md truncate">53 Grade Ordinary Portland Cement —
+                                        Specification</td>
+                                    <td class="p-space-sm font-label-sm text-label-sm">CED 02</td>
+                                    <td class="p-space-sm"><span
+                                            class="px-space-xs py-[1px] bg-error-container text-on-error-container font-label-sm text-label-sm">Mandatory
+                                            ISI</span></td>
+                                    <td class="p-space-sm text-on-surface-variant font-code-md text-code-md">2013 (R:
+                                        2019)</td>
+                                    <td class="p-space-sm text-right">
+                                        <button
+                                            class="px-space-xs py-[2px] bg-surface-container text-on-surface font-label-sm text-label-sm"
+                                            onclick="document.getElementById('clause-inspector-modal').classList.remove('hidden')">Inspect</button>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-surface-container-low bg-error-container/10">
+                                    <td
+                                        class="p-space-sm font-code-md text-code-md font-bold text-secondary line-through">
+                                        IS 1139</td>
+                                    <td class="p-space-sm max-w-md truncate text-on-surface-variant">Hot Rolled Mild
+                                        Steel Deformed Bars (Obsolete)</td>
+                                    <td class="p-space-sm font-label-sm text-label-sm">CED 54</td>
+                                    <td class="p-space-sm"><span
+                                            class="px-space-xs py-[1px] bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">SUPERSEDED</span>
+                                    </td>
+                                    <td class="p-space-sm text-on-surface-variant font-code-md text-code-md">1966
+                                        (Withdrawn)</td>
+                                    <td class="p-space-sm text-right">
+                                        <button
+                                            class="px-space-xs py-[2px] bg-secondary text-on-secondary font-label-sm text-label-sm">Migrate</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Statutory Gazette Notified Quality Control Orders (QCO) Section -->
+                <div class="flex flex-col gap-space-md">
+                    <div
+                        class="bg-surface-container p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+                        <div class="flex items-center gap-space-sm">
+                            <span class="material-symbols-outlined text-error text-[24px]">verified_user</span>
+                            <div>
+                                <h2 class="font-headline-md text-headline-md text-on-surface">Statutory Gazette Notified
+                                    Quality Control Orders (QCOs)</h2>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                    Orders issued under Section 16, BIS Act 2016. Enforcement is mandatory for all
+                                    procurement tenders, GeM catalogues, and imports.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-space-xs shrink-0">
+                            <span
+                                class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-space-xs py-[2px] uppercase">DPIIT
+                                &amp; Ministry Synchronized</span>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-lowest shadow-sm overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr
+                                    class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase">
+                                    <th class="p-space-md">Gazette Order Title</th>
+                                    <th class="p-space-md">Issuing Ministry</th>
+                                    <th class="p-space-md">S.O. Gazette Ref</th>
+                                    <th class="p-space-md">Notification Date</th>
+                                    <th class="p-space-md">Governed Standards</th>
+                                    <th class="p-space-md">Status</th>
+                                    <th class="p-space-md text-right">Gazette Artifact</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-surface-container font-body-md text-body-md">
+                                <tr class="hover:bg-surface-container-low">
+                                    <td class="p-space-md">
+                                        <div class="flex flex-col">
+                                            <span class="font-label-lg text-label-lg font-bold text-on-surface">Steel
+                                                and Steel Products (Quality Control) Order, 2024</span>
+                                            <span class="font-body-sm text-body-sm text-on-surface-variant">Mandates ISI
+                                                standard mark on all primary &amp; secondary structural steel</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-space-md font-body-sm text-body-sm text-on-surface">Ministry of Steel
+                                    </td>
+                                    <td class="p-space-md font-code-md text-code-md text-primary font-bold">S.O. 1294(E)
+                                    </td>
+                                    <td class="p-space-md text-on-surface-variant font-body-sm text-body-sm">15-Jan-2024
+                                    </td>
+                                    <td class="p-space-md">
+                                        <div class="flex flex-wrap gap-[4px]">
+                                            <span
+                                                class="px-space-xs py-[1px] bg-surface-container text-primary font-code-md text-code-md font-bold">IS
+                                                1786</span>
+                                            <span
+                                                class="px-space-xs py-[1px] bg-surface-container text-primary font-code-md text-code-md font-bold">IS
+                                                2062</span>
+                                            <span
+                                                class="px-space-xs py-[1px] bg-surface-container text-primary font-code-md text-code-md font-bold">IS
+                                                2830</span>
+                                            <span
+                                                class="px-space-xs py-[1px] bg-surface-container text-primary font-code-md text-code-md font-bold">IS
+                                                432</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-space-md">
+                                        <span
+                                            class="px-space-xs py-[2px] bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase font-bold">In
+                                            Force</span>
+                                    </td>
+                                    <td class="p-space-md text-right">
+                                        <div class="flex items-center justify-end gap-space-xs">
+                                            <button
+                                                class="px-space-sm py-1 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-space-xs">
+                                                <span
+                                                    class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+                                                <span>Download S.O.</span>
+                                            </button>
+                                            <button class="px-space-xs py-1 text-primary hover:text-primary-container">
+                                                <span class="material-symbols-outlined text-[18px]">table_chart</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-surface-container-low">
+                                    <td class="p-space-md">
+                                        <div class="flex flex-col">
+                                            <span
+                                                class="font-label-lg text-label-lg font-bold text-on-surface">Electrical
+                                                Wires and Cables (Quality Control) Order, 2023</span>
+                                            <span class="font-body-sm text-body-sm text-on-surface-variant">Prohibits
+                                                manufacture/sale of non-ISI domestic &amp; industrial insulated
+                                                wires</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-space-md font-body-sm text-body-sm text-on-surface">Ministry of Heavy
+                                        Industries / DPIIT</td>
+                                    <td class="p-space-md font-code-md text-code-md text-primary font-bold">S.O. 4218(E)
+                                    </td>
+                                    <td class="p-space-md text-on-surface-variant font-body-sm text-body-sm">21-Sep-2023
+                                    </td>
+                                    <td class="p-space-md">
+                                        <div class="flex flex-wrap gap-[4px]">
+                                            <span
+                                                class="px-space-xs py-[1px] bg-surface-container text-primary font-code-md text-code-md font-bold">IS
+                                                694</span>
+                                            <span
+                                                class="px-space-xs py-[1px] bg-surface-container text-primary font-code-md text-code-md font-bold">IS
+                                                7098 (Pt 1)</span>
+                                            <span
+                                                class="px-space-xs py-[1px] bg-surface-container text-primary font-code-md text-code-md font-bold">IS
+                                                9968</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-space-md">
+                                        <span
+                                            class="px-space-xs py-[2px] bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase font-bold">In
+                                            Force</span>
+                                    </td>
+                                    <td class="p-space-md text-right">
+                                        <div class="flex items-center justify-end gap-space-xs">
+                                            <button
+                                                class="px-space-sm py-1 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-space-xs">
+                                                <span
+                                                    class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+                                                <span>Download S.O.</span>
+                                            </button>
+                                            <button class="px-space-xs py-1 text-primary hover:text-primary-container">
+                                                <span class="material-symbols-outlined text-[18px]">table_chart</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-surface-container-low">
+                                    <td class="p-space-md">
+                                        <div class="flex flex-col">
+                                            <span class="font-label-lg text-label-lg font-bold text-on-surface">Cement
+                                                (Quality Control) Order, 2023</span>
+                                            <span class="font-body-sm text-body-sm text-on-surface-variant">Covers all
+                                                grades of Portland, Pozzolana, Slag, and Masonry cements</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-space-md font-body-sm text-body-sm text-on-surface">Ministry of
+                                        Commerce &amp; Industry (DPIIT)</td>
+                                    <td class="p-space-md font-code-md text-code-md text-primary font-bold">S.O. 3145(E)
+                                    </td>
+                                    <td class="p-space-md text-on-surface-variant font-body-sm text-body-sm">12-Jul-2023
+                                    </td>
+                                    <td class="p-space-md">
+                                        <div class="flex flex-wrap gap-[4px]">
+                                            <span
+                                                class="px-space-xs py-[1px] bg-surface-container text-primary font-code-md text-code-md font-bold">IS
+                                                12269</span>
+                                            <span
+                                                class="px-space-xs py-[1px] bg-surface-container text-primary font-code-md text-code-md font-bold">IS
+                                                8112</span>
+                                            <span
+                                                class="px-space-xs py-[1px] bg-surface-container text-primary font-code-md text-code-md font-bold">IS
+                                                1489</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-space-md">
+                                        <span
+                                            class="px-space-xs py-[2px] bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase font-bold">In
+                                            Force</span>
+                                    </td>
+                                    <td class="p-space-md text-right">
+                                        <div class="flex items-center justify-end gap-space-xs">
+                                            <button
+                                                class="px-space-sm py-1 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-space-xs">
+                                                <span
+                                                    class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+                                                <span>Download S.O.</span>
+                                            </button>
+                                            <button class="px-space-xs py-1 text-primary hover:text-primary-container">
+                                                <span class="material-symbols-outlined text-[18px]">table_chart</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-surface-container-low">
+                                    <td class="p-space-md">
+                                        <div class="flex flex-col">
+                                            <span class="font-label-lg text-label-lg font-bold text-on-surface">Personal
+                                                Protective Equipment (Helmets) Order, 2021</span>
+                                            <span class="font-body-sm text-body-sm text-on-surface-variant">Mandates BIS
+                                                certification for all protective headgear sold or procured in
+                                                India</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-space-md font-body-sm text-body-sm text-on-surface">MoRTH / DPIIT</td>
+                                    <td class="p-space-md font-code-md text-code-md text-primary font-bold">S.O. 5022(E)
+                                    </td>
+                                    <td class="p-space-md text-on-surface-variant font-body-sm text-body-sm">02-Dec-2021
+                                    </td>
+                                    <td class="p-space-md">
+                                        <div class="flex flex-wrap gap-[4px]">
+                                            <span
+                                                class="px-space-xs py-[1px] bg-surface-container text-primary font-code-md text-code-md font-bold">IS
+                                                2925</span>
+                                            <span
+                                                class="px-space-xs py-[1px] bg-surface-container text-primary font-code-md text-code-md font-bold">IS
+                                                4151</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-space-md">
+                                        <span
+                                            class="px-space-xs py-[2px] bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase font-bold">In
+                                            Force</span>
+                                    </td>
+                                    <td class="p-space-md text-right">
+                                        <div class="flex items-center justify-end gap-space-xs">
+                                            <button
+                                                class="px-space-sm py-1 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-space-xs">
+                                                <span
+                                                    class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+                                                <span>Download S.O.</span>
+                                            </button>
+                                            <button class="px-space-xs py-1 text-primary hover:text-primary-container">
+                                                <span class="material-symbols-outlined text-[18px]">table_chart</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Embedded Clause Detail Inspector Drawer / Modal (IS 1786 : 2008) -->
+            <div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md backdrop-blur-sm bg-inverse-surface/40"
+                id="clause-inspector-modal">
+                <div
+                    class="bg-surface-container-lowest w-full max-w-5xl max-h-[90vh] shadow-2xl flex flex-col overflow-hidden relative">
+                    <div class="w-full h-1 bg-primary"></div>
+                    <!-- Modal Header -->
+                    <div class="p-space-lg bg-surface-container-low flex items-start justify-between">
+                        <div class="flex flex-col gap-[2px]">
+                            <div class="flex items-center gap-space-xs">
+                                <span
+                                    class="px-space-xs py-[1px] bg-primary text-on-primary font-label-sm text-label-sm uppercase">Technical
+                                    Inspector</span>
+                                <span class="font-code-md text-code-md text-on-surface-variant">CED 54 : Concrete
+                                    Reinforcement</span>
+                            </div>
+                            <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+                                Clause &amp; Parameter Inspector: IS 1786 : 2008
+                            </h2>
+                            <span class="font-body-sm text-body-sm text-on-surface-variant">
+                                High Strength Deformed Steel Bars and Wires for Concrete Reinforcement (Fourth Revision)
+                            </span>
+                        </div>
+                        <button
+                            class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container"
+                            onclick="document.getElementById('clause-inspector-modal').classList.add('hidden')">
+                            <span class="material-symbols-outlined text-[24px]">close</span>
+                        </button>
+                    </div>
+                    <!-- Modal Tabs -->
+                    <div
+                        class="flex items-center bg-surface-container px-space-md border-b border-surface-container-high overflow-x-auto">
+                        <button
+                            class="px-space-md py-space-sm font-label-md text-label-md text-primary font-bold border-b-2 border-primary bg-surface-container-lowest">
+                            Clause 4: Chemical Composition
+                        </button>
+                        <button
+                            class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface">
+                            Clause 8: Mechanical Properties
+                        </button>
+                        <button
+                            class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface">
+                            Clause 9: Bend &amp; Rebend Test
+                        </button>
+                        <button
+                            class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface">
+                            QCO Legal Mandate
+                        </button>
+                    </div>
+                    <!-- Modal Content Body -->
+                    <div class="p-space-lg overflow-y-auto flex flex-col gap-space-lg">
+                        <!-- Table 1: Chemical Composition (Clause 4.2) -->
+                        <div class="flex flex-col gap-space-xs">
+                            <div class="flex items-center justify-between">
+                                <span class="font-label-lg text-label-lg font-bold text-on-surface">Table 1 — Chemical
+                                    Composition Limits (Clause 4.2)</span>
+                                <span class="font-label-sm text-label-sm text-primary uppercase font-bold">Max Percent
+                                    by Mass on Ladle Analysis</span>
+                            </div>
+                            <div class="overflow-x-auto shadow-sm">
+                                <table class="w-full text-left border-collapse">
+                                    <thead>
+                                        <tr
+                                            class="bg-surface-container-low text-on-surface font-label-sm text-label-sm uppercase">
+                                            <th class="p-space-sm">Grade</th>
+                                            <th class="p-space-sm">Carbon (C) Max</th>
+                                            <th class="p-space-sm">Sulphur (S) Max</th>
+                                            <th class="p-space-sm">Phosphorus (P) Max</th>
+                                            <th class="p-space-sm">S + P Total Max</th>
+                                            <th class="p-space-sm">Carbon Equivalent (CEq) Max</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="font-body-md text-body-md divide-y divide-surface-container">
+                                        <tr class="hover:bg-surface-container-low">
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">Fe
+                                                415</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.30 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.060 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.060 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.110 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.42 %</td>
+                                        </tr>
+                                        <tr class="hover:bg-surface-container-low">
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">Fe
+                                                500</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.30 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.055 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.055 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.105 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.42 %</td>
+                                        </tr>
+                                        <tr class="hover:bg-surface-container-low bg-primary-fixed/20">
+                                            <td
+                                                class="p-space-sm font-code-md text-code-md font-bold text-primary flex items-center gap-space-xs">
+                                                <span>Fe 500D</span>
+                                                <span
+                                                    class="px-space-xs py-[1px] bg-primary text-on-primary font-label-sm text-label-sm">CPWD
+                                                    Standard</span>
+                                            </td>
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">0.25
+                                                %</td>
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">
+                                                0.040 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">
+                                                0.040 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">
+                                                0.075 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">0.42
+                                                %</td>
+                                        </tr>
+                                        <tr class="hover:bg-surface-container-low">
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">Fe
+                                                550D</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.25 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.040 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.040 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.075 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">0.42 %</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                                Note: For seismic zones IV &amp; V, the Bureau mandates grade Fe 500D or Fe 550D with
+                                strict adherence to CEq ≤ 0.42% for weldability.
+                            </p>
+                        </div>
+                        <!-- Table 2: Mechanical Properties (Clause 8.1) -->
+                        <div class="flex flex-col gap-space-xs">
+                            <div class="flex items-center justify-between">
+                                <span class="font-label-lg text-label-lg font-bold text-on-surface">Table 2 — Mechanical
+                                    Property Requirements (Clause 8.1)</span>
+                                <span class="font-label-sm text-label-sm text-primary uppercase font-bold">Tensile &amp;
+                                    Elongation Standard</span>
+                            </div>
+                            <div class="overflow-x-auto shadow-sm">
+                                <table class="w-full text-left border-collapse">
+                                    <thead>
+                                        <tr
+                                            class="bg-surface-container-low text-on-surface font-label-sm text-label-sm uppercase">
+                                            <th class="p-space-sm">Grade</th>
+                                            <th class="p-space-sm">0.2% Proof Stress (Min)</th>
+                                            <th class="p-space-sm">Tensile Strength / Proof Stress Ratio</th>
+                                            <th class="p-space-sm">Total Elongation (Min)</th>
+                                            <th class="p-space-sm">Uniform Elongation (Agt)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="font-body-md text-body-md divide-y divide-surface-container">
+                                        <tr class="hover:bg-surface-container-low">
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">Fe
+                                                415</td>
+                                            <td class="p-space-sm font-code-md text-code-md">415.0 N/mm²</td>
+                                            <td class="p-space-sm font-code-md text-code-md">≥ 1.10</td>
+                                            <td class="p-space-sm font-code-md text-code-md">14.5 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">—</td>
+                                        </tr>
+                                        <tr class="hover:bg-surface-container-low bg-primary-fixed/20">
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">Fe
+                                                500D (Ductile)</td>
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">
+                                                500.0 N/mm²</td>
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">≥
+                                                1.10</td>
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">16.0
+                                                %</td>
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">≥
+                                                5.0 %</td>
+                                        </tr>
+                                        <tr class="hover:bg-surface-container-low">
+                                            <td class="p-space-sm font-code-md text-code-md font-bold text-primary">Fe
+                                                550D</td>
+                                            <td class="p-space-sm font-code-md text-code-md">550.0 N/mm²</td>
+                                            <td class="p-space-sm font-code-md text-code-md">≥ 1.08</td>
+                                            <td class="p-space-sm font-code-md text-code-md">14.5 %</td>
+                                            <td class="p-space-sm font-code-md text-code-md">≥ 5.0 %</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Action Bar -->
+                    <div
+                        class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+                        <div class="flex items-center gap-space-xs font-code-md text-code-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+                            <span>Verified against Bureau of Indian Standards Official Gazetted Edition 2024</span>
+                        </div>
+                        <div class="flex items-center gap-space-sm">
+                            <button
+                                class="h-9 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors"
+                                onclick="navigator.clipboard &amp;&amp; navigator.clipboard.writeText('IS 1786:2008 Clause 4.2 &amp; 8.1 Fe 500D specification verbatim');">
+                                <span class="material-symbols-outlined text-[16px]">content_copy</span>
+                                <span>Copy Markdown</span>
+                            </button>
+                            <button
+                                class="h-9 px-space-md bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm">
+                                <span class="material-symbols-outlined text-[16px]">add_task</span>
+                                <span>Insert Verbatim into GeM Tender</span>
+                            </button>
+                            <button
+                                class="h-9 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors"
+                                onclick="document.getElementById('clause-inspector-modal').classList.add('hidden')">
+                                Close Inspector
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Dynamic view toggling between Card Grid and Compact Table
+            const cardViewBtn = document.getElementById('view-card-btn');
+            const tableViewBtn = document.getElementById('view-table-btn');
+            const cardContainer = document.getElementById('standards-card-view');
+            const tableContainer = document.getElementById('standards-table-view');
+
+            if (cardViewBtn && tableViewBtn && cardContainer && tableContainer) {
+                cardViewBtn.addEventListener('click', () => {
+                    cardContainer.classList.remove('hidden');
+                    tableContainer.classList.add('hidden');
+                    cardViewBtn.classList.add('bg-primary', 'text-on-primary');
+                    cardViewBtn.classList.remove('text-on-surface-variant');
+                    tableViewBtn.classList.remove('bg-primary', 'text-on-primary');
+                    tableViewBtn.classList.add('text-on-surface-variant');
+                });
+
+                tableViewBtn.addEventListener('click', () => {
+                    cardContainer.classList.add('hidden');
+                    tableContainer.classList.remove('hidden');
+                    tableViewBtn.classList.add('bg-primary', 'text-on-primary');
+                    tableViewBtn.classList.remove('text-on-surface-variant');
+                    cardViewBtn.classList.remove('bg-primary', 'text-on-primary');
+                    cardViewBtn.classList.add('text-on-surface-variant');
+                });
+            }
+        </script>
+    </main>
+    <footer class="w-full bg-surface-container-low border-t border-outline-variant py-space-lg">
+        <div
+            class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left">
+            <div class="flex flex-col gap-space-xs">
+                <p class="font-label-md text-label-md text-on-surface font-semibold">Smart India Hackathon 2026 |
+                    Ministry of Consumer Affairs, Food &amp; Public Distribution | BIS Manakonline &amp; GeM API
+                    Integration Prototype</p>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Built under Rule 144(i) of General
+                    Financial Rules (GFR 2017) • Mandated for Central Procurement Agencies</p>
+            </div>
+            <div class="flex items-center gap-space-md shrink-0"><span
+                    class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest border border-outline-variant px-space-sm py-space-xs bg-surface-container-lowest">Gov.
+                    of India Protected</span><span class="font-code-md text-code-md text-on-surface-variant">ISO/IEC
+                    17025 Compliant Node</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>

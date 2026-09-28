@@ -1,0 +1,13 @@
+PUBLIC WORKS & INFRASTRUCTURE MONITORING AUTHORITY
+TENDER SPECIFICATION - PERSONAL PROTECTIVE EQUIPMENT (PPE)
+
+Subject: Procurement of Industrial Safety Helmets for Highway Tunnel Construction Staff.
+
+1. Product Specifications:
+   - Type: Industrial protective hard hat / safety helmet with adjustable ratchet suspension.
+   - Shell Material: UV-stabilized High Density Polyethylene (HDPE) shell with reinforced crown ribs.
+   - Suspension: 6-point nylon webbing harness with replaceable sweatband and chin strap.
+   - Impact Protection: Must withstand shock absorption test where 5 kg striker dropped from 1 meter imparts <= 5.0 kN peak force.
+   - Penetration Resistance: Must resist 3 kg conical striker impact from 1 meter.
+   - Electrical Resistance: Insulation resistance withstanding 1.2 kV leakage current test (<= 3 mA).
+   - Compliance: Vendor must hold valid BIS Certification License.

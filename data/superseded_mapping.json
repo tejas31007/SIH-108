@@ -1,0 +1,50 @@
+{
+  "IS 1139": {
+    "title": "Hot rolled mild steel and medium tensile steel deformed bars for concrete reinforcement",
+    "status": "SUPERSEDED",
+    "superseded_by": "IS 1786:2008",
+    "reason": "Cold-twisted and hot-rolled deformed bars were unified under IS 1786."
+  },
+  "IS 456:1978": {
+    "title": "Code of practice for plain and reinforced concrete (Third Revision)",
+    "status": "SUPERSEDED",
+    "superseded_by": "IS 456:2000",
+    "reason": "Working stress design replaced with Limit State Design as primary method."
+  },
+  "IS 8112:1989": {
+    "title": "43 Grade Ordinary Portland Cement - Specification",
+    "status": "SUPERSEDED",
+    "superseded_by": "IS 269:2015",
+    "reason": "33, 43, and 53 Grade Ordinary Portland Cements unified into single standard IS 269:2015."
+  },
+  "IS 12269:1987": {
+    "title": "53 Grade Ordinary Portland Cement - Specification",
+    "status": "SUPERSEDED",
+    "superseded_by": "IS 269:2015",
+    "reason": "Merged into unified standard IS 269:2015."
+  },
+  "IS 694:1990": {
+    "title": "PVC insulated cables for working voltages up to and including 1100 V (Third Revision)",
+    "status": "SUPERSEDED",
+    "superseded_by": "IS 694:2010",
+    "reason": "Updated to include Halogen-free and FR-LSH formulations and improved insulation test methods."
+  },
+  "IS 1293:2005": {
+    "title": "Plugs and socket-outlets of rated voltage up to and including 250 V (Third Revision)",
+    "status": "SUPERSEDED",
+    "superseded_by": "IS 1293:2019",
+    "reason": "Revised to mandate child safety shutters and modernized mechanical dimensions."
+  },
+  "IS 800:1984": {
+    "title": "Code of practice for general construction in steel",
+    "status": "SUPERSEDED",
+    "superseded_by": "IS 800:2007",
+    "reason": "Updated from Allowable Stress Design (ASD) to Limit State Method (LSM)."
+  },
+  "IS 1343:1980": {
+    "title": "Code of practice for prestressed concrete",
+    "status": "SUPERSEDED",
+    "superseded_by": "IS 1343:2012",
+    "reason": "Comprehensive revision reflecting modern prestressing technologies."
+  }
+}

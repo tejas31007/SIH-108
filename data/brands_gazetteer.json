@@ -1,0 +1,220 @@
+{
+  "brands": [
+    {
+      "name": "Tata Tiscon",
+      "sector": "Civil / Steel",
+      "commodity": "Steel Rebars (TMT)",
+      "recommended_generic_replacement": "Thermo-Mechanically Treated (TMT) High Strength Deformed Steel Bars Fe 500D conforming to IS 1786"
+    },
+    {
+      "name": "Jindal Panther",
+      "sector": "Civil / Steel",
+      "commodity": "Steel Rebars (TMT)",
+      "recommended_generic_replacement": "TMT High Strength Deformed Steel Bars conforming to IS 1786"
+    },
+    {
+      "name": "SAIL TMT",
+      "sector": "Civil / Steel",
+      "commodity": "Steel Rebars (TMT)",
+      "recommended_generic_replacement": "High Strength Deformed Steel Bars conforming to IS 1786"
+    },
+    {
+      "name": "UltraTech",
+      "sector": "Civil / Cement",
+      "commodity": "Cement",
+      "recommended_generic_replacement": "Portland Pozzolana Cement (PPC) conforming to IS 1489 (Part 1) or OPC conforming to IS 269"
+    },
+    {
+      "name": "ACC Cement",
+      "sector": "Civil / Cement",
+      "commodity": "Cement",
+      "recommended_generic_replacement": "Portland Pozzolana Cement (PPC) conforming to IS 1489 (Part 1)"
+    },
+    {
+      "name": "Ambuja Cement",
+      "sector": "Civil / Cement",
+      "commodity": "Cement",
+      "recommended_generic_replacement": "Portland Pozzolana Cement (PPC) conforming to IS 1489 (Part 1)"
+    },
+    {
+      "name": "Havells",
+      "sector": "Electrical",
+      "commodity": "Cables and Switches",
+      "recommended_generic_replacement": "Flame Retardant (FR) PVC Insulated Copper Conductor Cable conforming to IS 694"
+    },
+    {
+      "name": "Polycab",
+      "sector": "Electrical",
+      "commodity": "Cables",
+      "recommended_generic_replacement": "PVC Insulated Copper/Aluminium Power and Control Cable conforming to IS 694 or IS 1554"
+    },
+    {
+      "name": "Finolex",
+      "sector": "Electrical",
+      "commodity": "Cables and Pipes",
+      "recommended_generic_replacement": "PVC Insulated Cable conforming to IS 694"
+    },
+    {
+      "name": "RR Kabel",
+      "sector": "Electrical",
+      "commodity": "Cables",
+      "recommended_generic_replacement": "PVC Insulated Cable conforming to IS 694"
+    },
+    {
+      "name": "Anchor",
+      "sector": "Electrical",
+      "commodity": "Plugs & Sockets",
+      "recommended_generic_replacement": "3-Pin Shuttered Plug and Socket Outlet conforming to IS 1293"
+    },
+    {
+      "name": "Schneider Electric",
+      "sector": "Electrical",
+      "commodity": "Switchgear / MCBs",
+      "recommended_generic_replacement": "Miniature Circuit Breakers (MCBs) conforming to IS/IEC 60898 or IS 8828"
+    },
+    {
+      "name": "Legrand",
+      "sector": "Electrical",
+      "commodity": "Switches / Plugs",
+      "recommended_generic_replacement": "Modular Switches and Sockets conforming to IS 1293 and IS 3854"
+    },
+    {
+      "name": "Kirloskar",
+      "sector": "Mechanical",
+      "commodity": "Centrifugal Pumps",
+      "recommended_generic_replacement": "Horizontal Centrifugal Pump for clear cold fresh water conforming to IS 1520"
+    },
+    {
+      "name": "Crompton",
+      "sector": "Mechanical / Electrical",
+      "commodity": "Pumps and Motors",
+      "recommended_generic_replacement": "Horizontal Centrifugal Pump conforming to IS 1520 or Induction Motor conforming to IS 12615"
+    },
+    {
+      "name": "Grundfos",
+      "sector": "Mechanical",
+      "commodity": "Pumps",
+      "recommended_generic_replacement": "Centrifugal Water Pump conforming to IS 1520"
+    },
+    {
+      "name": "Dell OptiPlex",
+      "sector": "IT / Electronics",
+      "commodity": "Desktop Computers",
+      "recommended_generic_replacement": "Desktop Computer meeting BIS CRS IS 16046 / IS 13252 with specified benchmark, RAM, and cores"
+    },
+    {
+      "name": "HP EliteDesk",
+      "sector": "IT / Electronics",
+      "commodity": "Desktop Computers",
+      "recommended_generic_replacement": "Desktop Computer with BIS CRS Certification under IS 13252"
+    },
+    {
+      "name": "Lenovo ThinkPad",
+      "sector": "IT / Electronics",
+      "commodity": "Laptops",
+      "recommended_generic_replacement": "Commercial Laptop Computer meeting BIS CRS requirements under IS 13252 and IS 16046"
+    },
+    {
+      "name": "Lenovo",
+      "sector": "IT / Electronics",
+      "commodity": "Laptops",
+      "recommended_generic_replacement": "Commercial Laptop Computer conforming to IS 13252"
+    },
+    {
+      "name": "Dell Latitude",
+      "sector": "IT / Electronics",
+      "commodity": "Laptops",
+      "recommended_generic_replacement": "Commercial Grade Laptop Computer conforming to IS 13252 (Part 1)"
+    },
+    {
+      "name": "Dell",
+      "sector": "IT / Electronics",
+      "commodity": "Laptops & Desktops",
+      "recommended_generic_replacement": "Commercial Computing Equipment conforming to IS 13252"
+    },
+    {
+      "name": "HP EliteBook",
+      "sector": "IT / Electronics",
+      "commodity": "Laptops",
+      "recommended_generic_replacement": "Commercial Grade Laptop Computer conforming to IS 13252 (Part 1)"
+    },
+    {
+      "name": "HP",
+      "sector": "IT / Electronics",
+      "commodity": "Laptops & Desktops",
+      "recommended_generic_replacement": "Personal Computer System conforming to IS 13252"
+    },
+    {
+      "name": "Apple",
+      "sector": "IT / Electronics",
+      "commodity": "Laptops & Devices",
+      "recommended_generic_replacement": "Computing Device conforming to IS 13252"
+    },
+    {
+      "name": "Fortune",
+      "sector": "Food & Public Distribution",
+      "commodity": "Flour and Edible Oils",
+      "recommended_generic_replacement": "Food Products conforming to relevant Indian Standards"
+    },
+    {
+      "name": "3M",
+      "sector": "Safety / PPE",
+      "commodity": "Safety Equipment",
+      "recommended_generic_replacement": "Personal Protective Equipment conforming to IS 2925 or IS 9473"
+    },
+    {
+      "name": "Karam",
+      "sector": "Safety / PPE",
+      "commodity": "Safety Helmets & Harness",
+      "recommended_generic_replacement": "Industrial Safety Helmet conforming to IS 2925 with valid ISI mark"
+    },
+    {
+      "name": "3M Safety",
+      "sector": "Safety / PPE",
+      "commodity": "Respirator Masks & Helmets",
+      "recommended_generic_replacement": "Particulate Respirator Mask FFP2 conforming to IS 9473"
+    },
+    {
+      "name": "Bisleri",
+      "sector": "Food & Consumables",
+      "commodity": "Packaged Water",
+      "recommended_generic_replacement": "Packaged Drinking Water conforming to IS 14543 with mandatory ISI Mark"
+    },
+    {
+      "name": "Kinley",
+      "sector": "Food & Consumables",
+      "commodity": "Packaged Water",
+      "recommended_generic_replacement": "Packaged Drinking Water conforming to IS 14543"
+    },
+    {
+      "name": "Aashirvaad",
+      "sector": "Food & Public Distribution",
+      "commodity": "Wheat Atta",
+      "recommended_generic_replacement": "Whole Wheat Atta conforming to IS 1155"
+    },
+    {
+      "name": "Fortune Atta",
+      "sector": "Food & Public Distribution",
+      "commodity": "Wheat Flour",
+      "recommended_generic_replacement": "Milled Wheat Atta conforming to IS 1155"
+    },
+    {
+      "name": "Fortune Oil",
+      "sector": "Food & Public Distribution",
+      "commodity": "Edible Cooking Oil",
+      "recommended_generic_replacement": "Fortified Refined Edible Oil conforming to relevant Indian Standard"
+    },
+    {
+      "name": "Tata Salt",
+      "sector": "Food & Public Distribution",
+      "commodity": "Iodized Salt",
+      "recommended_generic_replacement": "Vacuum Evaporated Iodized Salt conforming to IS 7224 with mandatory ISI Mark"
+    },
+    {
+      "name": "Amul",
+      "sector": "Food & Public Distribution",
+      "commodity": "Dairy Products",
+      "recommended_generic_replacement": "Pasteurized Milk / Butter conforming to relevant Indian Standard"
+    }
+  ]
+}

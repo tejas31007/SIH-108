@@ -1,0 +1,25 @@
+TENDER: Supply of Low Voltage PVC Insulated Armoured Power Cables
+REFERENCE: DMRC/ELECT/LV-CABLE/2026/55
+DEPARTMENT: Delhi Metro Rail Corporation (DMRC) - Traction & Power
+
+DELHI METRO RAIL CORPORATION LIMITED
+Tender Notification: DMRC/ELECT/LV-CABLE/2026/55
+Works: Station Auxiliary Power Distribution Electrical Cabling
+
+TECHNICAL SPECIFICATION:
+
+1. ITEM PARTICULARS:
+Supply of 1100 Volts (1.1 kV) Grade Heavy Duty Cross-Linked/PVC Insulated Aluminium Conductor Armoured Underground Power Cables.
+
+2. BRAND COMPLIANCE REQUIREMENT:
+The cables must be manufactured exclusively by Havells or Polycab or Finolex. Equipment from other manufacturers will not qualify for technical evaluation.
+
+3. DESIGN AND CONSTRUCTION PARAMETERS:
+- System Voltage: Rated for 1100 V AC, 3-Phase 50 Hz earthed / unearthed electrical system.
+- Size and Core Configuration: 4-Core x 25 sq. mm.
+- Conductor: Stranded compact shaped H4 grade EC Aluminium complying with Class 2 flexibility.
+- Insulation: Type A PVC compound extruded over conductors.
+- Inner Sheath: Extruded PVC matching Type ST1.
+- Armouring: Single layer of Galvanized Round Steel Wire / Formed Steel Strip providing minimum 90% surface coverage.
+- Outer Sheath: Heavy-duty extruded PVC compound Type ST1, flame retardant (FR) with oxygen index >= 29%.
+- Statutory Markings: Mandatory ISI embossing with manufacturer license code under the Electrical Wires and Cable QCO.
